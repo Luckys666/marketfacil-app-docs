@@ -18,7 +18,7 @@ A Análise de Anúncios é o ponto de partida no Marketfacil. Cole um link, agua
 - Dados de **Product Ads** (se você tiver campanha ativa)
 - **Experiência de Compra** (reputação do anúncio)
 
-![Tela inicial da Análise de Anúncios com campo para colar link e botão Analisar](../assets/screenshots/analise-anuncios-input-v1.png)
+![Demonstração animada: colar link do anúncio, clicar em Analisar e receber o score (Classe A, 81 pontos) em segundos](../assets/gifs/analise-anuncios.gif)
 
 ## Três tipos de link aceitos
 

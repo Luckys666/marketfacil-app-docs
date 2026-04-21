@@ -17,7 +17,7 @@ A **Busca de Catálogos** ajuda você a encontrar produtos novos para vender na 
 3. Ajuste os filtros (opcional).
 4. Clique em **Buscar**.
 
-![Tela da Busca de Catálogos com campo de busca, filtros de logística, frete grátis, concorrentes e ordenação](../assets/screenshots/busca-catalogos-input-v1.png)
+![Demonstração animada: digitar "máquina de cortar cabelo", clicar em Buscar e ver a lista de catálogos aparecendo com gráficos de visitas e TOP 3 de menor preço](../assets/gifs/busca-catalogos.gif)
 
 ## Filtros disponíveis
 

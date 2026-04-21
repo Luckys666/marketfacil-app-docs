@@ -19,6 +19,15 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### GIFs animados nas features principais
+
+- 3 GIFs gerados via Playwright + ffmpeg mostrando o fluxo completo (input → ação → resultado):
+  - `analise-marca.gif` — busca INPI por "Nike" com resultado Risco Alto
+  - `analise-anuncios.gif` — análise de MLB com score 81 (Classe A)
+  - `busca-catalogos.gif` — busca "máquina de cortar cabelo" com resultado
+- Pasta `assets/gifs/` criada
+- GIFs substituem screenshots estáticos nas READMEs das 3 features principais
+
 ### Enriquecimento — playbooks, troubleshooting e checklists
 
 - **5 Playbooks** end-to-end criados (`playbooks/`):
@@ -749,7 +758,7 @@ A Análise de Anúncios é o ponto de partida no Marketfacil. Cole um link, agua
 - Dados de **Product Ads** (se você tiver campanha ativa)
 - **Experiência de Compra** (reputação do anúncio)
 
-![Tela inicial da Análise de Anúncios com campo para colar link e botão Analisar](../assets/screenshots/analise-anuncios-input-v1.png)
+![Demonstração animada: colar link do anúncio, clicar em Analisar e receber o score (Classe A, 81 pontos) em segundos](../assets/gifs/analise-anuncios.gif)
 
 ## Três tipos de link aceitos
 
@@ -999,7 +1008,7 @@ A **Análise de Marca** consulta a base oficial do INPI (Instituto Nacional da P
 3. Clique em **Analisar**.
 4. Aguarde alguns segundos e veja o resultado.
 
-![Tela inicial da Análise de Marca no INPI com campo de busca e placeholder Ex: Nike](../assets/screenshots/analise-marca-input-v1.png)
+![Demonstração animada: digitar "Nike", clicar em Analisar e ver o resultado de "Risco Alto: Marca Exata Registrada" com 8 processos em segundos](../assets/gifs/analise-marca.gif)
 
 ## Como ler o resultado
 
@@ -1143,7 +1152,7 @@ A **Busca de Catálogos** ajuda você a encontrar produtos novos para vender na 
 3. Ajuste os filtros (opcional).
 4. Clique em **Buscar**.
 
-![Tela da Busca de Catálogos com campo de busca, filtros de logística, frete grátis, concorrentes e ordenação](../assets/screenshots/busca-catalogos-input-v1.png)
+![Demonstração animada: digitar "máquina de cortar cabelo", clicar em Buscar e ver a lista de catálogos aparecendo com gráficos de visitas e TOP 3 de menor preço](../assets/gifs/busca-catalogos.gif)
 
 ## Filtros disponíveis
 

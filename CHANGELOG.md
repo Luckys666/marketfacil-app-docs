@@ -11,6 +11,15 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### GIFs animados nas features principais
+
+- 3 GIFs gerados via Playwright + ffmpeg mostrando o fluxo completo (input → ação → resultado):
+  - `analise-marca.gif` — busca INPI por "Nike" com resultado Risco Alto
+  - `analise-anuncios.gif` — análise de MLB com score 81 (Classe A)
+  - `busca-catalogos.gif` — busca "máquina de cortar cabelo" com resultado
+- Pasta `assets/gifs/` criada
+- GIFs substituem screenshots estáticos nas READMEs das 3 features principais
+
 ### Enriquecimento — playbooks, troubleshooting e checklists
 
 - **5 Playbooks** end-to-end criados (`playbooks/`):

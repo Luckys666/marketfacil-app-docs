@@ -17,7 +17,7 @@ A **Análise de Marca** consulta a base oficial do INPI (Instituto Nacional da P
 3. Clique em **Analisar**.
 4. Aguarde alguns segundos e veja o resultado.
 
-![Tela inicial da Análise de Marca no INPI com campo de busca e placeholder Ex: Nike](../assets/screenshots/analise-marca-input-v1.png)
+![Demonstração animada: digitar "Nike", clicar em Analisar e ver o resultado de "Risco Alto: Marca Exata Registrada" com 8 processos em segundos](../assets/gifs/analise-marca.gif)
 
 ## Como ler o resultado
 
