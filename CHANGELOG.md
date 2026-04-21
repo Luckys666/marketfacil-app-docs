@@ -11,6 +11,10 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Correção crítica — classes de serviço do INPI não são "risco baixo"
+
+Removida em todos os arquivos a narrativa de que marcas em classes 35–45 do INPI são de "risco baixo". A classificação anterior estava incompleta: classes de serviço impedem o BPP do Mercado Livre, mas o titular ainda pode acionar legalmente (notificação, processo judicial, indenização). Recomendação atualizada em `analise-de-marca/README.md`, `GLOSSARIO.md`, `playbooks/lancando-produto-novo.md` e `playbooks/escolhendo-nicho.md`: **evitar usar marca com qualquer registro no INPI**.
+
 ### GIFs animados nas features principais
 
 - 3 GIFs gerados via Playwright + ffmpeg mostrando o fluxo completo (input → ação → resultado):

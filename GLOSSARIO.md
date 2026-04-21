@@ -55,9 +55,9 @@ Termos que você encontra no Marketfacil e no Mercado Livre.
 
 **BPP** — *Brand Protection Program*. Programa do Mercado Livre que permite ao dono de uma marca pedir a retirada de anúncios de terceiros.
 
-**Classes 1–34** — Classes de **produtos** no INPI. Marca nestas classes pode derrubar anúncios via BPP. **Alto risco**.
+**Classes 1–34** — Classes de **produtos** no INPI. Marca registrada nestas classes permite ao titular derrubar anúncios de produtos via BPP. **Evite usar.**
 
-**Classes 35–45** — Classes de **serviços**. Não permitem retirada de anúncios de produtos. **Baixo risco**.
+**Classes 35–45** — Classes de **serviços**. Não permitem o atalho do BPP para retirar anúncios de produtos, **mas o titular ainda mantém os direitos legais da marca** (pode notificar, processar, pedir indenização). **Evite usar mesmo assim** — recomendamos operar apenas com marcas **sem registro** no INPI.
 
 ## Catálogos e EANs
 

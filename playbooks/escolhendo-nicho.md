@@ -43,7 +43,8 @@ Escolha 3 catálogos mais atraentes e para cada um:
 Se o nicho envolve uma marca específica:
 
 1. Pesquise a marca no INPI.
-2. Se a marca existir em classes 1–34 e você **não for revendedor**, mude de plano.
+2. Se a marca existir **em qualquer classe** (1–45) e você não for revendedor autorizado, **mude de plano**.
+3. Classes de serviço (35–45) não ficam imunes — o titular ainda pode acionar juridicamente mesmo que o BPP do ML não se aplique.
 
 ## Passo 4 — Entender a linguagem do comprador
 
@@ -62,7 +63,7 @@ Passou em **todos os 4 passos**? O nicho é promissor. Se falhou em algum:
 | Passo 1 (sem visitas) | Nicho com pouca demanda |
 | Passo 2 (concorrência forte) | Barreira alta, difícil entrar |
 | Passo 2 (margem apertada) | Entra em guerra de preço |
-| Passo 3 (marca registrada) | Risco legal ou precisa de autorização |
+| Passo 3 (marca registrada em qualquer classe) | Risco legal ou precisa de autorização por escrito |
 | Passo 4 (dominado por marca) | Não compete com marca sem ser autorizado |
 
 ## Checklist de decisão
@@ -71,7 +72,7 @@ Marque os itens antes de investir:
 
 - [ ] Encontrei ao menos 3 catálogos com Concorrentes 1–5 e Mais Visitas > 50/90d
 - [ ] Minha margem simulada é ≥ 20% no menor preço do catálogo
-- [ ] Não há marca registrada em classe de produto bloqueando o nicho
+- [ ] Não há marca registrada em **nenhuma classe** do INPI bloqueando o nicho (1–45)
 - [ ] Os compradores usam linguagem genérica (não só marca)
 - [ ] Tenho fornecedor confiável com preço que cabe no simulador
 
