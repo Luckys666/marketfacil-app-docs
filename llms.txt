@@ -1,0 +1,26 @@
+# Marketfacil — Manual do vendedor
+
+> Documentação oficial do Marketfacil, plataforma de inteligência para vendedores do Mercado Livre. Inclui análise de anúncios com score, buscador de catálogos, análise de concorrência, agente de palavras-chave, busca INPI e insights de Product Ads.
+
+Marketfacil é uma plataforma SaaS brasileira (app.marketfacil.com.br) voltada a vendedores que operam no Mercado Livre. A documentação abaixo é organizada por feature e destinada ao vendedor final (não desenvolvedor). A grafia correta da marca é "Marketfacil" (sem acento, "f" minúsculo).
+
+## Docs
+
+- [Bem-vindo](README.md): visão geral do manual e links para cada área.
+- [Glossário](GLOSSARIO.md): MLB, MLBU, catálogo, ACOS, TACOS, ROAS, BPP, INPI e termos do app.
+- [Primeiros passos](primeiros-passos/README.md): criar conta, conectar Mercado Livre, tour da plataforma.
+- [Análise de Anúncios](analise-de-anuncios/README.md): score do anúncio, fluxos MLB/MLBU/Catálogo, experiência de compra.
+- [Buscador de Catálogos](buscador-de-catalogos/README.md): encontrar catálogos com oportunidade.
+- [Concorrência de Catálogo](concorrencia-catalogo/README.md): quem compete no mesmo catálogo.
+- [Palavras-Chave](palavras-chave/README.md): agente que sugere palavras faltantes e gera títulos.
+- [Busca INPI](busca-inpi/README.md): verificar registro de marca e risco de BPP.
+- [Product Ads](product-ads/README.md): TACOS, ACOS, ROAS e métricas de anúncios patrocinados.
+
+## Ajuda
+
+- [FAQ e suporte](faq-e-suporte.md)
+- [Changelog](CHANGELOG.md)
+
+## Optional
+
+- [Regras de documentação](DOCS-RULES.md): padrões internos de escrita e estilo.

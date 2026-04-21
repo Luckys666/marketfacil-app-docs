@@ -1,0 +1,1149 @@
+# Marketfacil — Manual do vendedor (conteúdo completo)
+
+> Arquivo concatenado para consumo por LLMs. Gerado em 2026-04-21.
+
+---
+
+## File: CHANGELOG.md
+
+---
+title: Changelog
+description: Histórico de mudanças na documentação do Marketfacil.
+audience: todos
+keywords: [changelog, histórico, versões]
+---
+
+# Changelog
+
+Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
+
+## 2026-04-21
+
+- Criação inicial do manual.
+- Estrutura base: Primeiros passos, Análise de Anúncios, Buscador de Catálogos, Concorrência de Catálogo, Palavras-Chave, Busca INPI, Product Ads.
+- Glossário com termos MLB/MLBU/Catálogo, ACOS/TACOS/ROAS, BPP/INPI.
+- `llms.txt` e `llms-full.txt` para consumo por agentes de IA.
+- `DOCS-RULES.md` com padrões de escrita e grafia.
+
+
+---
+
+## File: DOCS-RULES.md
+
+---
+title: Regras de documentação
+description: Padrões de escrita, grafia, tom e estrutura para todas as páginas deste repositório.
+audience: editores
+keywords: [regras, estilo, tom, padrão, documentação]
+---
+
+# Regras de documentação
+
+Estas regras valem para **toda página** deste repositório. Qualquer pessoa (ou IA) que edite conteúdo deve segui-las.
+
+## 1. Grafia da marca
+
+- Sempre **Marketfacil** — tudo junto, "f" minúsculo, **sem acento**.
+- ❌ Errado: MarketFácil, Market Fácil, marketFacil, Marketfácil, market facil.
+- ✅ Certo: Marketfacil.
+
+## 2. Público-alvo
+
+O público é **vendedor do Mercado Livre**, não desenvolvedor. Regras:
+
+- Use português brasileiro direto, frases curtas.
+- Evite jargão técnico. Quando precisar usar (MLB, TACOS, BPP, etc.), linke para o [Glossário](GLOSSARIO.md) na primeira menção da página.
+- Prefira "seu anúncio" a "o item", "sua conta" a "a instância do usuário".
+- Exemplos concretos > definições abstratas.
+
+## 3. Escrita para humanos **e** IAs
+
+A documentação é consumida tanto por vendedores quanto por agentes de IA (RAG, chatbots, assistentes). Regras:
+
+- **Texto autossuficiente**: toda imagem ou vídeo deve ter descrição textual do que mostra. IA não vê o print — se a info só existe na imagem, a IA fica cega.
+- **Frontmatter YAML obrigatório** em cada `.md`: `title`, `description`, `audience`, `keywords`. Opcional: `feature`, `related`.
+- **Headings hierárquicos**: H1 único por página, nunca pule de H1 para H3.
+- **URLs canônicas estáveis**: não renomeie slugs de páginas já publicadas. Se precisar renomear, adicione redirect em `.gitbook.yaml`.
+- **Seção "Perguntas frequentes"** no final de cada página sobre feature, em formato Q&A curto — ajuda RAG.
+- **Datas absolutas** (não "semana passada", "recentemente"): escreva `2026-04-21`.
+
+## 4. Screenshots e vídeos
+
+- **Screenshots**: PNG, no máx 1600px de largura, em `assets/screenshots/`.
+- **Nome**: `feature-acao-vN.png` — ex: `analise-score-v1.png`.
+- **Alt text obrigatório**: descreva o que está na tela. Ex: `![Tela de análise com score 82 destacado em verde](../assets/screenshots/analise-score-v1.png)`.
+- **Parágrafo descritivo** acima OU abaixo de cada print — explica o print em texto corrido.
+- **Vídeos**: embute do YouTube (unlisted) ou Loom. Máximo 90 segundos. Sempre acompanhe de um resumo escrito do que o vídeo mostra.
+
+## 5. Callouts padronizados
+
+Use os hints nativos do GitBook:
+
+```
+{% hint style="info" %} 💡 Dica: texto curto de recomendação. {% endhint %}
+{% hint style="warning" %} ⚠️ Atenção: cuidado importante. {% endhint %}
+{% hint style="danger" %} 🚫 Bloqueio: evite fazer isso. {% endhint %}
+{% hint style="success" %} ✅ Boa prática: padrão recomendado. {% endhint %}
+```
+
+## 6. Estrutura padrão de página de feature
+
+```markdown
+---
+title: ...
+description: ...
+feature: ...
+audience: vendedores
+keywords: [...]
+---
+
+# Título da feature
+
+Parágrafo de abertura: o que é + pra que serve (1–2 frases).
+
+## Quando usar
+
+Bullets de casos de uso concretos.
+
+## Passo a passo
+
+1. Ação 1 — com print
+2. Ação 2 — com print
+3. Ação 3 — com resultado esperado
+
+## O que você vê na tela
+
+Descrição textual de cada seção/painel da feature.
+
+## Perguntas frequentes
+
+**P: ...?**
+R: ...
+
+## Veja também
+
+- [Link](...)
+```
+
+## 7. Changelog
+
+Toda mudança relevante entra em [`CHANGELOG.md`](CHANGELOG.md) com data ISO (`YYYY-MM-DD`). Assim a IA sabe se a info é fresca.
+
+## 8. Segurança
+
+- **Nunca** coloque tokens, API keys, URLs privadas de proxy, IDs internos do Bubble, nomes de elementos técnicos (bTKMH, bTKbr etc.) em páginas públicas.
+- Prints **não podem** mostrar: emails de outros usuários, tokens, sessões, dados de pagamento. Borre antes de subir.
+- Em dúvida: **não publique**. Pergunte antes.
+
+
+---
+
+## File: GLOSSARIO.md
+
+---
+title: Glossário
+description: Termos técnicos do Mercado Livre e do Marketfacil explicados para vendedores.
+audience: vendedores
+keywords: [glossário, mlb, mlbu, catálogo, tacos, acos, bpp, inpi]
+---
+
+# Glossário
+
+Termos que você vai encontrar no app e no Mercado Livre.
+
+## Identificadores de anúncio
+
+**MLB** — Prefixo de um anúncio comum no Mercado Livre Brasil. Exemplo: `MLB4466906893`. É o ID que aparece no link do anúncio.
+
+**MLBU** — Prefixo de um "produto de usuário", que é um agrupador que você cria para organizar seus anúncios. Um MLBU pode ter vários MLBs vinculados.
+
+**Catálogo** — Página única criada pelo Mercado Livre que agrupa vários vendedores disputando o mesmo produto. O link tem `/p/MLBxxx`. Quem ganha a "Buy Box" fica em destaque.
+
+## Métricas de anúncio
+
+**Score** — Nota de 0 a 100 que o Marketfacil dá ao seu anúncio com base em título, descrição, imagens, atributos e tags. Quanto maior, melhor otimizado.
+
+**Tags negativas** — Marcações do Mercado Livre que penalizam seu anúncio (ex: baixa qualidade de imagem, título mal formado).
+
+**Experiência de Compra** — Indicador do Mercado Livre sobre a reputação do anúncio com base em devoluções, reclamações e problemas pós-venda.
+
+## Product Ads (anúncios patrocinados)
+
+**ACOS** — *Advertising Cost of Sales*. Quanto você gastou em anúncios dividido pela receita gerada **pelos anúncios**. Quanto menor, mais eficiente a campanha.
+
+**TACOS** — *Total ACOS*. Gasto com anúncios dividido pela receita **total** (orgânica + paga). É a métrica mais importante: mostra o impacto real do investimento.
+
+**ROAS** — *Return on Ad Spend*. Receita dos anúncios dividida pelo gasto. É o inverso do ACOS.
+
+**CPC** — Custo por clique.
+
+**CTR** — *Click-Through Rate*. Porcentagem de pessoas que viram o anúncio e clicaram.
+
+**CVR** — *Conversion Rate*. Porcentagem de cliques que viraram venda.
+
+**SOV** — *Share of Voice*. Sua participação nas impressões de uma categoria ou palavra-chave.
+
+## INPI e marcas
+
+**INPI** — Instituto Nacional da Propriedade Industrial. Registra marcas no Brasil.
+
+**BPP** — *Brand Protection Program*. Programa do Mercado Livre que permite ao dono de uma marca registrada pedir a retirada de anúncios de terceiros.
+
+**Classes 1–34** — Classes de **produtos** no INPI. Marca registrada nestas classes pode ser usada para derrubar anúncios via BPP. **Alto risco** para o vendedor.
+
+**Classes 35–45** — Classes de **serviços**. Não permitem retirada de anúncios de produtos via BPP. **Baixo risco**.
+
+## Termos do app
+
+**Palavras-chave faltantes** — Palavras que outros anúncios usam e o seu não usa. O Agente de Palavras-Chave te mostra quais adicionar ao título.
+
+**Concorrência de Catálogo** — Lista dos vendedores que disputam o mesmo catálogo que você, com preço, frete e visitas.
+
+**Buscador de Catálogos** — Ferramenta para achar catálogos com pouca concorrência e boa oportunidade de venda.
+
+
+---
+
+## File: README.md
+
+---
+title: Manual do Marketfacil
+description: Documentação oficial para vendedores do Mercado Livre que usam o Marketfacil — análise de anúncios, concorrência de catálogo, palavras-chave, busca INPI e Product Ads.
+audience: vendedores
+keywords: [marketfacil, mercado livre, manual, vendedor, documentação]
+---
+
+# Bem-vindo ao Marketfacil
+
+O **Marketfacil** é a plataforma de inteligência para vendedores do Mercado Livre: você analisa anúncios, descobre concorrência de catálogo, encontra palavras-chave que faltam no seu título, verifica marcas no INPI e otimiza Product Ads — tudo em um só lugar.
+
+Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada página tem prints e vídeos curtos mostrando o passo a passo.
+
+## Por onde começar
+
+- 🚀 [Primeiros passos](primeiros-passos/README.md) — criar conta, conectar Mercado Livre, tour da plataforma
+- 🔍 [Análise de Anúncios](analise-de-anuncios/README.md) — descubra o score do seu anúncio e o que melhorar
+- 📦 [Buscador de Catálogos](buscador-de-catalogos/README.md) — encontre catálogos com boa oportunidade
+- 🏆 [Concorrência de Catálogo](concorrencia-catalogo/README.md) — analise quem compete com você
+- 🔑 [Palavras-Chave](palavras-chave/README.md) — descubra palavras que faltam no seu título
+- 🏷️ [Busca INPI](busca-inpi/README.md) — verifique risco de BPP antes de anunciar
+- 📣 [Product Ads](product-ads/README.md) — entenda TACOS, ACOS e ROAS
+
+## Links úteis
+
+- **App**: [app.marketfacil.com.br](https://app.marketfacil.com.br)
+- **Site**: [marketfacil.com.br](https://marketfacil.com.br)
+- **Suporte**: [FAQ e contato](faq-e-suporte.md)
+- **Glossário**: [termos técnicos explicados](GLOSSARIO.md)
+
+
+---
+
+## File: SUMMARY.md
+
+# Sumário
+
+* [Bem-vindo ao Marketfacil](README.md)
+* [Glossário](GLOSSARIO.md)
+
+## Primeiros passos
+
+* [Visão geral](primeiros-passos/README.md)
+* [Criar conta](primeiros-passos/criar-conta.md)
+* [Conectar Mercado Livre](primeiros-passos/conectar-mercado-livre.md)
+* [Tour da plataforma](primeiros-passos/tour-da-plataforma.md)
+
+## Análise de Anúncios
+
+* [Visão geral](analise-de-anuncios/README.md)
+* [Como analisar um anúncio](analise-de-anuncios/como-analisar.md)
+* [Entendendo o score](analise-de-anuncios/entendendo-o-score.md)
+* [Experiência de Compra](analise-de-anuncios/experiencia-de-compra.md)
+
+## Buscador de Catálogos
+
+* [Visão geral](buscador-de-catalogos/README.md)
+
+## Concorrência de Catálogo
+
+* [Visão geral](concorrencia-catalogo/README.md)
+
+## Palavras-Chave
+
+* [Visão geral](palavras-chave/README.md)
+
+## Busca INPI
+
+* [Visão geral](busca-inpi/README.md)
+
+## Product Ads
+
+* [Visão geral](product-ads/README.md)
+* [Entendendo TACOS, ACOS e ROAS](product-ads/entendendo-tacos.md)
+
+## Ajuda
+
+* [FAQ e suporte](faq-e-suporte.md)
+* [Changelog](CHANGELOG.md)
+
+
+---
+
+## File: analise-de-anuncios/README.md
+
+---
+title: Análise de Anúncios
+description: A ferramenta mais usada do Marketfacil — cole o link do seu anúncio, receba um score e um diagnóstico do que melhorar.
+audience: vendedores
+feature: analise-anuncios
+keywords: [análise, anúncio, score, mlb, mlbu, catálogo]
+---
+
+# Análise de Anúncios
+
+A Análise de Anúncios é o ponto de partida para qualquer vendedor no Marketfacil. Você cola um link, o sistema busca os dados oficiais do Mercado Livre e devolve:
+
+- Um **score de 0 a 100** do anúncio
+- Lista do que está bom e do que melhorar
+- Gráficos de visitas e avaliações
+- Métricas de Product Ads (se houver campanha)
+- Indicador de Experiência de Compra
+
+## Três tipos de link que o app aceita
+
+| Tipo | Exemplo de link | O que acontece |
+|------|----------------|-----------------|
+| **MLB** (anúncio comum) | `mercadolivre.com.br/.../MLB4466906893` | Análise direta do anúncio |
+| **MLBU** (produto do vendedor) | `.../p/MLBU3083545529` | Mostra os MLBs vinculados, você escolhe qual analisar |
+| **Catálogo** | `mercadolivre.com.br/p/MLB12345` | Análise do catálogo (atributos da categoria, itens vinculados) |
+
+## Nas próximas páginas
+
+- [Como analisar um anúncio](como-analisar.md) — passo a passo
+- [Entendendo o score](entendendo-o-score.md) — o que entra na nota
+- [Experiência de Compra](experiencia-de-compra.md) — o indicador de reputação
+
+
+---
+
+## File: analise-de-anuncios/como-analisar.md
+
+---
+title: Como analisar um anúncio
+description: Passo a passo para analisar um anúncio, produto MLBU ou catálogo no Marketfacil.
+audience: vendedores
+feature: analise-anuncios
+keywords: [como analisar, passo a passo, mlb, mlbu, catálogo]
+---
+
+# Como analisar um anúncio
+
+## Passo a passo
+
+1. No menu, clique em **Análise de Anúncios**.
+2. Cole o link do anúncio no campo de texto.
+3. Clique em **Analisar**.
+4. Aguarde alguns segundos — o app busca dados do anúncio, visitas, avaliações e Product Ads em paralelo.
+5. Role a página para ver o resultado completo.
+
+> 📸 *Screenshot pendente: campo de input com um link colado e botão Analisar destacado.*
+
+## Fluxos diferentes
+
+### Link de anúncio comum (MLB)
+Vai direto para o resultado: header do produto, score, seções detalhadas.
+
+### Link de produto do vendedor (MLBU)
+O app primeiro mostra **a lista dos MLBs vinculados** a esse produto. Você clica no que quer analisar e então a análise é feita.
+
+> 💡 Use MLBU quando você quer ver todos os anúncios derivados do mesmo produto (por exemplo, o mesmo produto em cores ou tamanhos diferentes).
+
+### Link de catálogo
+O app busca os dados do catálogo e os atributos oficiais da categoria. O score considera critérios específicos de catálogo (título longo, imagens, atributos obrigatórios).
+
+## O que você vê no resultado
+
+1. **Header do produto** — foto, título, preço, badges
+2. **Score** — a nota de 0 a 100, em destaque
+3. **Diagnóstico** — lista de pontos positivos e pontos a melhorar
+4. **Gráficos** — visitas diárias, evolução de avaliações
+5. **Product Ads** — métricas da campanha do anúncio (se houver)
+6. **Experiência de Compra** — indicador oficial do Mercado Livre
+
+## Perguntas frequentes
+
+**P: Analiso anúncios de concorrentes ou só os meus?**
+R: Qualquer anúncio público. Para dados de Product Ads, só aparece dos seus (você é o dono da campanha).
+
+**P: O anúncio é de outra conta minha, o Marketfacil consegue analisar?**
+R: Sim, desde que a conta esteja conectada no Marketfacil.
+
+**P: Por que às vezes o score muda ao analisar de novo?**
+R: Os dados do Mercado Livre mudam em tempo real — novas avaliações, mudanças de título, tags. O score reflete o estado atual.
+
+
+---
+
+## File: analise-de-anuncios/entendendo-o-score.md
+
+---
+title: Entendendo o score
+description: Como o Marketfacil calcula a nota de 0 a 100 do seu anúncio e o que pesa mais.
+audience: vendedores
+feature: analise-anuncios
+keywords: [score, nota, cálculo, pontuação, título, descrição, imagens, atributos]
+---
+
+# Entendendo o score
+
+O score começa em **100** e vai perdendo pontos conforme problemas são detectados. Quanto mais próximo de 100, melhor otimizado está seu anúncio.
+
+## O que pesa no score
+
+### Título
+- Título com menos de 40 caracteres: **−15 pontos**
+- Título com menos de 50 caracteres: **−8 pontos**
+
+> 💡 **Dica:** use o máximo de caracteres permitido (60 em anúncios, 200 em catálogo). Título curto perde espaço para palavras-chave importantes.
+
+### Descrição
+- Sem descrição: **−10 pontos**
+- Com descrição: **+3 pontos**
+
+### Garantia
+- Sem garantia cadastrada: **−5 pontos**
+
+### Imagens
+- Menos de 3 imagens: **−5 pontos**
+
+### Atributos da categoria
+- Cada atributo obrigatório em branco: **−2 pontos** (até **−20** no total)
+
+### Atributos problemáticos (tamanho, repetição)
+- Atributos muito longos ou com conteúdo duplicado: até **−25 pontos**
+
+### Tags negativas do Mercado Livre
+- De **−10 a −50 pontos** dependendo da gravidade
+
+### Catálogo (quando o link é de catálogo)
+- Título com menos de 80 caracteres: **−15**
+- Título com menos de 150 caracteres: **−8**
+- Sem imagens: **−10**
+- Sem descrição: **−10**
+- Atributos vazios da categoria: **−2 cada** (até **−30**)
+
+## Faixas de score
+
+| Faixa | Avaliação |
+|-------|-----------|
+| 90–100 | Excelente — anúncio bem otimizado |
+| 75–89 | Bom — ainda há espaço para melhorar |
+| 50–74 | Regular — vários pontos importantes pendentes |
+| 0–49 | Crítico — seu anúncio está perdendo vendas |
+
+## Como subir o score
+
+1. Use título no tamanho máximo com palavras-chave relevantes (veja [Palavras-Chave](../palavras-chave/README.md))
+2. Escreva descrição completa (mínimo 300 caracteres)
+3. Cadastre garantia, mesmo que curta
+4. Carregue pelo menos 3 imagens em alta qualidade
+5. Preencha **todos** os atributos obrigatórios da categoria
+6. Resolva as tags negativas apontadas no diagnóstico
+
+## Perguntas frequentes
+
+**P: Meu score é 92, preciso mexer em algo?**
+R: Acima de 90 você está no limite da otimização técnica. Foque em fotos, descrição persuasiva e palavras-chave — fatores que o score não mede, mas que influenciam conversão.
+
+**P: Corrigi os problemas, quando o score atualiza?**
+R: Analise o anúncio de novo. O Marketfacil sempre busca os dados atuais do Mercado Livre.
+
+**P: O score considera o preço?**
+R: Não. Preço é estratégia comercial — você decide. O score mede a **qualidade técnica** do anúncio.
+
+
+---
+
+## File: analise-de-anuncios/experiencia-de-compra.md
+
+---
+title: Experiência de Compra
+description: Entenda o indicador oficial de reputação do anúncio do Mercado Livre mostrado pelo Marketfacil.
+audience: vendedores
+feature: analise-anuncios
+keywords: [experiência de compra, reputação, purchase experience, devoluções]
+---
+
+# Experiência de Compra
+
+A seção **Experiência de Compra** mostra um indicador oficial do Mercado Livre sobre como os compradores avaliam a experiência com o seu anúncio específico. É um dado que o ML calcula a partir de:
+
+- Devoluções
+- Reclamações pós-venda
+- Problemas de entrega
+- Divergências entre produto anunciado e entregue
+
+## O que aparece na tela
+
+- **Nota de reputação** — verde (bom), amarelo (atenção), vermelho (crítico)
+- **Status** — rótulo do Mercado Livre (ex: "Ótima experiência", "Em observação")
+- **Título e subtítulo** — explicação em texto do que está afetando a reputação
+
+## Por que isso importa
+
+Anúncios com experiência de compra baixa:
+
+- Perdem posicionamento orgânico
+- Podem ser **pausados** automaticamente pelo Mercado Livre
+- Reduzem visitas, mesmo que o título e fotos estejam ótimos
+
+## Como melhorar
+
+1. Revise as **reclamações abertas** no Mercado Livre e resolva-as o quanto antes.
+2. Verifique se o título e as fotos do anúncio correspondem exatamente ao que é entregue — divergência é a principal causa de devolução.
+3. Garanta embalagem adequada para evitar quebras no transporte.
+4. Responda perguntas de compradores em até 24 horas.
+5. Se a reputação do anúncio está crítica, considere **pausar e recriar** o anúncio após resolver a causa raiz.
+
+## Perguntas frequentes
+
+**P: O indicador é do anúncio ou da minha conta?**
+R: **Do anúncio específico.** Uma conta pode ter anúncios com ótima reputação e outros com reputação ruim.
+
+**P: Consertei o problema, quanto tempo até a reputação melhorar?**
+R: Depende do volume de vendas do anúncio. Quanto mais vendas sem problemas novos, mais rápido o Mercado Livre recalcula o indicador. Pode levar de dias a semanas.
+
+**P: Por que meu anúncio parou de vender do nada?**
+R: Confira a seção Experiência de Compra. Se estiver em "Em observação" ou pior, o ML pode ter reduzido o alcance dele.
+
+
+---
+
+## File: busca-inpi/README.md
+
+---
+title: Busca INPI
+description: Verifique se uma marca está registrada no INPI e avalie o risco de BPP antes de anunciar.
+audience: vendedores
+feature: busca-inpi
+keywords: [inpi, marca, bpp, registro, classes, propriedade intelectual]
+---
+
+# Busca INPI
+
+Antes de usar o nome de uma marca em um anúncio do Mercado Livre, verifique se ela está registrada no INPI. Marcas registradas podem pedir a **retirada do seu anúncio via BPP** (Brand Protection Program) e até o bloqueio da sua conta.
+
+## Como usar
+
+1. No menu, clique em **Busca INPI**.
+2. Digite o nome da marca (ex: "Nike", "BelaSoft", "CasaViva").
+3. Escolha se quer **busca exata** ou **busca aproximada**.
+4. Clique em **Buscar**.
+5. Veja o resultado com todos os processos encontrados.
+
+> 📸 *Screenshot pendente: tela de resultado INPI com marcas listadas e classes destacadas.*
+
+## O que aparece no resultado
+
+Para cada marca encontrada:
+
+- Nome da marca
+- Processo INPI
+- Titular
+- Classe (número de 1 a 45)
+- Status (Concedida, Em análise, Indeferida, etc.)
+- Especificação (texto completo do que a marca protege)
+- Imagem da marca (quando existe)
+
+## Como ler as classes (regra BPP)
+
+| Classe | Tipo | Risco para o vendedor |
+|--------|------|------------------------|
+| 1–34 | **Produtos** | 🚨 **ALTO** — titular pode derrubar seu anúncio via BPP |
+| 35–45 | **Serviços** | ✅ **BAIXO** — classes de serviço não permitem retirada de produto |
+
+{% hint style="warning" %}
+⚠️ **Atenção:** a classe 35 é uma das mais registradas (cobre "comércio, varejo"), mas **não** permite derrubar anúncios de produtos. Uma marca só na classe 35 é de baixo risco pra você.
+{% endhint %}
+
+## Cenários comuns
+
+### Cenário 1: marca só em classes 35–45 (serviços)
+**Risco baixo.** Titular não pode usar BPP para derrubar seu anúncio de produto. Ainda assim, evite copiar marca registrada.
+
+### Cenário 2: marca em classes 1–34 (produtos)
+**Risco alto.** Não use o nome dessa marca no seu anúncio, exceto se:
+- Você é um revendedor oficial do produto dessa marca
+- Você tem autorização por escrito do titular
+
+### Cenário 3: marca "Em análise" ou "Indeferida"
+**Risco baixo no momento**, mas o status pode mudar. Confira periodicamente.
+
+### Cenário 4: marca não encontrada
+**Risco baixo no INPI**, mas verifique também Google, redes sociais e Google Patents. Alguém pode ter a marca de fato sem registro formal.
+
+## Dicas
+
+- Use **busca aproximada** na primeira consulta — pega variações (BelaSoft, BellaSoft, Bela Soft).
+- Registre sua própria marca no INPI se for escalar um negócio — protege você de cópias e dá poder de BPP.
+- Guarde print do resultado INPI como evidência caso precise se defender de um BPP indevido.
+
+## Perguntas frequentes
+
+**P: O Marketfacil registra minha marca no INPI?**
+R: Não. O Marketfacil **só consulta** a base pública do INPI. Para registrar, você precisa entrar no site do INPI ou contratar um agente/advogado.
+
+**P: A consulta é oficial?**
+R: Os dados vêm direto do sistema do INPI. É a mesma informação que você veria no site oficial, só que mais rápido e organizado.
+
+**P: Posso usar uma marca "Em análise"?**
+R: Tecnicamente sim no momento, mas o risco é alto: se for concedida depois, o titular pode derrubar anúncios antigos.
+
+
+---
+
+## File: buscador-de-catalogos/README.md
+
+---
+title: Buscador de Catálogos
+description: Encontre catálogos do Mercado Livre com boa oportunidade — pouca concorrência, bom preço, volume de vendas atraente.
+audience: vendedores
+feature: buscador-catalogos
+keywords: [buscador, catálogo, oportunidade, pesquisa, produtos]
+---
+
+# Buscador de Catálogos
+
+O Buscador de Catálogos ajuda você a encontrar **produtos novos para vender** olhando a base de catálogos do Mercado Livre por:
+
+- Pouca concorrência (poucos vendedores disputando)
+- Preço bom (margem viável)
+- Volume de vendas relevante
+
+## Como usar
+
+1. No menu, clique em **Buscador de Catálogos**.
+2. Digite uma palavra-chave (ex: "suporte notebook") ou escolha uma categoria.
+3. Clique em **Buscar**.
+4. Aguarde — a busca analisa **dezenas de catálogos** e os competidores de cada um para rankear por oportunidade.
+5. Veja o resultado em lista, ordenado por "oportunidade".
+
+> 📸 *Screenshot pendente: tela de busca com resultados em lista.*
+
+{% hint style="warning" %}
+⏱️ Uma busca pode levar de 30 segundos a 2 minutos — o app analisa cada catálogo em profundidade (top 3 competidores, visitas, frete, comissão). Não recarregue a página.
+{% endhint %}
+
+## O que aparece no resultado
+
+Para cada catálogo:
+
+- Foto e nome do produto
+- Preço médio dos competidores
+- Número de vendedores ativos
+- Estimativa de vendas por mês
+- **Sinal de oportunidade** — verde (bom), amarelo (médio), vermelho (saturado)
+
+## Ações a partir do resultado
+
+- Clicar em **Analisar** → vai para [Análise de Anúncios](../analise-de-anuncios/README.md) com o catálogo já preenchido
+- Clicar em **Concorrência** → vai para [Concorrência de Catálogo](../concorrencia-catalogo/README.md)
+- Clicar em **Ver no ML** → abre o catálogo original no Mercado Livre
+
+## Dicas de uso
+
+- Busque por **nichos específicos** ("suporte notebook madeira"), não palavras genéricas ("notebook")
+- Use as sugestões de categoria para explorar segmentos novos
+- Anote os catálogos "verdes" — são os melhores candidatos a entrar
+
+## Perguntas frequentes
+
+**P: Posso buscar qualquer palavra-chave?**
+R: Sim, qualquer termo que exista no Mercado Livre.
+
+**P: Por que uma busca demora mais que outra?**
+R: Depende de quantos catálogos batem com a palavra e quantos competidores cada um tem. Termos amplos geram mais análises.
+
+**P: Como o "sinal de oportunidade" é calculado?**
+R: Combinação de: nº de competidores, ticket médio, diferença entre o melhor e o pior preço, volume estimado de vendas e presença de vendedor dominante.
+
+
+---
+
+## File: concorrencia-catalogo/README.md
+
+---
+title: Concorrência de Catálogo
+description: Veja todos os vendedores que disputam um catálogo, com preço, frete, visitas e quem está na Buy Box.
+audience: vendedores
+feature: concorrencia-catalogo
+keywords: [concorrência, catálogo, competidores, buy box, preço, frete]
+---
+
+# Concorrência de Catálogo
+
+Informe o link de um catálogo e veja uma tabela completa dos vendedores que competem nele. Perfeito para:
+
+- Decidir seu preço de entrada em um catálogo novo
+- Descobrir quem está ganhando a Buy Box e por quê
+- Entender a estratégia de frete e comissão dos concorrentes
+
+## Como usar
+
+1. No menu, clique em **Concorrência de Catálogo**.
+2. Cole o link do catálogo (formato `mercadolivre.com.br/p/MLB12345`).
+3. Clique em **Analisar catálogo**.
+4. Aguarde o carregamento — o app busca dados de cada competidor em paralelo.
+
+> 📸 *Screenshot pendente: tabela de competidores com colunas de preço, frete, visitas.*
+
+## O que aparece na tabela
+
+| Coluna | O que significa |
+|--------|----------------|
+| Vendedor | Nome e link do perfil no ML |
+| Preço | Preço atual no catálogo |
+| Frete | Grátis, pago, tabela |
+| Visitas | Estimativa de visitas diárias |
+| Comissão ML | % que o ML cobra do vendedor |
+| Posição | Lugar na disputa do catálogo |
+
+## Gráficos
+
+Ao clicar em uma linha da tabela, abre um gráfico com a **evolução das visitas** daquele vendedor específico no catálogo nos últimos dias. Útil pra ver quem está ganhando tração.
+
+> 💡 Vendedor com visitas crescendo + preço agressivo geralmente é quem vai dominar o catálogo nas próximas semanas.
+
+## Perguntas frequentes
+
+**P: O que é Buy Box?**
+R: É quem fica em destaque no catálogo — geralmente quem tem a melhor combinação de preço, frete e reputação. Explicado no [Glossário](../GLOSSARIO.md).
+
+**P: Por que alguns dados de competidor aparecem vazios?**
+R: O Mercado Livre bloqueia parte das informações de terceiros. O Marketfacil mostra o que é público.
+
+**P: Posso baixar a tabela em Excel?**
+R: Essa funcionalidade está planejada — por enquanto, copie os dados manualmente.
+
+
+---
+
+## File: faq-e-suporte.md
+
+---
+title: FAQ e suporte
+description: Perguntas frequentes sobre o Marketfacil e como falar com o suporte.
+audience: vendedores
+keywords: [faq, suporte, contato, ajuda]
+---
+
+# FAQ e suporte
+
+## Perguntas frequentes
+
+**P: Preciso instalar algo para usar o Marketfacil?**
+R: Não. O Marketfacil roda 100% no navegador em [app.marketfacil.com.br](https://app.marketfacil.com.br).
+
+**P: O Marketfacil acessa minha conta do Mercado Livre?**
+R: Sim, via login oficial do Mercado Livre (OAuth). Você autoriza apenas permissões de leitura dos seus anúncios e métricas. O Marketfacil **nunca** tem sua senha.
+
+**P: Meus dados ficam seguros?**
+R: Sim. Tokens de acesso são armazenados de forma criptografada e nunca expostos em URLs ou logs.
+
+**P: Posso usar em celular?**
+R: Sim, o app é responsivo. Algumas telas com muitos gráficos ficam melhores no desktop.
+
+**P: Quantas análises posso fazer por dia?**
+R: Depende do seu plano. Há limite por minuto para evitar sobrecarga na API do Mercado Livre.
+
+**P: O score do meu anúncio mudou do nada. Por quê?**
+R: O score é recalculado toda análise, com base em dados atuais do anúncio. Se você alterou título, imagens, atributos ou se o Mercado Livre mudou tags, o score reflete isso.
+
+## Suporte
+
+Para dúvidas, bugs ou sugestões:
+
+- **Email**: *(preencher)*
+- **WhatsApp**: *(preencher)*
+- **Comunidade**: *(preencher)*
+
+Quando reportar um problema, envie:
+
+1. O link do anúncio (MLB) envolvido
+2. O print da tela com o problema
+3. Horário aproximado em que aconteceu
+
+
+---
+
+## File: palavras-chave/README.md
+
+---
+title: Agente de Palavras-Chave
+description: Descubra quais palavras faltam no seu título e receba sugestões de títulos otimizados geradas por IA.
+audience: vendedores
+feature: palavras-chave
+keywords: [palavras-chave, keywords, título, SEO, IA, gerador de título]
+---
+
+# Agente de Palavras-Chave
+
+O Agente de Palavras-Chave analisa seu anúncio e mostra **quais palavras concorrentes estão usando que você não está** — e gera três sugestões de título otimizado com IA.
+
+## Como usar
+
+1. No menu, clique em **Palavras-Chave**.
+2. Cole o link ou ID do anúncio (aceita MLB, MLBU ou link de catálogo).
+3. Clique em **Analisar**.
+4. Aguarde o app fazer scraping do anúncio e gerar sugestões.
+
+> 📸 *Screenshot pendente: tela com seção "Palavras que Faltam" e gerador de títulos.*
+
+## O que você vê no resultado
+
+### 1. Header do produto
+Foto, título atual, preço e badges.
+
+### 2. Palavras indexadas
+Tags coloridas com o que o ML já associa ao seu anúncio:
+- **Verde**: palavras do seu título
+- **Azul**: palavras dos seus atributos
+
+### 3. Barra de estatísticas
+- **Palavras Faltando**: quantidade total de palavras que concorrentes usam e você não
+- **Combos IA**: quantidade de combinações de palavras sugeridas
+- **Categorias**: quantas categorias de palavras foram encontradas
+- **Copiar Palavras**: botão pra copiar todas as palavras faltantes de uma vez
+
+### 4. Palavras que Faltam
+A seção mais importante — lista de palavras **individuais** faltando no seu título, ordenadas por relevância (quantos combos de IA aparecem aquela palavra). Cada palavra mostra:
+
+- Quantos combos da IA contêm aquela palavra
+- Em quais categorias ela aparece
+- Exemplos de frases de contexto
+
+### 5. Gerador de Títulos IA
+Três sugestões de título editáveis, com contagem de caracteres. O app faz auto-corte para nunca passar do limite (60 em anúncios, 200 em catálogo).
+
+### 6. Cards por categoria
+Palavras agrupadas em 7 categorias:
+
+| Categoria | Exemplo |
+|-----------|---------|
+| **Sinônimos** | "tênis" e "calçado esportivo" |
+| **Pesquisa** | termos que compradores buscam |
+| **Utilidades** | uso/aplicação do produto |
+| **Concorrência** | o que concorrentes bem-posicionados usam |
+| **Benefícios** | qualidades ("resistente", "leve") |
+| **Contexto** | onde/quando usar |
+| **Regional** | termos regionais relevantes |
+
+## Dicas de uso
+
+- Não saia adicionando todas as palavras faltantes de uma vez — priorize as de **maior peso** (mais combos).
+- Palavras em **Sinônimos** e **Pesquisa** costumam dar o maior ganho de tráfego.
+- Teste um novo título por pelo menos 7 dias antes de mudar de novo — o ML precisa de tempo pra re-indexar.
+
+## Perguntas frequentes
+
+**P: A IA inventa palavras?**
+R: Não. A IA sugere combinações baseadas em **palavras reais** vindas do scraping de concorrentes e atributos do ML.
+
+**P: Posso usar os títulos sugeridos como estão?**
+R: Pode, mas edite para soar natural. A IA é uma base — você conhece seu produto melhor.
+
+**P: Por que algumas buscas demoram mais?**
+R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode demorar até 30 segundos.
+
+
+---
+
+## File: primeiros-passos/README.md
+
+---
+title: Primeiros passos
+description: Como criar sua conta no Marketfacil, conectar seu Mercado Livre e conhecer as principais áreas do app.
+audience: vendedores
+keywords: [primeiros passos, onboarding, criar conta, mercado livre, tour]
+---
+
+# Primeiros passos
+
+Se você está chegando agora no Marketfacil, esta é a sequência recomendada:
+
+1. [Criar sua conta](criar-conta.md) — 1 minuto
+2. [Conectar seu Mercado Livre](conectar-mercado-livre.md) — 2 minutos
+3. [Tour da plataforma](tour-da-plataforma.md) — 5 minutos
+
+Depois disso, escolha por onde começar:
+
+- Quer saber como está seu anúncio? → [Análise de Anúncios](../analise-de-anuncios/README.md)
+- Quer encontrar produtos novos pra vender? → [Buscador de Catálogos](../buscador-de-catalogos/README.md)
+- Seu título está travado, concorrentes passando? → [Palavras-Chave](../palavras-chave/README.md)
+- Vai lançar uma marca própria? → [Busca INPI](../busca-inpi/README.md)
+
+
+---
+
+## File: primeiros-passos/conectar-mercado-livre.md
+
+---
+title: Conectar Mercado Livre
+description: Como autorizar o Marketfacil a acessar os dados do seu Mercado Livre via login oficial.
+audience: vendedores
+feature: onboarding
+keywords: [conectar, oauth, mercado livre, autorização, permissões]
+---
+
+# Conectar seu Mercado Livre
+
+Para o Marketfacil analisar seus anúncios, você precisa autorizar o acesso aos dados da sua conta do Mercado Livre. Esse processo é feito pelo **login oficial do próprio Mercado Livre** — o Marketfacil nunca vê nem guarda sua senha.
+
+## Passo a passo
+
+1. Dentro do app, clique em **Conectar Mercado Livre**.
+2. Você será redirecionado para o site oficial do Mercado Livre.
+3. Faça login com sua conta de vendedor.
+4. Revise as permissões solicitadas e clique em **Autorizar**.
+5. Você volta automaticamente para o Marketfacil, já conectado.
+
+> 📸 *Screenshot pendente: tela de autorização do Mercado Livre.*
+
+## O que o Marketfacil acessa
+
+- Lista dos seus anúncios (MLBs e MLBUs)
+- Métricas de visitas, vendas e reputação
+- Dados de Product Ads (quando você tiver campanhas ativas)
+
+## O que o Marketfacil **não** acessa
+
+- Sua senha — nunca é compartilhada
+- Dados de pagamento ou cartão
+- Mensagens privadas com compradores
+- Dados de outros vendedores
+
+## Perguntas frequentes
+
+**P: Posso desconectar depois?**
+R: Sim. Tanto dentro do Marketfacil quanto na sua conta do Mercado Livre (Configurações → Aplicativos autorizados).
+
+**P: Preciso reconectar de tempos em tempos?**
+R: O token expira periodicamente e é renovado automaticamente. Se por algum motivo parar de funcionar, basta clicar em "Reconectar".
+
+**P: Posso conectar mais de uma conta do Mercado Livre?**
+R: Depende do seu plano. Consulte os planos disponíveis no app.
+
+
+---
+
+## File: primeiros-passos/criar-conta.md
+
+---
+title: Criar conta
+description: Como abrir sua conta no Marketfacil em menos de 1 minuto.
+audience: vendedores
+feature: onboarding
+keywords: [criar conta, cadastro, registro, signup]
+---
+
+# Criar sua conta no Marketfacil
+
+## Passo a passo
+
+1. Acesse [app.marketfacil.com.br](https://app.marketfacil.com.br).
+2. Clique em **Criar conta**.
+3. Preencha: email, senha e nome.
+4. Confirme seu email através do link que chega na sua caixa de entrada.
+
+> 📸 *Screenshot pendente: tela de cadastro com campos de email/senha.*
+
+## Pronto
+
+Após confirmar o email, você já consegue entrar no app. O próximo passo é [conectar seu Mercado Livre](conectar-mercado-livre.md).
+
+## Perguntas frequentes
+
+**P: Posso criar mais de uma conta com o mesmo email?**
+R: Não. Cada email corresponde a uma conta.
+
+**P: Esqueci minha senha, o que fazer?**
+R: Na tela de login, clique em "Esqueci a senha" e siga as instruções.
+
+
+---
+
+## File: primeiros-passos/tour-da-plataforma.md
+
+---
+title: Tour da plataforma
+description: Visão geral das principais áreas do Marketfacil e o que você encontra em cada uma.
+audience: vendedores
+feature: onboarding
+keywords: [tour, overview, menu, áreas, funcionalidades]
+---
+
+# Tour da plataforma
+
+Depois de criar conta e conectar o Mercado Livre, você chega ao painel principal. Aqui está o que cada área faz.
+
+## Menu principal
+
+### Análise de Anúncios
+Cole o link de um anúncio (MLB), produto (MLBU) ou catálogo e receba um score de 0 a 100 com o que está bom e o que melhorar. [Saiba mais →](../analise-de-anuncios/README.md)
+
+### Buscador de Catálogos
+Pesquise catálogos por palavra-chave ou categoria e veja quais têm oportunidade (pouca concorrência, bom preço). [Saiba mais →](../buscador-de-catalogos/README.md)
+
+### Concorrência de Catálogo
+Informe um catálogo e veja a lista de vendedores que competem nele: preço, frete, visitas e quem está ganhando a Buy Box. [Saiba mais →](../concorrencia-catalogo/README.md)
+
+### Palavras-Chave
+Cole o link do seu anúncio e veja quais palavras faltam no seu título que concorrentes estão usando. Gera sugestões de título com IA. [Saiba mais →](../palavras-chave/README.md)
+
+### Busca INPI
+Verifique se uma marca está registrada no INPI e avalie o risco de BPP antes de usar o nome num anúncio. [Saiba mais →](../busca-inpi/README.md)
+
+### Product Ads
+Painel com suas campanhas de Mercado Ads: TACOS, ACOS, ROAS, CPC, CTR. [Saiba mais →](../product-ads/README.md)
+
+## Onde encontrar
+
+> 📸 *Screenshot pendente: painel principal do app com menu lateral.*
+> 🎥 *Vídeo pendente (60s): navegando pelo app e abrindo cada feature.*
+
+
+---
+
+## File: product-ads/README.md
+
+---
+title: Product Ads
+description: Veja métricas das suas campanhas de Mercado Ads — TACOS, ACOS, ROAS, CPC, CTR.
+audience: vendedores
+feature: product-ads
+keywords: [product ads, mercado ads, tacos, acos, roas, cpc, ctr, anúncios pagos]
+---
+
+# Product Ads
+
+O painel de Product Ads mostra as métricas das suas campanhas de **Mercado Ads** (antigo Product Ads) — os anúncios pagos do Mercado Livre. Você vê:
+
+- TACOS, ACOS, ROAS por campanha e por item
+- Evolução diária de cliques, impressões, custo e conversões
+- Quais itens estão dando prejuízo com anúncio e quais estão performando
+
+## Como usar
+
+1. No menu, clique em **Product Ads**.
+2. Selecione a campanha ou filtre por item.
+3. Ajuste o período (últimos 7, 30, 90 dias).
+4. Analise as métricas.
+
+> 📸 *Screenshot pendente: dashboard de Product Ads com gráficos e tabela de itens.*
+
+## Métricas principais
+
+- **TACOS** — a **mais importante.** Mostra o impacto real do investimento em ads.
+- **ACOS** — mede a eficiência dos ads isolados.
+- **ROAS** — o inverso do ACOS, em formato "retorno sobre investimento".
+- **CPC, CTR, CVR** — métricas de funil (custo por clique, taxa de clique, taxa de conversão).
+
+Os significados detalhados estão em [Entendendo TACOS, ACOS e ROAS](entendendo-tacos.md).
+
+## O que fazer com esses dados
+
+- **TACOS alto (>20%)**: seu anúncio pago está comendo sua margem. Pause ou reduza lance.
+- **ACOS alto + CVR baixa**: o anúncio atrai cliques, mas não converte. Problema na página (título, fotos, preço).
+- **CTR baixo**: as pessoas veem o anúncio mas não clicam. Problema de criativo (foto, título).
+- **ROAS alto + volume baixo**: funciona bem, mas você pode aumentar lance pra escalar.
+
+## Perguntas frequentes
+
+**P: Quais campanhas aparecem?**
+R: Todas as do Mercado Ads vinculadas à sua conta conectada.
+
+**P: Vejo dados do concorrente?**
+R: Não. Product Ads são dados privados de quem gerencia a campanha.
+
+**P: Com que frequência os dados atualizam?**
+R: O Mercado Livre atualiza em janelas de horas. Para análise, espere pelo menos 24h após a venda para ter métricas estáveis.
+
+
+---
+
+## File: product-ads/entendendo-tacos.md
+
+---
+title: Entendendo TACOS, ACOS e ROAS
+description: As três métricas essenciais de Product Ads explicadas com exemplos práticos.
+audience: vendedores
+feature: product-ads
+keywords: [tacos, acos, roas, métricas, product ads, anúncios pagos]
+---
+
+# Entendendo TACOS, ACOS e ROAS
+
+Essas três métricas confundem muito vendedor. Aqui vai o essencial.
+
+## ACOS — eficiência do anúncio pago isolado
+
+**Fórmula:** `Gasto com ads ÷ Receita gerada pelos ads`
+
+Mede **só** a performance do dinheiro investido em ads. Exemplo:
+
+- Você gastou R$ 100 em ads.
+- Esses ads geraram R$ 500 em vendas.
+- ACOS = 100/500 = **20%**.
+
+Ou seja: 20% da receita do anúncio pago foi consumida pelo próprio custo do ad.
+
+## ROAS — o mesmo, mas ao contrário
+
+**Fórmula:** `Receita dos ads ÷ Gasto com ads`
+
+É o inverso do ACOS, expresso como "retorno". No exemplo acima:
+
+- ROAS = 500/100 = **5x** (cada R$1 investido volta R$5).
+
+## TACOS — o que importa de verdade
+
+**Fórmula:** `Gasto com ads ÷ Receita TOTAL (orgânica + paga)`
+
+Por que é a mais importante? Porque mede o impacto do investimento em ads **na sua receita total**, não só na receita do anúncio pago.
+
+Exemplo:
+
+- Gasto em ads: R$ 100.
+- Receita pelos ads: R$ 500.
+- Receita orgânica (mesmo item, sem ads): R$ 1500.
+- Receita total: R$ 2000.
+- **TACOS = 100/2000 = 5%**.
+
+Você está investindo 5% da sua receita total em ads para gerar esse volume. Isso é saudável.
+
+{% hint style="success" %}
+✅ **Regra prática:** TACOS entre 5% e 15% é saudável para a maioria dos nichos. Acima de 20%, os ads estão consumindo demais da margem.
+{% endhint %}
+
+## Comparando as três
+
+| Métrica | O que mede | Quando usar |
+|---------|-----------|-------------|
+| **ACOS** | Eficiência do ad isolado | Comparar campanhas entre si |
+| **ROAS** | Retorno sobre investimento em ads | Comunicar com equipe/parceiros |
+| **TACOS** | Impacto real do ad na receita total | Decidir se vale investir mais ou menos |
+
+## Perguntas frequentes
+
+**P: Meu ACOS é 10% mas meu TACOS é 30%. O que isso quer dizer?**
+R: Significa que **a maior parte da sua receita total vem dos ads**, e muito pouco vem orgânico. Seu anúncio depende demais do pago — risco alto se você pausar a campanha.
+
+**P: ACOS subiu de repente. Por quê?**
+R: Causas comuns: concorrente agressivo no mesmo termo (subindo o CPC), queda de conversão no seu anúncio (fotos/preço/estoque), ou mudança na sua estratégia de lance.
+
+**P: Vale investir em ad se meu ACOS for maior que minha margem?**
+R: Normalmente não — você vende no prejuízo. Exceção: quando o ad está **ajudando o ranking orgânico** (você vê isso olhando o TACOS em vez do ACOS).
+
+
+---
+
