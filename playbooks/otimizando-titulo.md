@@ -1,19 +1,39 @@
 ---
 title: Otimizando um título
-description: Transforme um título medíocre em um título que vende — combinação de 3 features de palavras-chave.
+description: Crie títulos vencedores para anúncios NOVOS — combinação de 3 features de palavras-chave. Regra crítica: não modifique título de anúncio que já vende.
 audience: vendedores
 feature: playbook
-keywords: [título, otimização, palavras-chave, SEO ML, reescrever]
+keywords: [título, otimização, palavras-chave, SEO ML, anúncio novo]
 ---
 
 # Playbook: Otimizando um título
 
-Título é o fator que mais influencia visitas no Mercado Livre. Este playbook usa **3 features em conjunto** para reescrever um título ruim em 20 minutos.
+Título é o fator que mais influencia visitas no Mercado Livre — mas há uma regra antes de tudo.
+
+{% hint style="danger" %}
+🚫 **Não modifique o título de anúncios que já têm vendas.**
+
+Se um anúncio vende há semanas ou meses com o título atual, **deixe como está**. Qualquer mudança no título **reseta a indexação** do Mercado Livre e **derruba a exposição** — mesmo que o novo título seja tecnicamente melhor. O algoritmo do ML recompensa histórico, e histórico é vinculado ao título atual.
+
+**Regra prática:** se o anúncio teve venda nos últimos **30 dias**, não mexa no título. Trabalhe outros pontos (fotos, descrição, atributos, preço).
+{% endhint %}
+
+## Quando usar este playbook
+
+✅ Ideal para:
+- **Anúncio novo** sem histórico de vendas
+- **Anúncio antigo sem vendas** nos últimos 30+ dias (e você já descartou outras causas — ver [Recuperando um anúncio](recuperando-anuncio.md))
+- **Anúncio em criação** (antes de publicar pela primeira vez)
+
+❌ **Não use** em:
+- Anúncio que vende bem (mesmo que score técnico esteja em B/C — histórico vale mais)
+- Anúncio que vende pouco mas com tendência estável
 
 ## Pré-requisito
 
-- Anúncio já criado (qualquer título)
+- Anúncio já criado (pode estar em rascunho ou publicado)
 - Link ou ID do anúncio
+- Confirmado que o anúncio **não tem vendas recentes** (se tiver, não siga este playbook)
 
 ## Passo 1 — Radiografia do título atual
 
@@ -25,7 +45,7 @@ Título é o fator que mais influencia visitas no Mercado Livre. Este playbook u
    - **Palavras Faltando** (quantas e quais)
    - **Barra de estatísticas** — quantos combos de IA foram gerados
 
-3. Anote as **5 palavras com maior score** na lista de faltantes.
+3. Anote as palavras com maior score na lista de faltantes.
 
 ## Passo 2 — Descobrir como compradores falam
 
@@ -43,7 +63,7 @@ Título é o fator que mais influencia visitas no Mercado Livre. Este playbook u
 2. Veja palavras em alta **agora**.
 3. Adicione à sua lista de prioridade.
 
-## Passo 4 — Montar o novo título
+## Passo 4 — Montar o título
 
 Regras:
 
@@ -58,18 +78,28 @@ Regras:
 - ❌ Antes: `Máquina de cortar cabelo profissional`
 - ✅ Depois: `Máquina Cortar Cabelo Kemei KM-2299 Sem Fio USB Bivolt 3 Pentes`
 
-## Passo 5 — Validar
+## Passo 5 — Publicar e acompanhar
 
-**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) (de novo)
-
-1. Depois de alterar o título no ML, espere ~3 horas pra re-indexar.
-2. Rode o Agente novamente.
-3. A lista "Palavras Faltando" diminuiu?
-4. A classe do anúncio melhorou?
+1. Publique o anúncio com o novo título.
+2. **Não mexa no título** pelas próximas semanas — deixe o ML indexar e o histórico se formar.
+3. Acompanhe visitas e conversão por pelo menos **14 dias** antes de qualquer ajuste.
 
 ## Regras de ouro
 
-- **Mude o título no máximo a cada 7 dias.** Mudanças frequentes confundem o algoritmo.
+- **Anúncio vendendo = título fechado.** Nunca toque no título de um anúncio que tem vendas recentes.
+- **Título é decisão de criação**, não de manutenção.
 - **Não use ALL CAPS.** ML penaliza.
-- **Não repita palavras** mesmo que mudando ordem — redundância não ajuda.
-- **Não copie título de concorrente idêntico.** Diferencie com algum atributo único.
+- **Não repita palavras** mesmo mudando ordem.
+- **Não copie título de concorrente idêntico.** Diferencie com atributo único.
+- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição por semanas enquanto o ML re-indexa.
+
+## Perguntas frequentes
+
+**P: Meu anúncio tem 3 vendas no último mês, posso mudar o título?**
+R: Desencorajado. Mesmo 3 vendas indicam indexação em andamento. Trabalhe outros pontos antes.
+
+**P: E se o título atual tem erro de ortografia?**
+R: Pese o trade-off. Ortografia horrível pode atrapalhar mais que mexer. Se decidir corrigir, faça **uma mudança mínima** e espere reindexação.
+
+**P: Posso trocar o título se o anúncio está em observação/pausado?**
+R: Sim — anúncio em observação já perdeu ranking. Reescrever junto com outras correções pode ajudar na recuperação.

@@ -42,15 +42,18 @@ Se o indicador estiver em atenção ou crítico:
    - Foto em baixa qualidade → use [Redimensionar Imagens](../redimensionar-imagens/README.md) + padrão 1200x1540.
    - Perdendo exposição → resolução + talvez Melhorar Resolução do próprio ML.
 
-## Passo 4 — Revisar o título (10 min)
+## Passo 4 — (Último recurso) Revisar o título (10 min)
 
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
 
-Mercado Livre muda tendências — títulos bons ficam obsoletos.
+{% hint style="danger" %}
+🚫 **Só mexa no título se o anúncio está sem vendas há pelo menos 30 dias** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título reseta a indexação — vale o risco apenas quando o anúncio já não tem histórico a preservar.
+{% endhint %}
 
 1. Rode o Agente e veja palavras faltantes novas.
 2. Rode Palavras-Chave da Categoria — veja o que está em **tendência agora**.
-3. Se aparecerem termos novos relevantes, **reescreva o título** incorporando-os.
+3. Se aparecerem termos novos relevantes, reescreva o título incorporando-os.
+4. Depois de reescrever, **não mexa mais** por pelo menos 14 dias.
 
 ## Passo 5 — Verificar concorrência (5 min)
 
@@ -71,9 +74,10 @@ Baseado no diagnóstico, decida:
 |---------------------|------------------|
 | Experiência de Compra crítica | Resolver reclamações + considerar pausar/recriar |
 | Tags negativas de foto | Redimensionar imagens + aplicar no ML |
-| Título defasado | Reescrever com palavras em tendência |
+| Título defasado **e sem vendas há 30+ dias** | Reescrever com palavras em tendência (aceitar reset de indexação) |
+| Título defasado **mas ainda com algumas vendas** | **Não reescrever** — trabalhe fotos, descrição, preço, frete |
 | Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
-| Nada obvio | Pequenas melhorias em atributos e descrição; esperar re-indexação (3–7 dias) |
+| Nada óbvio | Pequenas melhorias em atributos e descrição; esperar re-indexação (3–7 dias) |
 
 {% hint style="warning" %}
 ⚠️ Evite mudar tudo de uma vez. Ajuste **um ou dois fatores** e espere 7 dias pra ver o efeito antes de mexer mais. Mudanças em cascata confundem o algoritmo do ML.

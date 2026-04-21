@@ -47,11 +47,26 @@ Lista rankeada de palavras individuais que concorrentes usam e você não. Cada 
 ### 5. Gerador de Títulos IA
 Sugestões editáveis com contagem de caracteres, respeitando o limite (60 em anúncios, 200 em catálogo).
 
+## Quando aplicar as sugestões
+
+{% hint style="danger" %}
+🚫 **Não mude o título de anúncios que já têm vendas recentes.**
+
+Alterar o título de um anúncio com histórico de vendas **reseta a indexação** e **derruba a exposição** no Mercado Livre. O algoritmo do ML recompensa histórico, e esse histórico está vinculado ao título atual.
+
+Use o Agente principalmente para:
+- Criar título de anúncio **novo**
+- Reescrever anúncio **sem vendas** nos últimos 30 dias (após descartar outras causas)
+- Planejar títulos antes de publicar
+
+**Anúncio que vende = título fechado.** Trabalhe fotos, descrição e atributos.
+{% endhint %}
+
 ## Dicas de uso
 
 - Priorize as palavras com **maior score** — são as que mais aparecem em sugestões.
-- Teste um novo título por **pelo menos 7 dias** antes de mudar de novo — o ML precisa de tempo pra re-indexar.
 - Os títulos da IA são uma base — **edite** pra soar natural e refletir o que o produto é de verdade.
+- Depois de publicar um novo título, **não mexa** por pelo menos 14 dias — deixe o ML indexar.
 
 ## Perguntas frequentes
 
@@ -63,6 +78,9 @@ R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode de
 
 **P: Posso usar o título sugerido direto?**
 R: Pode. Mas edite antes pra garantir que reflete seu produto e soa natural.
+
+**P: Meu anúncio vende há meses, mas o score está em C. Devo mexer no título?**
+R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Se vende, o título funciona para o algoritmo do ML. Trabalhe fotos, descrição e atributos.
 
 ## Veja também
 

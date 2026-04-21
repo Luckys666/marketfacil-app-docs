@@ -11,6 +11,10 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Correção crítica — nunca modificar título de anúncio que já vende
+
+Adicionada em todos os arquivos a regra de ouro: **alterar título de anúncio com vendas derruba a exposição do Mercado Livre** (reseta indexação). A otimização de título serve apenas para anúncios novos ou sem vendas há 30+ dias. Para anúncios vendendo com score técnico baixo, o vendedor deve trabalhar outros pontos (fotos, atributos, descrição, preço, frete) — nunca o título. Arquivos atualizados: `playbooks/otimizando-titulo.md`, `palavras-chave/README.md`, `playbooks/recuperando-anuncio.md`, `analise-de-anuncios/entendendo-o-score.md`, `ajuda/checklists.md`, `faq-e-suporte.md`.
+
 ### Correção crítica — classes de serviço do INPI não são "risco baixo"
 
 Removida em todos os arquivos a narrativa de que marcas em classes 35–45 do INPI são de "risco baixo". A classificação anterior estava incompleta: classes de serviço impedem o BPP do Mercado Livre, mas o titular ainda pode acionar legalmente (notificação, processo judicial, indenização). Recomendação atualizada em `analise-de-marca/README.md`, `GLOSSARIO.md`, `playbooks/lancando-produto-novo.md` e `playbooks/escolhendo-nicho.md`: **evitar usar marca com qualquer registro no INPI**.

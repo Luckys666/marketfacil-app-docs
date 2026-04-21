@@ -9,9 +9,9 @@ keywords: [checklist, check list, lista, revisão, otimização]
 
 Imprima ou salve. Use quando precisar.
 
-## ✅ Anúncio otimizado (diário)
+## ✅ Anúncio NOVO otimizado (antes de publicar)
 
-Antes de publicar ou atualizar um anúncio:
+Antes de publicar um anúncio pela primeira vez:
 
 - [ ] Título usa **50+ caracteres** (meta: 60 em anúncio comum, 200 em catálogo)
 - [ ] Título contém **3 a 5 palavras-chave relevantes** ([Agente de Palavras-Chave](../palavras-chave/README.md))
@@ -21,8 +21,25 @@ Antes de publicar ou atualizar um anúncio:
 - [ ] **Todos os atributos obrigatórios** da categoria preenchidos
 - [ ] **Descrição** com ≥ 300 caracteres e sem copiar fornecedor
 - [ ] **Garantia** cadastrada (mesmo que "7 dias pela lei")
-- [ ] **Marca** verificada no INPI — você tem direito de usar ([Análise de Marca](../analise-de-marca/README.md))
+- [ ] **Marca** não registrada no INPI ([Análise de Marca](../analise-de-marca/README.md))
 - [ ] Score ≥ **Classe B** ([Análise de Anúncios](../analise-de-anuncios/README.md))
+
+{% hint style="danger" %}
+🚫 **Este checklist é para anúncios novos ou sem vendas.** Se o anúncio já tem vendas, **não mexa no título** — isso derruba a exposição. Trabalhe apenas fotos, atributos, descrição e garantia.
+{% endhint %}
+
+## ✅ Anúncio JÁ VENDENDO — o que você pode mexer
+
+Anúncio com vendas recentes precisa de cuidado. **Mexa apenas no que não reseta a indexação:**
+
+- [ ] Atributos faltantes
+- [ ] Descrição (pode reescrever sem risco)
+- [ ] Garantia
+- [ ] Fotos (pode trocar, adicionar, redimensionar)
+- [ ] Preço
+- [ ] Configurações de frete (Full, Flex)
+
+**Nunca mexer:** título, categoria principal.
 
 ## ✅ Lançamento de produto novo (por produto)
 

@@ -52,15 +52,23 @@ E ainda:
 ## Como subir de classe
 
 1. Resolva primeiro os itens da lista "O que melhorar".
-2. Use o [Agente de Palavras-Chave](../palavras-chave/README.md) para otimizar o título.
-3. Preencha **todos** os atributos obrigatórios da categoria.
-4. Se tiver tags negativas, entenda a causa (foto em baixa qualidade, título ruim, etc.) e corrija.
-5. Reanalise depois de algumas horas — o score reflete o estado atual.
+2. Preencha **todos** os atributos obrigatórios da categoria.
+3. Melhore as fotos (padrão 1200x1540, veja [Redimensionar Imagens](../redimensionar-imagens/README.md)).
+4. Se tiver tags negativas, entenda a causa e corrija.
+5. **Se o anúncio ainda não vende**, considere otimizar o título com o [Agente de Palavras-Chave](../palavras-chave/README.md).
+6. Reanalise depois de algumas horas — o score reflete o estado atual.
+
+{% hint style="warning" %}
+⚠️ **Anúncio que vende = título fechado.** Se seu anúncio tem vendas recentes mas o score está em B/C, **não mexa no título**. Mudar título de anúncio com histórico derruba a exposição. Foque nos outros pontos (fotos, atributos, descrição) que melhoram o score sem resetar indexação.
+{% endhint %}
 
 ## Perguntas frequentes
 
 **P: Meu score é 85, vale a pena tentar chegar a 95?**
 R: Acima de 80, os ganhos marginais são pequenos em qualidade técnica. Foque em conversão: fotos melhores, descrição persuasiva, preço competitivo.
+
+**P: Meu anúncio vende bem mas o score está em C. Devo otimizar?**
+R: **Cuidado.** Se o anúncio tem vendas, o histórico no ML vale mais que o score técnico. Corrija apenas os pontos que **não mexem no título** (atributos, descrição, fotos, garantia). Jamais troque o título de anúncio com histórico de vendas — derruba a exposição.
 
 **P: Corrigi um problema mas o score não mudou. Por quê?**
 R: O Mercado Livre leva algumas horas para re-indexar mudanças no anúncio. Analise de novo depois de 3–6 horas.

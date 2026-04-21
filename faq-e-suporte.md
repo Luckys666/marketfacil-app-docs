@@ -74,6 +74,9 @@ R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
 **P: Meu anúncio está em Classe A mas não vende. Por quê?**
 R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
 
+**P: Meu anúncio vende bem mas tem score em C. Devo otimizar?**
+R: **Cuidado.** Vendas valem mais que score técnico. Se mexer no **título**, reseta a indexação do ML e a exposição cai. Melhore só o que não exige mudar título (fotos, atributos, descrição, garantia). Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
+
 **P: Corrigi um problema e o score não mudou. Por quê?**
 R: O ML leva de 3 a 6 horas pra re-indexar mudanças. Analise de novo mais tarde.
 

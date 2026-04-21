@@ -19,6 +19,10 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Correção crítica — nunca modificar título de anúncio que já vende
+
+Adicionada em todos os arquivos a regra de ouro: **alterar título de anúncio com vendas derruba a exposição do Mercado Livre** (reseta indexação). A otimização de título serve apenas para anúncios novos ou sem vendas há 30+ dias. Para anúncios vendendo com score técnico baixo, o vendedor deve trabalhar outros pontos (fotos, atributos, descrição, preço, frete) — nunca o título. Arquivos atualizados: `playbooks/otimizando-titulo.md`, `palavras-chave/README.md`, `playbooks/recuperando-anuncio.md`, `analise-de-anuncios/entendendo-o-score.md`, `ajuda/checklists.md`, `faq-e-suporte.md`.
+
 ### Correção crítica — classes de serviço do INPI não são "risco baixo"
 
 Removida em todos os arquivos a narrativa de que marcas em classes 35–45 do INPI são de "risco baixo". A classificação anterior estava incompleta: classes de serviço impedem o BPP do Mercado Livre, mas o titular ainda pode acionar legalmente (notificação, processo judicial, indenização). Recomendação atualizada em `analise-de-marca/README.md`, `GLOSSARIO.md`, `playbooks/lancando-produto-novo.md` e `playbooks/escolhendo-nicho.md`: **evitar usar marca com qualquer registro no INPI**.
@@ -495,9 +499,9 @@ keywords: [checklist, check list, lista, revisão, otimização]
 
 Imprima ou salve. Use quando precisar.
 
-## ✅ Anúncio otimizado (diário)
+## ✅ Anúncio NOVO otimizado (antes de publicar)
 
-Antes de publicar ou atualizar um anúncio:
+Antes de publicar um anúncio pela primeira vez:
 
 - [ ] Título usa **50+ caracteres** (meta: 60 em anúncio comum, 200 em catálogo)
 - [ ] Título contém **3 a 5 palavras-chave relevantes** ([Agente de Palavras-Chave](../palavras-chave/README.md))
@@ -507,8 +511,25 @@ Antes de publicar ou atualizar um anúncio:
 - [ ] **Todos os atributos obrigatórios** da categoria preenchidos
 - [ ] **Descrição** com ≥ 300 caracteres e sem copiar fornecedor
 - [ ] **Garantia** cadastrada (mesmo que "7 dias pela lei")
-- [ ] **Marca** verificada no INPI — você tem direito de usar ([Análise de Marca](../analise-de-marca/README.md))
+- [ ] **Marca** não registrada no INPI ([Análise de Marca](../analise-de-marca/README.md))
 - [ ] Score ≥ **Classe B** ([Análise de Anúncios](../analise-de-anuncios/README.md))
+
+{% hint style="danger" %}
+🚫 **Este checklist é para anúncios novos ou sem vendas.** Se o anúncio já tem vendas, **não mexa no título** — isso derruba a exposição. Trabalhe apenas fotos, atributos, descrição e garantia.
+{% endhint %}
+
+## ✅ Anúncio JÁ VENDENDO — o que você pode mexer
+
+Anúncio com vendas recentes precisa de cuidado. **Mexa apenas no que não reseta a indexação:**
+
+- [ ] Atributos faltantes
+- [ ] Descrição (pode reescrever sem risco)
+- [ ] Garantia
+- [ ] Fotos (pode trocar, adicionar, redimensionar)
+- [ ] Preço
+- [ ] Configurações de frete (Full, Flex)
+
+**Nunca mexer:** título, categoria principal.
 
 ## ✅ Lançamento de produto novo (por produto)
 
@@ -914,15 +935,23 @@ E ainda:
 ## Como subir de classe
 
 1. Resolva primeiro os itens da lista "O que melhorar".
-2. Use o [Agente de Palavras-Chave](../palavras-chave/README.md) para otimizar o título.
-3. Preencha **todos** os atributos obrigatórios da categoria.
-4. Se tiver tags negativas, entenda a causa (foto em baixa qualidade, título ruim, etc.) e corrija.
-5. Reanalise depois de algumas horas — o score reflete o estado atual.
+2. Preencha **todos** os atributos obrigatórios da categoria.
+3. Melhore as fotos (padrão 1200x1540, veja [Redimensionar Imagens](../redimensionar-imagens/README.md)).
+4. Se tiver tags negativas, entenda a causa e corrija.
+5. **Se o anúncio ainda não vende**, considere otimizar o título com o [Agente de Palavras-Chave](../palavras-chave/README.md).
+6. Reanalise depois de algumas horas — o score reflete o estado atual.
+
+{% hint style="warning" %}
+⚠️ **Anúncio que vende = título fechado.** Se seu anúncio tem vendas recentes mas o score está em B/C, **não mexa no título**. Mudar título de anúncio com histórico derruba a exposição. Foque nos outros pontos (fotos, atributos, descrição) que melhoram o score sem resetar indexação.
+{% endhint %}
 
 ## Perguntas frequentes
 
 **P: Meu score é 85, vale a pena tentar chegar a 95?**
 R: Acima de 80, os ganhos marginais são pequenos em qualidade técnica. Foque em conversão: fotos melhores, descrição persuasiva, preço competitivo.
+
+**P: Meu anúncio vende bem mas o score está em C. Devo otimizar?**
+R: **Cuidado.** Se o anúncio tem vendas, o histórico no ML vale mais que o score técnico. Corrija apenas os pontos que **não mexem no título** (atributos, descrição, fotos, garantia). Jamais troque o título de anúncio com histórico de vendas — derruba a exposição.
 
 **P: Corrigi um problema mas o score não mudou. Por quê?**
 R: O Mercado Livre leva algumas horas para re-indexar mudanças no anúncio. Analise de novo depois de 3–6 horas.
@@ -1441,6 +1470,9 @@ R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
 **P: Meu anúncio está em Classe A mas não vende. Por quê?**
 R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
 
+**P: Meu anúncio vende bem mas tem score em C. Devo otimizar?**
+R: **Cuidado.** Vendas valem mais que score técnico. Se mexer no **título**, reseta a indexação do ML e a exposição cai. Melhore só o que não exige mudar título (fotos, atributos, descrição, garantia). Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
+
 **P: Corrigi um problema e o score não mudou. Por quê?**
 R: O ML leva de 3 a 6 horas pra re-indexar mudanças. Analise de novo mais tarde.
 
@@ -1748,11 +1780,26 @@ Lista rankeada de palavras individuais que concorrentes usam e você não. Cada 
 ### 5. Gerador de Títulos IA
 Sugestões editáveis com contagem de caracteres, respeitando o limite (60 em anúncios, 200 em catálogo).
 
+## Quando aplicar as sugestões
+
+{% hint style="danger" %}
+🚫 **Não mude o título de anúncios que já têm vendas recentes.**
+
+Alterar o título de um anúncio com histórico de vendas **reseta a indexação** e **derruba a exposição** no Mercado Livre. O algoritmo do ML recompensa histórico, e esse histórico está vinculado ao título atual.
+
+Use o Agente principalmente para:
+- Criar título de anúncio **novo**
+- Reescrever anúncio **sem vendas** nos últimos 30 dias (após descartar outras causas)
+- Planejar títulos antes de publicar
+
+**Anúncio que vende = título fechado.** Trabalhe fotos, descrição e atributos.
+{% endhint %}
+
 ## Dicas de uso
 
 - Priorize as palavras com **maior score** — são as que mais aparecem em sugestões.
-- Teste um novo título por **pelo menos 7 dias** antes de mudar de novo — o ML precisa de tempo pra re-indexar.
 - Os títulos da IA são uma base — **edite** pra soar natural e refletir o que o produto é de verdade.
+- Depois de publicar um novo título, **não mexa** por pelo menos 14 dias — deixe o ML indexar.
 
 ## Perguntas frequentes
 
@@ -1764,6 +1811,9 @@ R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode de
 
 **P: Posso usar o título sugerido direto?**
 R: Pode. Mas edite antes pra garantir que reflete seu produto e soa natural.
+
+**P: Meu anúncio vende há meses, mas o score está em C. Devo mexer no título?**
+R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Se vende, o título funciona para o algoritmo do ML. Trabalhe fotos, descrição e atributos.
 
 ## Veja também
 
@@ -2137,20 +2187,40 @@ Depois de lançar:
 
 ---
 title: Otimizando um título
-description: Transforme um título medíocre em um título que vende — combinação de 3 features de palavras-chave.
+description: Crie títulos vencedores para anúncios NOVOS — combinação de 3 features de palavras-chave. Regra crítica: não modifique título de anúncio que já vende.
 audience: vendedores
 feature: playbook
-keywords: [título, otimização, palavras-chave, SEO ML, reescrever]
+keywords: [título, otimização, palavras-chave, SEO ML, anúncio novo]
 ---
 
 # Playbook: Otimizando um título
 
-Título é o fator que mais influencia visitas no Mercado Livre. Este playbook usa **3 features em conjunto** para reescrever um título ruim em 20 minutos.
+Título é o fator que mais influencia visitas no Mercado Livre — mas há uma regra antes de tudo.
+
+{% hint style="danger" %}
+🚫 **Não modifique o título de anúncios que já têm vendas.**
+
+Se um anúncio vende há semanas ou meses com o título atual, **deixe como está**. Qualquer mudança no título **reseta a indexação** do Mercado Livre e **derruba a exposição** — mesmo que o novo título seja tecnicamente melhor. O algoritmo do ML recompensa histórico, e histórico é vinculado ao título atual.
+
+**Regra prática:** se o anúncio teve venda nos últimos **30 dias**, não mexa no título. Trabalhe outros pontos (fotos, descrição, atributos, preço).
+{% endhint %}
+
+## Quando usar este playbook
+
+✅ Ideal para:
+- **Anúncio novo** sem histórico de vendas
+- **Anúncio antigo sem vendas** nos últimos 30+ dias (e você já descartou outras causas — ver [Recuperando um anúncio](recuperando-anuncio.md))
+- **Anúncio em criação** (antes de publicar pela primeira vez)
+
+❌ **Não use** em:
+- Anúncio que vende bem (mesmo que score técnico esteja em B/C — histórico vale mais)
+- Anúncio que vende pouco mas com tendência estável
 
 ## Pré-requisito
 
-- Anúncio já criado (qualquer título)
+- Anúncio já criado (pode estar em rascunho ou publicado)
 - Link ou ID do anúncio
+- Confirmado que o anúncio **não tem vendas recentes** (se tiver, não siga este playbook)
 
 ## Passo 1 — Radiografia do título atual
 
@@ -2162,7 +2232,7 @@ Título é o fator que mais influencia visitas no Mercado Livre. Este playbook u
    - **Palavras Faltando** (quantas e quais)
    - **Barra de estatísticas** — quantos combos de IA foram gerados
 
-3. Anote as **5 palavras com maior score** na lista de faltantes.
+3. Anote as palavras com maior score na lista de faltantes.
 
 ## Passo 2 — Descobrir como compradores falam
 
@@ -2180,7 +2250,7 @@ Título é o fator que mais influencia visitas no Mercado Livre. Este playbook u
 2. Veja palavras em alta **agora**.
 3. Adicione à sua lista de prioridade.
 
-## Passo 4 — Montar o novo título
+## Passo 4 — Montar o título
 
 Regras:
 
@@ -2195,21 +2265,31 @@ Regras:
 - ❌ Antes: `Máquina de cortar cabelo profissional`
 - ✅ Depois: `Máquina Cortar Cabelo Kemei KM-2299 Sem Fio USB Bivolt 3 Pentes`
 
-## Passo 5 — Validar
+## Passo 5 — Publicar e acompanhar
 
-**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) (de novo)
-
-1. Depois de alterar o título no ML, espere ~3 horas pra re-indexar.
-2. Rode o Agente novamente.
-3. A lista "Palavras Faltando" diminuiu?
-4. A classe do anúncio melhorou?
+1. Publique o anúncio com o novo título.
+2. **Não mexa no título** pelas próximas semanas — deixe o ML indexar e o histórico se formar.
+3. Acompanhe visitas e conversão por pelo menos **14 dias** antes de qualquer ajuste.
 
 ## Regras de ouro
 
-- **Mude o título no máximo a cada 7 dias.** Mudanças frequentes confundem o algoritmo.
+- **Anúncio vendendo = título fechado.** Nunca toque no título de um anúncio que tem vendas recentes.
+- **Título é decisão de criação**, não de manutenção.
 - **Não use ALL CAPS.** ML penaliza.
-- **Não repita palavras** mesmo que mudando ordem — redundância não ajuda.
-- **Não copie título de concorrente idêntico.** Diferencie com algum atributo único.
+- **Não repita palavras** mesmo mudando ordem.
+- **Não copie título de concorrente idêntico.** Diferencie com atributo único.
+- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição por semanas enquanto o ML re-indexa.
+
+## Perguntas frequentes
+
+**P: Meu anúncio tem 3 vendas no último mês, posso mudar o título?**
+R: Desencorajado. Mesmo 3 vendas indicam indexação em andamento. Trabalhe outros pontos antes.
+
+**P: E se o título atual tem erro de ortografia?**
+R: Pese o trade-off. Ortografia horrível pode atrapalhar mais que mexer. Se decidir corrigir, faça **uma mudança mínima** e espere reindexação.
+
+**P: Posso trocar o título se o anúncio está em observação/pausado?**
+R: Sim — anúncio em observação já perdeu ranking. Reescrever junto com outras correções pode ajudar na recuperação.
 
 
 ---
@@ -2356,15 +2436,18 @@ Se o indicador estiver em atenção ou crítico:
    - Foto em baixa qualidade → use [Redimensionar Imagens](../redimensionar-imagens/README.md) + padrão 1200x1540.
    - Perdendo exposição → resolução + talvez Melhorar Resolução do próprio ML.
 
-## Passo 4 — Revisar o título (10 min)
+## Passo 4 — (Último recurso) Revisar o título (10 min)
 
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
 
-Mercado Livre muda tendências — títulos bons ficam obsoletos.
+{% hint style="danger" %}
+🚫 **Só mexa no título se o anúncio está sem vendas há pelo menos 30 dias** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título reseta a indexação — vale o risco apenas quando o anúncio já não tem histórico a preservar.
+{% endhint %}
 
 1. Rode o Agente e veja palavras faltantes novas.
 2. Rode Palavras-Chave da Categoria — veja o que está em **tendência agora**.
-3. Se aparecerem termos novos relevantes, **reescreva o título** incorporando-os.
+3. Se aparecerem termos novos relevantes, reescreva o título incorporando-os.
+4. Depois de reescrever, **não mexa mais** por pelo menos 14 dias.
 
 ## Passo 5 — Verificar concorrência (5 min)
 
@@ -2385,9 +2468,10 @@ Baseado no diagnóstico, decida:
 |---------------------|------------------|
 | Experiência de Compra crítica | Resolver reclamações + considerar pausar/recriar |
 | Tags negativas de foto | Redimensionar imagens + aplicar no ML |
-| Título defasado | Reescrever com palavras em tendência |
+| Título defasado **e sem vendas há 30+ dias** | Reescrever com palavras em tendência (aceitar reset de indexação) |
+| Título defasado **mas ainda com algumas vendas** | **Não reescrever** — trabalhe fotos, descrição, preço, frete |
 | Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
-| Nada obvio | Pequenas melhorias em atributos e descrição; esperar re-indexação (3–7 dias) |
+| Nada óbvio | Pequenas melhorias em atributos e descrição; esperar re-indexação (3–7 dias) |
 
 {% hint style="warning" %}
 ⚠️ Evite mudar tudo de uma vez. Ajuste **um ou dois fatores** e espere 7 dias pra ver o efeito antes de mexer mais. Mudanças em cascata confundem o algoritmo do ML.
