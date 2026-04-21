@@ -1,15 +1,27 @@
 # Marketfacil — Manual do vendedor
 
-> Documentação oficial do Marketfacil, plataforma brasileira de inteligência para vendedores do Mercado Livre. Cobre análise de anúncios, análise de marca (INPI), busca e concorrência de catálogos, agentes de palavras-chave, auditoria de tags, redimensionador de imagens, gerador de EAN, planejador de ads e conta.
+> Documentação oficial do Marketfacil, plataforma brasileira de inteligência para vendedores do Mercado Livre. Cobre análise de anúncios, análise de marca (INPI), busca e concorrência de catálogos, agentes de palavras-chave, auditoria de tags, redimensionador de imagens, gerador de EAN, planejador de ads, playbooks end-to-end e troubleshooting.
 
-Marketfacil (app.marketfacil.com.br) é uma plataforma SaaS voltada a vendedores que operam no Mercado Livre. A documentação abaixo é organizada por feature e destinada ao vendedor final (não desenvolvedor). A grafia correta da marca é "Marketfacil" (sem acento, "f" minúsculo).
+Marketfacil (app.marketfacil.com.br) é uma plataforma SaaS voltada a vendedores que operam no Mercado Livre. A documentação é organizada em 4 camadas: features (referência por tela), playbooks (workflows combinando features), ajuda (troubleshooting e checklists) e referência (glossário). Destinada ao vendedor final, não ao desenvolvedor. Grafia correta da marca: "Marketfacil" (sem acento, "f" minúsculo).
 
-## Docs
+## Docs — orientação inicial
 
 - [Bem-vindo](README.md): visão geral do manual e links para cada feature.
 - [Glossário](GLOSSARIO.md): MLB, MLBU, catálogo, ACOS, TACOS, ROAS, BPP, INPI, EAN, tags, logística.
 - [Primeiros passos](primeiros-passos/README.md): criar conta, conectar Mercado Livre, tour da plataforma.
-- [Análise de Anúncios](analise-de-anuncios/README.md): score, classe (A a F), fluxos MLB/MLBU/Catálogo, experiência de compra.
+
+## Playbooks — workflows combinando features
+
+- [Visão geral](playbooks/README.md): índice dos playbooks disponíveis.
+- [Lançando um produto novo](playbooks/lancando-produto-novo.md): 5 passos do zero ao primeiro anúncio otimizado (Busca Catálogos → Concorrência → INPI → Palavras-Chave → Análise).
+- [Recuperando um anúncio](playbooks/recuperando-anuncio.md): diagnóstico quando as vendas caem — Análise, Experiência de Compra, Auditoria de Tags, Concorrência.
+- [Escolhendo um novo nicho](playbooks/escolhendo-nicho.md): validação em 5 passos antes de investir.
+- [Otimizando um título](playbooks/otimizando-titulo.md): 3 features de palavras-chave em conjunto.
+- [Preparando uma campanha de Ads](playbooks/preparando-campanha-ads.md): checklist pré-investimento em Mercado Ads.
+
+## Features — referência
+
+- [Análise de Anúncios](analise-de-anuncios/README.md): score, classe A a F, fluxos MLB/MLBU/Catálogo, experiência de compra.
 - [Análise de Marca](analise-de-marca/README.md): consulta oficial no INPI e risco de BPP por classe.
 - [Busca de Catálogos](busca-de-catalogos/README.md): filtros de logística (Full, Flex, ME1, ME2, Places, Correios), frete, concorrência.
 - [Concorrência de Catálogo](concorrencia-catalogo/README.md): vendedores, preços, frete, simulador de margem, líder do catálogo.
@@ -18,15 +30,18 @@ Marketfacil (app.marketfacil.com.br) é uma plataforma SaaS voltada a vendedores
 - [Redimensionar Imagens](redimensionar-imagens/README.md): padrão 1200x1540 do Mercado Livre.
 - [Palavras-Chave do Autocompletar](palavras-chave-autocompletar/README.md): o que compradores digitam nos buscadores.
 - [Palavras-Chave da Categoria](palavras-chave-categoria/README.md): termos em tendência na categoria.
-- [Planejador de Ads](planejador-de-ads/README.md): saúde das campanhas de Mercado Ads com gamificação (Beta).
+- [Planejador de Ads](planejador-de-ads/README.md): saúde das campanhas com gamificação (Beta).
 - [Entendendo TACOS, ACOS e ROAS](planejador-de-ads/entendendo-tacos.md): as 3 métricas essenciais de Ads.
 - [Gerador de EAN](gerador-ean/README.md): cria EANs para novos catálogos (não homologados GS1).
 - [Minha Conta](minha-conta/README.md): plano, conexões ML, dados cadastrais.
 
 ## Ajuda
 
-- [FAQ e suporte](faq-e-suporte.md)
-- [Changelog](CHANGELOG.md)
+- [Ajuda — visão geral](ajuda/README.md): índice dos recursos de apoio.
+- [Checklists reutilizáveis](ajuda/checklists.md): anúncio otimizado, lançamento, pré-campanha, revisão mensal, SOS.
+- [Problemas comuns e soluções](ajuda/troubleshooting.md): troubleshooting por feature.
+- [FAQ e suporte](faq-e-suporte.md): perguntas frequentes por tema — conta, conexão ML, features, score, dados, pagamento.
+- [Changelog](CHANGELOG.md): histórico de mudanças.
 
 ## Optional
 

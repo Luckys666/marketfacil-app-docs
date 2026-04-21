@@ -1,42 +1,122 @@
 ---
 title: FAQ e suporte
-description: Perguntas frequentes sobre o Marketfacil e como falar com o suporte.
+description: Perguntas frequentes sobre o Marketfacil organizadas por tema — conta, features, dados, pagamento e suporte.
 audience: vendedores
-keywords: [faq, suporte, contato, ajuda]
+keywords: [faq, suporte, contato, ajuda, dúvidas]
 ---
 
 # FAQ e suporte
 
-## Perguntas frequentes
+Perguntas frequentes separadas por tema. Se não achar sua dúvida aqui, fale com o [suporte](#suporte).
+
+## Conta e cadastro
 
 **P: Preciso instalar algo para usar o Marketfacil?**
 R: Não. O Marketfacil roda 100% no navegador em [app.marketfacil.com.br](https://app.marketfacil.com.br).
 
-**P: O Marketfacil acessa minha conta do Mercado Livre?**
-R: Sim, via login oficial do Mercado Livre (OAuth). Você autoriza apenas permissões de leitura dos seus anúncios e métricas. O Marketfacil **nunca** tem sua senha.
+**P: Como crio conta?**
+R: Veja [Criar conta](primeiros-passos/criar-conta.md).
+
+**P: Esqueci minha senha. E agora?**
+R: Na tela de login, clique em "Perdi Minha Senha" e siga as instruções do email.
+
+**P: Posso usar a mesma conta em mais de um computador?**
+R: Sim. Seu login funciona em qualquer navegador.
+
+**P: Uso celular. Dá pra usar o Marketfacil?**
+R: Sim, o app é responsivo. Telas com muitos gráficos (Concorrência, Planejador de Ads) ficam melhores no desktop.
+
+## Conexão com Mercado Livre
+
+**P: O Marketfacil acessa minha senha do Mercado Livre?**
+R: **Nunca.** A conexão é feita via login oficial do ML (OAuth). Você autoriza apenas permissões de leitura — o Marketfacil nunca vê sua senha.
+
+**P: O Marketfacil pode criar ou pausar anúncios?**
+R: Não. O Marketfacil é **somente leitura**. Ele mostra insights mas não altera seus anúncios.
+
+**P: Quantas contas do Mercado Livre posso conectar?**
+R: Depende do seu plano. Consulte em [Minha Conta](minha-conta/README.md).
+
+**P: Meu token expirou. Como renovar?**
+R: Clique em **Reconectar** na página [Minha Conta](minha-conta/README.md). A renovação é automática na maior parte do tempo — se não for, ela é manual pelo botão.
+
+## Features
+
+**P: Qual a diferença entre as 3 features de palavras-chave?**
+R:
+- [Agente de Palavras-Chave](palavras-chave/README.md) — palavras que **faltam** no seu título comparado a concorrentes
+- [Autocompletar](palavras-chave-autocompletar/README.md) — o que **compradores digitam** nos buscadores
+- [Categoria](palavras-chave-categoria/README.md) — termos em **tendência** na categoria
+
+**P: Posso analisar anúncio de concorrente?**
+R: Depende da feature:
+- [Análise de Anúncios](analise-de-anuncios/README.md) — só da sua conta
+- [Concorrência de Catálogo](concorrencia-catalogo/README.md) — qualquer catálogo público (inclui concorrentes)
+- [Palavras-Chave da Categoria](palavras-chave-categoria/README.md) — qualquer anúncio público
+
+**P: Por que umas análises demoram mais que outras?**
+R: Features que consultam **muitos concorrentes em paralelo** (Concorrência, Busca de Catálogos) podem levar 1 a 3 minutos. Features de anúncio único são rápidas (segundos).
+
+**P: A IA do Agente de Palavras-Chave inventa palavras?**
+R: Não. Ela sugere combinações baseadas em **palavras reais** do Mercado Livre.
+
+**P: A Busca INPI é oficial?**
+R: Sim. Os dados vêm direto da base pública do INPI.
+
+## Score e análise
+
+**P: Meu score mudou do nada. Por quê?**
+R: O score é recalculado a cada análise, com base em dados atuais do Mercado Livre. Mudanças em avaliações, tags, visitas refletem no score.
+
+**P: Qual score é "bom"?**
+R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
+
+**P: Meu anúncio está em Classe A mas não vende. Por quê?**
+R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
+
+**P: Corrigi um problema e o score não mudou. Por quê?**
+R: O ML leva de 3 a 6 horas pra re-indexar mudanças. Analise de novo mais tarde.
+
+## Dados e segurança
 
 **P: Meus dados ficam seguros?**
-R: Sim. Tokens de acesso são armazenados de forma criptografada e nunca expostos em URLs ou logs.
+R: Sim. Tokens de acesso são armazenados criptografados e nunca expostos em URLs ou logs.
 
-**P: Posso usar em celular?**
-R: Sim, o app é responsivo. Algumas telas com muitos gráficos ficam melhores no desktop.
+**P: O Marketfacil vende meus dados para terceiros?**
+R: **Não.** Seus dados são usados exclusivamente para te entregar os insights do app.
 
-**P: Quantas análises posso fazer por dia?**
-R: Depende do seu plano. Há limite por minuto para evitar sobrecarga na API do Mercado Livre.
+**P: Posso excluir minha conta e meus dados?**
+R: Sim. Entre em contato pelo [suporte](#suporte) pra solicitar.
 
-**P: O score do meu anúncio mudou do nada. Por quê?**
-R: O score é recalculado toda análise, com base em dados atuais do anúncio. Se você alterou título, imagens, atributos ou se o Mercado Livre mudou tags, o score reflete isso.
+**P: E se meu plano vencer?**
+R: Você perde acesso às features pagas, mas sua conta e dados ficam preservados caso você volte.
+
+## Pagamento e planos
+
+**P: Como cancelo meu plano pago?**
+R: Entre em contato pelo [suporte](#suporte). Cancelamentos são processados pelo time.
+
+**P: Posso mudar de plano?**
+R: Sim — upgrade e downgrade são permitidos. Fale com o suporte.
+
+**P: Por que algumas features dizem "Disponível somente para assinantes"?**
+R: Features avançadas (Busca de Catálogos, Concorrência, Agente de Palavras-Chave, Redimensionar, Gerador de EAN) são exclusivas de planos pagos.
 
 ## Suporte
 
 Para dúvidas, bugs ou sugestões:
 
-- **Email**: *(preencher)*
-- **WhatsApp**: *(preencher)*
-- **Comunidade**: *(preencher)*
+- **WhatsApp** — disponível dentro do app pelo botão **Suporte** no menu lateral
+- **Email** — *(preencher)*
+- **Comunidade** — *(preencher)*
 
 Quando reportar um problema, envie:
 
 1. O link do anúncio (MLB) envolvido
 2. O print da tela com o problema
 3. Horário aproximado em que aconteceu
+4. Passos que você seguiu antes do erro
+
+{% hint style="success" %}
+✅ **Dica pro suporte responder mais rápido:** descreva o **resultado esperado** e o **resultado obtido**. Ex: "Esperava ver score A, mas apareceu C mesmo após corrigir atributos."
+{% endhint %}

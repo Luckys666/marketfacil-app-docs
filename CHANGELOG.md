@@ -11,6 +11,22 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Enriquecimento — playbooks, troubleshooting e checklists
+
+- **5 Playbooks** end-to-end criados (`playbooks/`):
+  - Lançando um produto novo
+  - Recuperando um anúncio que parou de vender
+  - Escolhendo um novo nicho
+  - Otimizando um título
+  - Preparando uma campanha de Ads
+- **Seção Ajuda** criada (`ajuda/`):
+  - Checklists reutilizáveis (anúncio otimizado, lançamento, pré-campanha, revisão mensal, SOS)
+  - Troubleshooting completo (problemas e soluções por feature)
+- FAQ expandido em **6 seções temáticas** (conta, conexão ML, features, score, dados, pagamento)
+- Links cruzados entre features, playbooks e checklists
+- `llms.txt` reorganizado em 4 camadas (orientação, playbooks, features, ajuda)
+- SUMMARY.md e README.md atualizados
+
 ### Expansão major — 13 features documentadas
 
 - **Reescrita completa** do manual com base em navegação real no app via Playwright.

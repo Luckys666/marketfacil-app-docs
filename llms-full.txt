@@ -19,6 +19,22 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Enriquecimento — playbooks, troubleshooting e checklists
+
+- **5 Playbooks** end-to-end criados (`playbooks/`):
+  - Lançando um produto novo
+  - Recuperando um anúncio que parou de vender
+  - Escolhendo um novo nicho
+  - Otimizando um título
+  - Preparando uma campanha de Ads
+- **Seção Ajuda** criada (`ajuda/`):
+  - Checklists reutilizáveis (anúncio otimizado, lançamento, pré-campanha, revisão mensal, SOS)
+  - Troubleshooting completo (problemas e soluções por feature)
+- FAQ expandido em **6 seções temáticas** (conta, conexão ML, features, score, dados, pagamento)
+- Links cruzados entre features, playbooks e checklists
+- `llms.txt` reorganizado em 4 camadas (orientação, playbooks, features, ajuda)
+- SUMMARY.md e README.md atualizados
+
 ### Expansão major — 13 features documentadas
 
 - **Reescrita completa** do manual com base em navegação real no app via Playwright.
@@ -318,10 +334,21 @@ Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada pági
 - 📊 [Gerador de EAN](gerador-ean/README.md) — gere EANs para criar catálogos
 - 👤 [Minha Conta](minha-conta/README.md) — plano e conexões do Mercado Livre
 
+## Playbooks — usando as features em conjunto
+
+As features ficam muito mais poderosas combinadas. Os [Playbooks](playbooks/README.md) são workflows prontos pra situações reais:
+
+- 🚀 [Lançando um produto novo](playbooks/lancando-produto-novo.md)
+- 🔧 [Recuperando um anúncio que parou de vender](playbooks/recuperando-anuncio.md)
+- 🎯 [Escolhendo um novo nicho](playbooks/escolhendo-nicho.md)
+- ✍️ [Otimizando um título](playbooks/otimizando-titulo.md)
+- 📈 [Preparando uma campanha de Ads](playbooks/preparando-campanha-ads.md)
+
 ## Links úteis
 
 - **App**: [app.marketfacil.com.br](https://app.marketfacil.com.br)
 - **Site**: [marketfacil.com.br](https://marketfacil.com.br)
+- **Ajuda**: [checklists, troubleshooting e FAQ](ajuda/README.md)
 - **Suporte**: [FAQ e contato](faq-e-suporte.md)
 - **Glossário**: [termos técnicos explicados](GLOSSARIO.md)
 
@@ -341,6 +368,15 @@ Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada pági
 * [Criar conta](primeiros-passos/criar-conta.md)
 * [Conectar Mercado Livre](primeiros-passos/conectar-mercado-livre.md)
 * [Tour da plataforma](primeiros-passos/tour-da-plataforma.md)
+
+## Playbooks
+
+* [Visão geral](playbooks/README.md)
+* [Lançando um produto novo](playbooks/lancando-produto-novo.md)
+* [Recuperando um anúncio que parou de vender](playbooks/recuperando-anuncio.md)
+* [Escolhendo um novo nicho](playbooks/escolhendo-nicho.md)
+* [Otimizando um título](playbooks/otimizando-titulo.md)
+* [Preparando uma campanha de Ads](playbooks/preparando-campanha-ads.md)
 
 ## Análise de Anúncios
 
@@ -396,8 +432,297 @@ Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada pági
 
 ## Ajuda
 
+* [Visão geral](ajuda/README.md)
+* [Checklists reutilizáveis](ajuda/checklists.md)
+* [Problemas comuns e soluções](ajuda/troubleshooting.md)
 * [FAQ e suporte](faq-e-suporte.md)
 * [Changelog](CHANGELOG.md)
+
+
+---
+
+## File: ajuda/README.md
+
+---
+title: Ajuda
+description: Recursos de apoio — FAQ, troubleshooting, checklists e contato com suporte.
+audience: vendedores
+keywords: [ajuda, suporte, troubleshooting, checklists]
+---
+
+# Ajuda
+
+Três recursos pra te ajudar a tirar o máximo do Marketfacil:
+
+- 📋 [Checklists reutilizáveis](checklists.md) — listas prontas pra dia a dia, lançamento, pré-campanha e revisão mensal
+- 🔧 [Problemas comuns e soluções](troubleshooting.md) — troubleshooting de todas as features
+- ❓ [FAQ e suporte](../faq-e-suporte.md) — perguntas frequentes organizadas por tema
+
+## Como escolher
+
+- **"Não sei o que fazer a seguir"** → [Playbooks](../playbooks/README.md)
+- **"Algo não funciona"** → [Troubleshooting](troubleshooting.md)
+- **"Quero revisar antes de agir"** → [Checklists](checklists.md)
+- **"Tenho uma dúvida conceitual"** → [FAQ](../faq-e-suporte.md) ou [Glossário](../GLOSSARIO.md)
+- **"Preciso falar com humano"** → botão **Suporte** no menu lateral do app (abre WhatsApp)
+
+
+---
+
+## File: ajuda/checklists.md
+
+---
+title: Checklists reutilizáveis
+description: Checklists prontos para usar no dia a dia — anúncio otimizado, pré-campanha, lançamento de produto e revisão mensal.
+audience: vendedores
+keywords: [checklist, check list, lista, revisão, otimização]
+---
+
+# Checklists reutilizáveis
+
+Imprima ou salve. Use quando precisar.
+
+## ✅ Anúncio otimizado (diário)
+
+Antes de publicar ou atualizar um anúncio:
+
+- [ ] Título usa **50+ caracteres** (meta: 60 em anúncio comum, 200 em catálogo)
+- [ ] Título contém **3 a 5 palavras-chave relevantes** ([Agente de Palavras-Chave](../palavras-chave/README.md))
+- [ ] Título **não tem palavras repetidas**
+- [ ] **Pelo menos 5 fotos** em ângulos diferentes
+- [ ] Fotos no padrão **1200x1540** ([Redimensionar Imagens](../redimensionar-imagens/README.md))
+- [ ] **Todos os atributos obrigatórios** da categoria preenchidos
+- [ ] **Descrição** com ≥ 300 caracteres e sem copiar fornecedor
+- [ ] **Garantia** cadastrada (mesmo que "7 dias pela lei")
+- [ ] **Marca** verificada no INPI — você tem direito de usar ([Análise de Marca](../analise-de-marca/README.md))
+- [ ] Score ≥ **Classe B** ([Análise de Anúncios](../analise-de-anuncios/README.md))
+
+## ✅ Lançamento de produto novo (por produto)
+
+Sequência completa:
+
+- [ ] Demanda validada ([Busca de Catálogos](../busca-de-catalogos/README.md) — Concorrentes 1–5, ordenado por Mais Visitas)
+- [ ] Margem simulada positiva em 3 catálogos-candidatos ([Concorrência de Catálogo](../concorrencia-catalogo/README.md))
+- [ ] Marca checada no INPI ([Análise de Marca](../analise-de-marca/README.md))
+- [ ] EAN criado (se precisar de catálogo novo) ([Gerador de EAN](../gerador-ean/README.md))
+- [ ] Anúncio criado no Mercado Livre
+- [ ] Título otimizado (playbook [Otimizando um título](../playbooks/otimizando-titulo.md))
+- [ ] Imagens redimensionadas 1200x1540
+- [ ] Análise final ≥ Classe B
+
+## ✅ Pré-campanha de Ads (por anúncio)
+
+Antes de investir 1 real em Mercado Ads:
+
+- [ ] Anúncio em **Classe A ou B**
+- [ ] Imagens em **1200x1540**
+- [ ] **Experiência de Compra** verde
+- [ ] **Sem tags negativas** da [Auditoria de Tags](../auditoria-tags/README.md)
+- [ ] **Taxa de conversão orgânica ≥ 1%** nos últimos 7 dias
+- [ ] **TACOS máximo** definido (meta)
+- [ ] **Estoque** suficiente pra sustentar volume
+- [ ] Plano de acompanhamento no [Planejador de Ads](../planejador-de-ads/README.md)
+
+## ✅ Revisão mensal da conta
+
+Uma vez por mês, gaste 1 hora fazendo:
+
+- [ ] [Auditoria de Tags](../auditoria-tags/README.md) — escanear toda a conta
+- [ ] Exportar relatório e priorizar tag mais comum
+- [ ] Analisar **top 5 anúncios por visitas** — confirmar Classe A/B
+- [ ] Analisar **bottom 5 anúncios por vendas** — decidir: otimizar, pausar ou excluir
+- [ ] Revisar **Experiência de Compra** de todos os anúncios críticos
+- [ ] No [Planejador de Ads](../planejador-de-ads/README.md): revisar TACOS do mês e ajustar meta se necessário
+- [ ] Pesquisar 3 a 5 nichos novos no [Busca de Catálogos](../busca-de-catalogos/README.md)
+
+## ✅ Quando anúncio parou de vender (SOS)
+
+Diagnóstico rápido — siga em ordem:
+
+- [ ] Confira [Experiência de Compra](../analise-de-anuncios/experiencia-de-compra.md) — verde?
+- [ ] Confira [Auditoria de Tags](../auditoria-tags/README.md) — alguma tag nova?
+- [ ] Confira [Concorrência de Catálogo](../concorrencia-catalogo/README.md) — seu preço ainda é competitivo?
+- [ ] Confira [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md) — termos em alta mudaram?
+- [ ] Tem avaliações novas ruins? Responda imediatamente.
+- [ ] Houve mudança recente (título, foto, preço) nos últimos 14 dias? Considere reverter.
+
+## ✅ Checklist de segurança da conta
+
+Uma vez por semestre:
+
+- [ ] Senha forte no Mercado Livre (≥ 12 caracteres, sem data de nascimento)
+- [ ] Autenticação de dois fatores ativa no ML
+- [ ] Aplicativos autorizados no ML revisados — manter só Marketfacil e outros que você usa de fato
+- [ ] Dados cadastrais do [Minha Conta](../minha-conta/README.md) atualizados
+
+
+---
+
+## File: ajuda/troubleshooting.md
+
+---
+title: Problemas comuns e soluções
+description: Troubleshooting — problemas que você pode encontrar no Marketfacil e como resolver.
+audience: vendedores
+keywords: [troubleshooting, erro, problema, não funciona, solução]
+---
+
+# Problemas comuns e soluções
+
+Se algo não está funcionando como esperado, procure a situação abaixo antes de abrir chamado no suporte.
+
+## Análise de Anúncios
+
+### "Erro ao buscar anúncio" / análise não carrega
+
+**Causas possíveis:**
+1. Anúncio pausado ou excluído no Mercado Livre
+2. Token do ML expirou — vá em [Minha Conta](../minha-conta/README.md) e reconecte
+3. Link colado está truncado ou com caracteres a mais
+
+**Solução:** verifique se o anúncio está ativo, reconecte a conta, cole o link novamente.
+
+### Score mudou muito em um dia
+
+**Causas possíveis:**
+1. ML atualizou tags do anúncio (novas tags negativas)
+2. Anúncio recebeu avaliação ruim / reclamação
+3. Queda forte de visitas ou vendas
+
+**Solução:** olhe "O que melhorar" na análise — a causa aparece lá.
+
+### A análise mostra "X campos da categoria faltando" mas eu já preenchi
+
+**Causas possíveis:**
+1. Mudou de categoria e os atributos da nova são diferentes
+2. ML leva horas pra propagar mudanças de atributos
+3. Atributos foram preenchidos com valores inválidos
+
+**Solução:** espere 6 horas e analise de novo. Se persistir, confira os atributos no editor do ML.
+
+## Busca de Catálogos / Concorrência
+
+### Busca está muito lenta ou travou
+
+**Causas possíveis:**
+1. Busca muito ampla (ex: "celular" retorna milhares de catálogos)
+2. Horário de pico no Mercado Livre
+3. Problema de rede
+
+**Solução:** use termos mais específicos. Se o problema for de rede, feche a aba e abra nova.
+
+### "Carregando vendedores: X/Y" para em um número e não avança
+
+**Causas possíveis:**
+1. O Mercado Livre limitou temporariamente as requisições
+2. Alguns vendedores bloqueiam consulta pública
+
+**Solução:** os dados carregados já são utilizáveis. Para análise completa, aguarde alguns minutos e tente de novo.
+
+### Não consigo ver preço/frete de um vendedor
+
+**Causa:** o Mercado Livre bloqueia parte dos dados de terceiros em certas situações.
+
+**Solução:** nada a fazer — é limitação do ML. O Marketfacil mostra o que é público.
+
+## Palavras-Chave
+
+### Agente não encontra palavras
+
+**Causas possíveis:**
+1. Anúncio com título muito longo e preenchido — já está bem otimizado
+2. Categoria com pouca variedade lexical (ex: produtos muito específicos)
+3. Scraping do ML falhou
+
+**Solução:** se persistir, tente de novo em alguns minutos. Se o anúncio realmente está ótimo, significa que você não tem muito o que melhorar no título.
+
+### Autocompletar retorna poucas ou zero sugestões
+
+**Causa:** termo raiz muito longo ou específico demais.
+
+**Solução:** use termos mais curtos e genéricos. Ex: "máquina dragão" em vez de "máquina de cortar cabelo dragão profissional".
+
+## Redimensionar Imagens
+
+### "Perdendo exposição" persiste após redimensionar
+
+**Causa:** a imagem original tinha baixa qualidade — o redimensionamento não cria pixels que não existem.
+
+**Solução:** no Mercado Livre, use também **Melhore Sua Foto → Ajustes de Imagem → Melhorar Resolução**. Evite o "Ajuste Automático", que pode recortar.
+
+### Upload da imagem falha
+
+**Causas possíveis:**
+1. Arquivo muito grande (acima de 10 MB)
+2. Formato não suportado (use JPG ou PNG)
+3. Conexão instável
+
+## Análise de Marca
+
+### Marca conhecida não aparece
+
+**Causas possíveis:**
+1. Grafia diferente (com/sem acento, espaços)
+2. Marca registrada só no exterior (INPI é do Brasil)
+3. Marca ainda não teve pedido de registro
+
+**Solução:** tente variações. Se não aparecer, o INPI não tem registro formal — mas **ainda pode existir** propriedade de fato (Google, redes sociais).
+
+### Mostra "Em análise" — posso usar?
+
+**Risco baixo agora**, alto depois. Se a marca for concedida, o titular pode pedir retirada retroativa dos seus anúncios. Evite se puder.
+
+## Planejador de Ads
+
+### "Faz X dias que não revisa"
+
+**Causa:** você não abriu o Planejador hoje. Sua sequência pode zerar.
+
+**Solução:** entre todo dia, complete pelo menos 1 tarefa. 2 minutos por dia mantém o ritmo.
+
+### Score de Saúde caiu sem eu fazer nada
+
+**Causas possíveis:**
+1. Campanha nova com métricas instáveis (normal nas primeiras 48h)
+2. Anúncio entrou em "observação" (problema pós-venda)
+3. TACOS estourou a meta
+
+**Solução:** clique em **Ver detalhes** na Saúde dos Ads pra ver qual verificação falhou.
+
+## Gerador de EAN
+
+### EAN gerado recusado pelo Mercado Livre
+
+**Causa provável:** o produto tem catálogo existente com EAN oficial (GS1). Você precisa usar o EAN oficial nesse caso.
+
+**Solução:** verifique se o catálogo já existe no ML. Se sim, use o EAN dele.
+
+## Minha Conta
+
+### "Adicionar Conta" não funciona
+
+**Causas possíveis:**
+1. Popup bloqueado pelo navegador
+2. Não está logado no Mercado Livre em outra aba
+3. Plano não permite mais contas
+
+**Solução:** permita popup, faça login no ML em outra aba, verifique seu plano.
+
+## Problemas gerais
+
+### Tudo está lento hoje
+
+**Causas possíveis:**
+1. API do Mercado Livre com latência alta (afeta todo mundo)
+2. Você está em rede corporativa/VPN
+
+**Solução:** aguarde, tente em outra rede, ou use outro navegador.
+
+### Aparece "você não tem permissão"
+
+**Causa:** a feature exige plano pago e você está no grátis.
+
+**Solução:** upgrade na página [Minha Conta](../minha-conta/README.md).
 
 
 ---
@@ -995,46 +1320,126 @@ R: De 1 a 3 minutos dependendo do número de vendedores. Não feche a aba.
 
 ---
 title: FAQ e suporte
-description: Perguntas frequentes sobre o Marketfacil e como falar com o suporte.
+description: Perguntas frequentes sobre o Marketfacil organizadas por tema — conta, features, dados, pagamento e suporte.
 audience: vendedores
-keywords: [faq, suporte, contato, ajuda]
+keywords: [faq, suporte, contato, ajuda, dúvidas]
 ---
 
 # FAQ e suporte
 
-## Perguntas frequentes
+Perguntas frequentes separadas por tema. Se não achar sua dúvida aqui, fale com o [suporte](#suporte).
+
+## Conta e cadastro
 
 **P: Preciso instalar algo para usar o Marketfacil?**
 R: Não. O Marketfacil roda 100% no navegador em [app.marketfacil.com.br](https://app.marketfacil.com.br).
 
-**P: O Marketfacil acessa minha conta do Mercado Livre?**
-R: Sim, via login oficial do Mercado Livre (OAuth). Você autoriza apenas permissões de leitura dos seus anúncios e métricas. O Marketfacil **nunca** tem sua senha.
+**P: Como crio conta?**
+R: Veja [Criar conta](primeiros-passos/criar-conta.md).
+
+**P: Esqueci minha senha. E agora?**
+R: Na tela de login, clique em "Perdi Minha Senha" e siga as instruções do email.
+
+**P: Posso usar a mesma conta em mais de um computador?**
+R: Sim. Seu login funciona em qualquer navegador.
+
+**P: Uso celular. Dá pra usar o Marketfacil?**
+R: Sim, o app é responsivo. Telas com muitos gráficos (Concorrência, Planejador de Ads) ficam melhores no desktop.
+
+## Conexão com Mercado Livre
+
+**P: O Marketfacil acessa minha senha do Mercado Livre?**
+R: **Nunca.** A conexão é feita via login oficial do ML (OAuth). Você autoriza apenas permissões de leitura — o Marketfacil nunca vê sua senha.
+
+**P: O Marketfacil pode criar ou pausar anúncios?**
+R: Não. O Marketfacil é **somente leitura**. Ele mostra insights mas não altera seus anúncios.
+
+**P: Quantas contas do Mercado Livre posso conectar?**
+R: Depende do seu plano. Consulte em [Minha Conta](minha-conta/README.md).
+
+**P: Meu token expirou. Como renovar?**
+R: Clique em **Reconectar** na página [Minha Conta](minha-conta/README.md). A renovação é automática na maior parte do tempo — se não for, ela é manual pelo botão.
+
+## Features
+
+**P: Qual a diferença entre as 3 features de palavras-chave?**
+R:
+- [Agente de Palavras-Chave](palavras-chave/README.md) — palavras que **faltam** no seu título comparado a concorrentes
+- [Autocompletar](palavras-chave-autocompletar/README.md) — o que **compradores digitam** nos buscadores
+- [Categoria](palavras-chave-categoria/README.md) — termos em **tendência** na categoria
+
+**P: Posso analisar anúncio de concorrente?**
+R: Depende da feature:
+- [Análise de Anúncios](analise-de-anuncios/README.md) — só da sua conta
+- [Concorrência de Catálogo](concorrencia-catalogo/README.md) — qualquer catálogo público (inclui concorrentes)
+- [Palavras-Chave da Categoria](palavras-chave-categoria/README.md) — qualquer anúncio público
+
+**P: Por que umas análises demoram mais que outras?**
+R: Features que consultam **muitos concorrentes em paralelo** (Concorrência, Busca de Catálogos) podem levar 1 a 3 minutos. Features de anúncio único são rápidas (segundos).
+
+**P: A IA do Agente de Palavras-Chave inventa palavras?**
+R: Não. Ela sugere combinações baseadas em **palavras reais** do Mercado Livre.
+
+**P: A Busca INPI é oficial?**
+R: Sim. Os dados vêm direto da base pública do INPI.
+
+## Score e análise
+
+**P: Meu score mudou do nada. Por quê?**
+R: O score é recalculado a cada análise, com base em dados atuais do Mercado Livre. Mudanças em avaliações, tags, visitas refletem no score.
+
+**P: Qual score é "bom"?**
+R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
+
+**P: Meu anúncio está em Classe A mas não vende. Por quê?**
+R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
+
+**P: Corrigi um problema e o score não mudou. Por quê?**
+R: O ML leva de 3 a 6 horas pra re-indexar mudanças. Analise de novo mais tarde.
+
+## Dados e segurança
 
 **P: Meus dados ficam seguros?**
-R: Sim. Tokens de acesso são armazenados de forma criptografada e nunca expostos em URLs ou logs.
+R: Sim. Tokens de acesso são armazenados criptografados e nunca expostos em URLs ou logs.
 
-**P: Posso usar em celular?**
-R: Sim, o app é responsivo. Algumas telas com muitos gráficos ficam melhores no desktop.
+**P: O Marketfacil vende meus dados para terceiros?**
+R: **Não.** Seus dados são usados exclusivamente para te entregar os insights do app.
 
-**P: Quantas análises posso fazer por dia?**
-R: Depende do seu plano. Há limite por minuto para evitar sobrecarga na API do Mercado Livre.
+**P: Posso excluir minha conta e meus dados?**
+R: Sim. Entre em contato pelo [suporte](#suporte) pra solicitar.
 
-**P: O score do meu anúncio mudou do nada. Por quê?**
-R: O score é recalculado toda análise, com base em dados atuais do anúncio. Se você alterou título, imagens, atributos ou se o Mercado Livre mudou tags, o score reflete isso.
+**P: E se meu plano vencer?**
+R: Você perde acesso às features pagas, mas sua conta e dados ficam preservados caso você volte.
+
+## Pagamento e planos
+
+**P: Como cancelo meu plano pago?**
+R: Entre em contato pelo [suporte](#suporte). Cancelamentos são processados pelo time.
+
+**P: Posso mudar de plano?**
+R: Sim — upgrade e downgrade são permitidos. Fale com o suporte.
+
+**P: Por que algumas features dizem "Disponível somente para assinantes"?**
+R: Features avançadas (Busca de Catálogos, Concorrência, Agente de Palavras-Chave, Redimensionar, Gerador de EAN) são exclusivas de planos pagos.
 
 ## Suporte
 
 Para dúvidas, bugs ou sugestões:
 
-- **Email**: *(preencher)*
-- **WhatsApp**: *(preencher)*
-- **Comunidade**: *(preencher)*
+- **WhatsApp** — disponível dentro do app pelo botão **Suporte** no menu lateral
+- **Email** — *(preencher)*
+- **Comunidade** — *(preencher)*
 
 Quando reportar um problema, envie:
 
 1. O link do anúncio (MLB) envolvido
 2. O print da tela com o problema
 3. Horário aproximado em que aconteceu
+4. Passos que você seguiu antes do erro
+
+{% hint style="success" %}
+✅ **Dica pro suporte responder mais rápido:** descreva o **resultado esperado** e o **resultado obtido**. Ex: "Esperava ver score A, mas apareceu C mesmo após corrigir atributos."
+{% endhint %}
 
 
 ---
@@ -1476,6 +1881,469 @@ R: Causas comuns: concorrente agressivo no mesmo termo (subindo o CPC), queda de
 
 **P: Vale investir em ad se meu ACOS for maior que minha margem?**
 R: Normalmente não — você vende no prejuízo. Exceção: quando o ad está **ajudando o ranking orgânico** (você vê isso olhando o TACOS em vez do ACOS).
+
+
+---
+
+## File: playbooks/README.md
+
+---
+title: Playbooks
+description: Workflows prontos combinando as features do Marketfacil para resolver situações reais do dia a dia do vendedor.
+audience: vendedores
+keywords: [playbook, workflow, receita, passo a passo, caso de uso]
+---
+
+# Playbooks
+
+As features do Marketfacil são mais poderosas quando usadas **em conjunto**. Os playbooks abaixo são sequências testadas — cada um resolve uma situação concreta combinando 3 a 5 features.
+
+## Playbooks disponíveis
+
+- 🚀 [**Lançando um produto novo**](lancando-produto-novo.md) — do zero até o primeiro anúncio otimizado
+- 🔧 [**Recuperando um anúncio que parou de vender**](recuperando-anuncio.md) — diagnóstico e plano de ação
+- 🎯 [**Escolhendo um novo nicho**](escolhendo-nicho.md) — validação antes de investir
+- ✍️ [**Otimizando um título**](otimizando-titulo.md) — do título atual ao título ideal
+- 📈 [**Preparando uma campanha de Ads**](preparando-campanha-ads.md) — checklist pré-investimento
+
+## Como usar os playbooks
+
+1. Escolha o playbook que mais se parece com sua situação.
+2. Siga os passos na ordem — cada passo produz um dado que alimenta o próximo.
+3. Ao terminar, você tem **ações concretas** para aplicar no Mercado Livre.
+
+{% hint style="info" %}
+💡 Cada playbook referencia features específicas do Marketfacil. Se não sabe o que é alguma, o link te leva à explicação.
+{% endhint %}
+
+
+---
+
+## File: playbooks/escolhendo-nicho.md
+
+---
+title: Escolhendo um novo nicho
+description: Validação em 5 passos antes de investir em um novo nicho — demanda, concorrência, margem e barreiras.
+audience: vendedores
+feature: playbook
+keywords: [nicho, validação, novo produto, pesquisa, oportunidade]
+---
+
+# Playbook: Escolhendo um novo nicho
+
+Antes de comprar estoque ou assinar contrato com fornecedor, valide o nicho em 30 minutos.
+
+## Passo 1 — Explorar a base de catálogos
+
+**Feature:** [Busca de Catálogos](../busca-de-catalogos/README.md)
+
+1. Pense em 3 a 5 palavras-chave genéricas do nicho (ex: "suporte notebook", "porta copos carro").
+2. Para cada palavra, rode a busca.
+3. Aplique filtros:
+   - **Concorrentes: 1–5** — nichos com espaço
+   - **Ordenar: Mais Visitas** — com demanda
+4. Anote 10 a 15 catálogos candidatos com: ID, faixa de preço, nº de concorrentes, visitas.
+
+## Passo 2 — Analisar concorrência em profundidade
+
+**Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md)
+
+Escolha 3 catálogos mais atraentes e para cada um:
+
+1. Rode a análise completa.
+2. Simule sua margem (custo estimado + frete + imposto).
+3. Olhe a tabela de competidores: tem **loja oficial**? Vendedor com **1000+ vendas**? Isso vira barreira.
+
+**🚩 Red flags**:
+- Loja oficial dominante
+- Top 3 vendedores com **reputação verde escuro** e milhares de vendas
+- Spread de preço muito apertado (margem de todos achatada)
+
+## Passo 3 — Verificar marca registrada
+
+**Feature:** [Análise de Marca](../analise-de-marca/README.md)
+
+Se o nicho envolve uma marca específica:
+
+1. Pesquise a marca no INPI.
+2. Se a marca existir em classes 1–34 e você **não for revendedor**, mude de plano.
+
+## Passo 4 — Entender a linguagem do comprador
+
+**Feature:** [Palavras-Chave do Autocompletar](../palavras-chave-autocompletar/README.md)
+
+1. Digite o termo genérico do nicho.
+2. Veja as sugestões — os compradores falam assim mesmo?
+3. Se as sugestões incluem marcas específicas que você não vende, seu nicho é dominado por marcas, não por categoria.
+
+## Passo 5 — Decisão final
+
+Passou em **todos os 4 passos**? O nicho é promissor. Se falhou em algum:
+
+| Falhou em | Significado |
+|-----------|-------------|
+| Passo 1 (sem visitas) | Nicho com pouca demanda |
+| Passo 2 (concorrência forte) | Barreira alta, difícil entrar |
+| Passo 2 (margem apertada) | Entra em guerra de preço |
+| Passo 3 (marca registrada) | Risco legal ou precisa de autorização |
+| Passo 4 (dominado por marca) | Não compete com marca sem ser autorizado |
+
+## Checklist de decisão
+
+Marque os itens antes de investir:
+
+- [ ] Encontrei ao menos 3 catálogos com Concorrentes 1–5 e Mais Visitas > 50/90d
+- [ ] Minha margem simulada é ≥ 20% no menor preço do catálogo
+- [ ] Não há marca registrada em classe de produto bloqueando o nicho
+- [ ] Os compradores usam linguagem genérica (não só marca)
+- [ ] Tenho fornecedor confiável com preço que cabe no simulador
+
+5/5 → vai em frente. Menos → replaneje.
+
+
+---
+
+## File: playbooks/lancando-produto-novo.md
+
+---
+title: Lançando um produto novo
+description: Playbook completo do zero até o primeiro anúncio otimizado — validação, checagem legal, criação e otimização.
+audience: vendedores
+feature: playbook
+keywords: [lançamento, produto novo, novo anúncio, validação, playbook]
+---
+
+# Playbook: Lançando um produto novo
+
+Você tem um produto em mente e quer lançar certo desde o início. Este playbook te guia pelos **5 passos** essenciais antes e depois de criar o anúncio.
+
+## Passo 1 — Valide a oportunidade (15 min)
+
+**Feature:** [Busca de Catálogos](../busca-de-catalogos/README.md)
+
+1. Pesquise pelo nome genérico do produto (ex: "máquina de cortar cabelo").
+2. Filtre por **Concorrentes: 1–5** pra ver catálogos com pouca disputa.
+3. Ordene por **Mais Visitas** pra priorizar produtos com demanda real.
+4. Anote os catálogos que parecem atraentes (ID + faixa de preço).
+
+**✅ Pronto quando:** você identifica 2 a 3 catálogos-candidatos com volume razoável e concorrência baixa.
+
+## Passo 2 — Analise a concorrência (10 min por catálogo)
+
+**Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md)
+
+Para cada catálogo-candidato:
+
+1. Cole o link → Analisar catálogo.
+2. Use o **Simulador de Margem** com seu **custo + frete + imposto**.
+3. Veja se seu preço-alvo ainda fica na faixa competitiva.
+4. Verifique quem é o **líder** e se ele é forte (reputação + Full) ou fraco (sua chance de assumir).
+
+**✅ Pronto quando:** você escolhe **1 catálogo** com margem saudável e líder vencível.
+
+## Passo 3 — Verifique a marca (5 min)
+
+**Feature:** [Análise de Marca](../analise-de-marca/README.md)
+
+1. Digite a marca do produto (se houver) → Analisar.
+2. Se a marca tiver registro em **classes 1–34**, **não use o nome da marca** no seu anúncio — você não é o dono nem revendedor autorizado.
+3. Se só tiver em classes 35–45, pode usar (baixo risco).
+
+**✅ Pronto quando:** você confirma que pode usar (ou não) o nome da marca.
+
+## Passo 4 — Crie o anúncio com título otimizado (20 min)
+
+**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave do Autocompletar](../palavras-chave-autocompletar/README.md)
+
+1. Crie o anúncio no Mercado Livre com título provisório.
+2. Analise no **Agente de Palavras-Chave** → copie as palavras faltantes.
+3. Complemente com o **Autocompletar** — descubra variações que compradores digitam.
+4. Use o **Gerador de Títulos IA** do Agente como base.
+5. Edite o título final até ficar natural e usar ~60 caracteres.
+
+**✅ Pronto quando:** seu anúncio tem título no limite de caracteres e palavras-chave relevantes.
+
+## Passo 5 — Analise e ajuste (10 min)
+
+**Feature:** [Análise de Anúncios](../analise-de-anuncios/README.md)
+
+1. Cole o link do seu anúncio recém-criado → Analisar.
+2. Veja a classe (A a F). Se menor que B, leia "O que melhorar" e corrija.
+3. Confira: imagens 1200x1540 ([Redimensionar Imagens](../redimensionar-imagens/README.md)), todos os atributos, descrição, garantia.
+4. Reanalise até atingir Classe A ou B.
+
+**✅ Pronto quando:** seu anúncio está em **Classe A ou B** antes de começar a rodar.
+
+## Próximos passos
+
+Depois de lançar:
+
+- Acompanhe visitas e vendas nos primeiros 7 dias
+- Se tudo estiver bem, considere [preparar uma campanha de Ads](preparando-campanha-ads.md)
+- Se não vender, use o playbook [Recuperando um anúncio](recuperando-anuncio.md)
+
+
+---
+
+## File: playbooks/otimizando-titulo.md
+
+---
+title: Otimizando um título
+description: Transforme um título medíocre em um título que vende — combinação de 3 features de palavras-chave.
+audience: vendedores
+feature: playbook
+keywords: [título, otimização, palavras-chave, SEO ML, reescrever]
+---
+
+# Playbook: Otimizando um título
+
+Título é o fator que mais influencia visitas no Mercado Livre. Este playbook usa **3 features em conjunto** para reescrever um título ruim em 20 minutos.
+
+## Pré-requisito
+
+- Anúncio já criado (qualquer título)
+- Link ou ID do anúncio
+
+## Passo 1 — Radiografia do título atual
+
+**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md)
+
+1. Cole o link → Analisar.
+2. Observe:
+   - **Palavras indexadas** (verde = título, azul = atributos)
+   - **Palavras Faltando** (quantas e quais)
+   - **Barra de estatísticas** — quantos combos de IA foram gerados
+
+3. Anote as **5 palavras com maior score** na lista de faltantes.
+
+## Passo 2 — Descobrir como compradores falam
+
+**Feature:** [Palavras-Chave do Autocompletar](../palavras-chave-autocompletar/README.md)
+
+1. Digite o termo raiz do seu produto (sem marcas).
+2. Veja as sugestões reais dos buscadores.
+3. Cruze com a lista do passo 1 — palavras que aparecem em **ambos** têm prioridade.
+
+## Passo 3 — Pegar tendências da categoria
+
+**Feature:** [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
+
+1. Cole o link do seu anúncio → Analisar.
+2. Veja palavras em alta **agora**.
+3. Adicione à sua lista de prioridade.
+
+## Passo 4 — Montar o novo título
+
+Regras:
+
+- **Comece pelo principal** (o nome genérico do produto).
+- Encaixe 3 a 5 **palavras prioritárias** (que apareceram em ≥2 features).
+- Inclua **atributo diferenciador** (cor, tamanho, característica).
+- Use **todo o espaço disponível** (60 em anúncio comum, 200 em catálogo).
+- **Evite** palavras repetidas, sinônimos muito parecidos e adjetivos genéricos ("melhor", "top").
+
+**Exemplo** — anúncio de máquina de cortar cabelo:
+
+- ❌ Antes: `Máquina de cortar cabelo profissional`
+- ✅ Depois: `Máquina Cortar Cabelo Kemei KM-2299 Sem Fio USB Bivolt 3 Pentes`
+
+## Passo 5 — Validar
+
+**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) (de novo)
+
+1. Depois de alterar o título no ML, espere ~3 horas pra re-indexar.
+2. Rode o Agente novamente.
+3. A lista "Palavras Faltando" diminuiu?
+4. A classe do anúncio melhorou?
+
+## Regras de ouro
+
+- **Mude o título no máximo a cada 7 dias.** Mudanças frequentes confundem o algoritmo.
+- **Não use ALL CAPS.** ML penaliza.
+- **Não repita palavras** mesmo que mudando ordem — redundância não ajuda.
+- **Não copie título de concorrente idêntico.** Diferencie com algum atributo único.
+
+
+---
+
+## File: playbooks/preparando-campanha-ads.md
+
+---
+title: Preparando uma campanha de Ads
+description: Checklist pré-investimento em Mercado Ads — só invista em anúncios prontos para converter.
+audience: vendedores
+feature: playbook
+keywords: [campanha, ads, mercado ads, product ads, checklist]
+---
+
+# Playbook: Preparando uma campanha de Ads
+
+**Mercado Ads amplifica o que já funciona.** Se seu anúncio não converte organicamente, Ads só vai queimar dinheiro. Este checklist garante que você investe só em anúncios prontos.
+
+## Pré-requisito
+
+- Pelo menos **7 dias** de visitas orgânicas no anúncio (pra ter dados reais)
+- Produto em estoque suficiente pra sustentar volume
+
+## Checklist pré-campanha
+
+### 1. Score mínimo do anúncio
+**Feature:** [Análise de Anúncios](../analise-de-anuncios/README.md)
+
+- [ ] O anúncio está em **Classe A ou B**?
+
+Se não, **não invista ainda**. Otimize primeiro (veja playbook [Otimizando um título](otimizando-titulo.md)).
+
+### 2. Imagens no padrão
+**Feature:** [Redimensionar Imagens](../redimensionar-imagens/README.md)
+
+- [ ] Imagens em **1200x1540**?
+- [ ] Pelo menos **5 fotos** em ângulos diferentes?
+- [ ] Sem tag "Perdendo exposição"?
+
+### 3. Reputação do anúncio
+**Feature:** [Experiência de Compra](../analise-de-anuncios/experiencia-de-compra.md)
+
+- [ ] Indicador em **verde**?
+- [ ] Sem reclamações abertas?
+
+Ad amplifica tráfego, mas **tráfego em anúncio com reputação ruim aumenta reclamações** — efeito dominó ruim.
+
+### 4. Taxa de conversão orgânica
+Olhe no painel do Mercado Livre:
+
+- [ ] **Taxa de conversão ≥ 1%** nos últimos 7 dias?
+
+Se a conversão orgânica está baixa, o problema **não é falta de tráfego** — é o anúncio. Ads não vai resolver.
+
+### 5. Tags da conta limpas
+**Feature:** [Auditoria de Tags](../auditoria-tags/README.md)
+
+- [ ] Escaneie a conta e resolva tags negativas antes de investir.
+
+### 6. Meta de TACOS definida
+**Feature:** [Planejador de Ads](../planejador-de-ads/README.md) + [Entendendo TACOS](../planejador-de-ads/entendendo-tacos.md)
+
+- [ ] Você sabe qual **TACOS máximo** seu negócio suporta?
+- [ ] Regra prática: 5–15% é saudável. Mais que isso compromete margem.
+
+## Lançando a campanha
+
+No Mercado Ads:
+
+1. Crie a campanha com orçamento **pequeno** (R$ 10–30/dia pra começar).
+2. Use **lance automático** nos primeiros dias.
+3. Abra o [Planejador de Ads](../planejador-de-ads/README.md) diariamente e complete as **Tarefas de Hoje**.
+
+## Semana 1 — acompanhamento diário
+
+- [ ] Dia 3 — TACOS está dentro da meta?
+- [ ] Dia 5 — CTR está ≥ 1%? Se não, problema de criativo (foto/título).
+- [ ] Dia 7 — ACOS menor que sua margem? Se sim, pode escalar orçamento.
+
+## Quando desligar a campanha
+
+Desligue imediatamente se:
+
+- TACOS > 2x a meta por 3 dias seguidos
+- CVR < 0.5% por 5 dias (gente clica mas não compra)
+- Estoque acabando (ads gera quebra de expectativa)
+- Experiência de Compra começou a cair
+
+## Quando escalar
+
+Escale o orçamento (+50%) se, após 2 semanas:
+
+- TACOS consistentemente abaixo da meta
+- ROAS > 5x
+- Anúncio mantendo Classe A/B
+- Estoque sustentável
+
+
+---
+
+## File: playbooks/recuperando-anuncio.md
+
+---
+title: Recuperando um anúncio que parou de vender
+description: Diagnóstico estruturado quando um anúncio bom de repente para de vender — descobrir a causa e agir.
+audience: vendedores
+feature: playbook
+keywords: [recuperação, diagnóstico, anúncio parado, sem visitas, tags negativas]
+---
+
+# Playbook: Recuperando um anúncio que parou de vender
+
+Anúncio que vendia bem agora está com poucas visitas ou vendas. Este playbook te dá um **roteiro de diagnóstico** pra encontrar a causa e o plano de ação.
+
+## Passo 1 — Análise de surface (5 min)
+
+**Feature:** [Análise de Anúncios](../analise-de-anuncios/README.md)
+
+1. Cole o link do anúncio → Analisar.
+2. Olhe **três indicadores**:
+   - **Classe** — caiu de A/B pra C/D?
+   - **Visitas** — tendência em queda?
+   - **Experiência de Compra** — alguma alerta (amarelo, vermelho)?
+
+3. A lista "O que melhorar" já aponta a maioria dos problemas.
+
+## Passo 2 — Checar Experiência de Compra (2 min)
+
+**Feature:** [Experiência de Compra](../analise-de-anuncios/experiencia-de-compra.md)
+
+Se o indicador estiver em atenção ou crítico:
+
+- É a causa mais comum de queda súbita de vendas.
+- Resolva **reclamações abertas** no Mercado Livre imediatamente.
+- Verifique se o produto entregue corresponde ao anunciado.
+
+## Passo 3 — Verificar tags penalizantes (10 min)
+
+**Feature:** [Auditoria de Tags](../auditoria-tags/README.md)
+
+1. Rode a Auditoria de Tags na sua conta.
+2. Procure tags negativas **neste anúncio específico** (ex: `poor_quality_picture`, `perdendo_exposicao`).
+3. Para cada tag, aplique a correção:
+   - Foto em baixa qualidade → use [Redimensionar Imagens](../redimensionar-imagens/README.md) + padrão 1200x1540.
+   - Perdendo exposição → resolução + talvez Melhorar Resolução do próprio ML.
+
+## Passo 4 — Revisar o título (10 min)
+
+**Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
+
+Mercado Livre muda tendências — títulos bons ficam obsoletos.
+
+1. Rode o Agente e veja palavras faltantes novas.
+2. Rode Palavras-Chave da Categoria — veja o que está em **tendência agora**.
+3. Se aparecerem termos novos relevantes, **reescreva o título** incorporando-os.
+
+## Passo 5 — Verificar concorrência (5 min)
+
+**Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md) (se for catálogo)
+
+Se o anúncio está em um catálogo:
+
+1. Analise a concorrência.
+2. Seu **preço final** ainda é competitivo?
+3. Apareceu um novo líder agressivo?
+4. Novos vendedores com Full/Frete Grátis?
+
+## Passo 6 — Plano de ação
+
+Baseado no diagnóstico, decida:
+
+| Problema encontrado | Ação recomendada |
+|---------------------|------------------|
+| Experiência de Compra crítica | Resolver reclamações + considerar pausar/recriar |
+| Tags negativas de foto | Redimensionar imagens + aplicar no ML |
+| Título defasado | Reescrever com palavras em tendência |
+| Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
+| Nada obvio | Pequenas melhorias em atributos e descrição; esperar re-indexação (3–7 dias) |
+
+{% hint style="warning" %}
+⚠️ Evite mudar tudo de uma vez. Ajuste **um ou dois fatores** e espere 7 dias pra ver o efeito antes de mexer mais. Mudanças em cascata confundem o algoritmo do ML.
+{% endhint %}
 
 
 ---

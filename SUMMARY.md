@@ -10,6 +10,15 @@
 * [Conectar Mercado Livre](primeiros-passos/conectar-mercado-livre.md)
 * [Tour da plataforma](primeiros-passos/tour-da-plataforma.md)
 
+## Playbooks
+
+* [Visão geral](playbooks/README.md)
+* [Lançando um produto novo](playbooks/lancando-produto-novo.md)
+* [Recuperando um anúncio que parou de vender](playbooks/recuperando-anuncio.md)
+* [Escolhendo um novo nicho](playbooks/escolhendo-nicho.md)
+* [Otimizando um título](playbooks/otimizando-titulo.md)
+* [Preparando uma campanha de Ads](playbooks/preparando-campanha-ads.md)
+
 ## Análise de Anúncios
 
 * [Visão geral](analise-de-anuncios/README.md)
@@ -64,5 +73,8 @@
 
 ## Ajuda
 
+* [Visão geral](ajuda/README.md)
+* [Checklists reutilizáveis](ajuda/checklists.md)
+* [Problemas comuns e soluções](ajuda/troubleshooting.md)
 * [FAQ e suporte](faq-e-suporte.md)
 * [Changelog](CHANGELOG.md)

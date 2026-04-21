@@ -29,9 +29,20 @@ Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada pági
 - 📊 [Gerador de EAN](gerador-ean/README.md) — gere EANs para criar catálogos
 - 👤 [Minha Conta](minha-conta/README.md) — plano e conexões do Mercado Livre
 
+## Playbooks — usando as features em conjunto
+
+As features ficam muito mais poderosas combinadas. Os [Playbooks](playbooks/README.md) são workflows prontos pra situações reais:
+
+- 🚀 [Lançando um produto novo](playbooks/lancando-produto-novo.md)
+- 🔧 [Recuperando um anúncio que parou de vender](playbooks/recuperando-anuncio.md)
+- 🎯 [Escolhendo um novo nicho](playbooks/escolhendo-nicho.md)
+- ✍️ [Otimizando um título](playbooks/otimizando-titulo.md)
+- 📈 [Preparando uma campanha de Ads](playbooks/preparando-campanha-ads.md)
+
 ## Links úteis
 
 - **App**: [app.marketfacil.com.br](https://app.marketfacil.com.br)
 - **Site**: [marketfacil.com.br](https://marketfacil.com.br)
+- **Ajuda**: [checklists, troubleshooting e FAQ](ajuda/README.md)
 - **Suporte**: [FAQ e contato](faq-e-suporte.md)
 - **Glossário**: [termos técnicos explicados](GLOSSARIO.md)
