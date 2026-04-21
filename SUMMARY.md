@@ -17,26 +17,50 @@
 * [Entendendo o score](analise-de-anuncios/entendendo-o-score.md)
 * [Experiência de Compra](analise-de-anuncios/experiencia-de-compra.md)
 
-## Buscador de Catálogos
+## Análise de Marca
 
-* [Visão geral](buscador-de-catalogos/README.md)
+* [Visão geral](analise-de-marca/README.md)
+
+## Busca de Catálogos
+
+* [Visão geral](busca-de-catalogos/README.md)
 
 ## Concorrência de Catálogo
 
 * [Visão geral](concorrencia-catalogo/README.md)
 
-## Palavras-Chave
+## Agente de Palavras-Chave
 
 * [Visão geral](palavras-chave/README.md)
 
-## Busca INPI
+## Auditoria de Tags
 
-* [Visão geral](busca-inpi/README.md)
+* [Visão geral](auditoria-tags/README.md)
 
-## Product Ads
+## Redimensionar Imagens
 
-* [Visão geral](product-ads/README.md)
-* [Entendendo TACOS, ACOS e ROAS](product-ads/entendendo-tacos.md)
+* [Visão geral](redimensionar-imagens/README.md)
+
+## Palavras-Chave do Autocompletar
+
+* [Visão geral](palavras-chave-autocompletar/README.md)
+
+## Palavras-Chave da Categoria
+
+* [Visão geral](palavras-chave-categoria/README.md)
+
+## Planejador de Ads
+
+* [Visão geral](planejador-de-ads/README.md)
+* [Entendendo TACOS, ACOS e ROAS](planejador-de-ads/entendendo-tacos.md)
+
+## Gerador de EAN
+
+* [Visão geral](gerador-ean/README.md)
+
+## Minha Conta
+
+* [Visão geral](minha-conta/README.md)
 
 ## Ajuda
 

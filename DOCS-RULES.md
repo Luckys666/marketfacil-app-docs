@@ -102,3 +102,29 @@ Toda mudança relevante entra em [`CHANGELOG.md`](CHANGELOG.md) com data ISO (`Y
 - **Nunca** coloque tokens, API keys, URLs privadas de proxy, IDs internos do Bubble, nomes de elementos técnicos (bTKMH, bTKbr etc.) em páginas públicas.
 - Prints **não podem** mostrar: emails de outros usuários, tokens, sessões, dados de pagamento. Borre antes de subir.
 - Em dúvida: **não publique**. Pergunte antes.
+
+## 9. Sem "ouro" — esconder diferenciais competitivos
+
+Esta é uma **doc pública**, acessível também pelos concorrentes. Explique **o que a feature faz e como usar**, sem expor os internals que dão vantagem competitiva ao Marketfacil.
+
+### ❌ NÃO revelar:
+- Fórmulas exatas de score ("−15 pontos se título < 40 chars")
+- Pesos e thresholds específicos dos algoritmos
+- Categorias internas da IA ("7 categorias: Sinônimos, Pesquisa, Utilidades…")
+- Quais endpoints do proxy são usados
+- Lógica exata de ranking ou de "sinal de oportunidade"
+- Número exato de requests por operação
+- Modelos de IA usados (gpt-5-mini, gpt-4o-mini, etc.)
+- Retry counts, timeouts, rate limits específicos
+
+### ✅ OK revelar:
+- O que a feature faz em alto nível
+- Quando e por que usar
+- Tipos de input aceitos
+- Como ler/interpretar o output **qualitativamente** (sem pesos)
+- Dicas de uso baseadas em experiência
+- Faixas qualitativas ("score alto = bom, baixo = ruim")
+- Limites públicos da API do Mercado Livre
+- Termos do próprio ML (ACOS, TACOS, BPP, tags, níveis)
+
+**Regra de ouro:** se um concorrente leria o texto e saberia replicar a feature, removeu "ouro" demais. O texto deve ajudar o **vendedor a usar**, não ensinar a **construir**.

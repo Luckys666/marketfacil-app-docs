@@ -1,25 +1,33 @@
 ---
 title: Manual do Marketfacil
-description: Documentação oficial para vendedores do Mercado Livre que usam o Marketfacil — análise de anúncios, concorrência de catálogo, palavras-chave, busca INPI e Product Ads.
+description: Documentação oficial para vendedores do Mercado Livre que usam o Marketfacil — análise de anúncios, análise de marca, busca de catálogos, concorrência, palavras-chave, auditoria de tags, redimensionador de imagens e planejador de ads.
 audience: vendedores
 keywords: [marketfacil, mercado livre, manual, vendedor, documentação]
 ---
 
 # Bem-vindo ao Marketfacil
 
-O **Marketfacil** é a plataforma de inteligência para vendedores do Mercado Livre: você analisa anúncios, descobre concorrência de catálogo, encontra palavras-chave que faltam no seu título, verifica marcas no INPI e otimiza Product Ads — tudo em um só lugar.
+O **Marketfacil** é a plataforma de inteligência para vendedores do Mercado Livre. Em um só lugar você analisa anúncios, verifica marcas no INPI, encontra catálogos com oportunidade, analisa concorrência, descobre palavras-chave, audita tags do Mercado Livre, redimensiona imagens, gera EANs e planeja suas campanhas de Ads.
 
-Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada página tem prints e vídeos curtos mostrando o passo a passo.
+Este manual foi feito para **você, vendedor**, sem jargão técnico. Cada página tem prints e vídeos mostrando como usar.
+
+![Painel inicial do Marketfacil com a seção "Explore o App!" e menu lateral de features](assets/screenshots/dashboard-v1.png)
 
 ## Por onde começar
 
-- 🚀 [Primeiros passos](primeiros-passos/README.md) — criar conta, conectar Mercado Livre, tour da plataforma
-- 🔍 [Análise de Anúncios](analise-de-anuncios/README.md) — descubra o score do seu anúncio e o que melhorar
-- 📦 [Buscador de Catálogos](buscador-de-catalogos/README.md) — encontre catálogos com boa oportunidade
-- 🏆 [Concorrência de Catálogo](concorrencia-catalogo/README.md) — analise quem compete com você
-- 🔑 [Palavras-Chave](palavras-chave/README.md) — descubra palavras que faltam no seu título
-- 🏷️ [Busca INPI](busca-inpi/README.md) — verifique risco de BPP antes de anunciar
-- 📣 [Product Ads](product-ads/README.md) — entenda TACOS, ACOS e ROAS
+- 🚀 [Primeiros passos](primeiros-passos/README.md) — criar conta, conectar Mercado Livre, tour
+- 🔍 [Análise de Anúncios](analise-de-anuncios/README.md) — score do seu anúncio e o que melhorar
+- 🏷️ [Análise de Marca](analise-de-marca/README.md) — consulta oficial no INPI
+- 📦 [Busca de Catálogos](busca-de-catalogos/README.md) — encontre catálogos com oportunidade
+- 🏆 [Concorrência de Catálogo](concorrencia-catalogo/README.md) — quem compete com você
+- 🔑 [Agente de Palavras-Chave](palavras-chave/README.md) — palavras que faltam + gerador de títulos IA
+- ✅ [Auditoria de Tags](auditoria-tags/README.md) — escaneie toda sua conta em busca de tags negativas
+- 📸 [Redimensionar Imagens](redimensionar-imagens/README.md) — padrão 1200x1540 do Mercado Livre
+- 🔎 [Palavras-Chave do Autocompletar](palavras-chave-autocompletar/README.md) — o que os compradores digitam
+- 📑 [Palavras-Chave da Categoria](palavras-chave-categoria/README.md) — tendências da categoria do seu produto
+- 📣 [Planejador de Ads](planejador-de-ads/README.md) — saúde das suas campanhas
+- 📊 [Gerador de EAN](gerador-ean/README.md) — gere EANs para criar catálogos
+- 👤 [Minha Conta](minha-conta/README.md) — plano e conexões do Mercado Livre
 
 ## Links úteis
 

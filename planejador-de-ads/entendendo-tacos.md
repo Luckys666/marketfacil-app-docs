@@ -1,6 +1,6 @@
 ---
 title: Entendendo TACOS, ACOS e ROAS
-description: As três métricas essenciais de Product Ads explicadas com exemplos práticos.
+description: As três métricas essenciais do Mercado Ads explicadas com exemplos práticos.
 audience: vendedores
 feature: product-ads
 keywords: [tacos, acos, roas, métricas, product ads, anúncios pagos]

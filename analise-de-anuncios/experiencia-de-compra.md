@@ -8,7 +8,7 @@ keywords: [experiência de compra, reputação, purchase experience, devoluçõe
 
 # Experiência de Compra
 
-A seção **Experiência de Compra** mostra um indicador oficial do Mercado Livre sobre como os compradores avaliam a experiência com o seu anúncio específico. É um dado que o ML calcula a partir de:
+A seção **Experiência de Compra** mostra um indicador oficial do Mercado Livre sobre como os compradores avaliam a experiência com o seu anúncio específico. O ML calcula esse indicador a partir de:
 
 - Devoluções
 - Reclamações pós-venda
@@ -18,7 +18,7 @@ A seção **Experiência de Compra** mostra um indicador oficial do Mercado Livr
 ## O que aparece na tela
 
 - **Nota de reputação** — verde (bom), amarelo (atenção), vermelho (crítico)
-- **Status** — rótulo do Mercado Livre (ex: "Ótima experiência", "Em observação")
+- **Status** — rótulo do Mercado Livre
 - **Título e subtítulo** — explicação em texto do que está afetando a reputação
 
 ## Por que isso importa
@@ -32,8 +32,8 @@ Anúncios com experiência de compra baixa:
 ## Como melhorar
 
 1. Revise as **reclamações abertas** no Mercado Livre e resolva-as o quanto antes.
-2. Verifique se o título e as fotos do anúncio correspondem exatamente ao que é entregue — divergência é a principal causa de devolução.
-3. Garanta embalagem adequada para evitar quebras no transporte.
+2. Verifique se o título e as fotos correspondem exatamente ao que é entregue — divergência é a principal causa de devolução.
+3. Garanta embalagem adequada para evitar quebras.
 4. Responda perguntas de compradores em até 24 horas.
 5. Se a reputação do anúncio está crítica, considere **pausar e recriar** o anúncio após resolver a causa raiz.
 
@@ -46,4 +46,4 @@ R: **Do anúncio específico.** Uma conta pode ter anúncios com ótima reputaç
 R: Depende do volume de vendas do anúncio. Quanto mais vendas sem problemas novos, mais rápido o Mercado Livre recalcula o indicador. Pode levar de dias a semanas.
 
 **P: Por que meu anúncio parou de vender do nada?**
-R: Confira a seção Experiência de Compra. Se estiver em "Em observação" ou pior, o ML pode ter reduzido o alcance dele.
+R: Confira a seção Experiência de Compra. Se estiver em observação ou pior, o ML pode ter reduzido o alcance dele.

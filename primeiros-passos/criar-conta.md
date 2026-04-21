@@ -15,7 +15,7 @@ keywords: [criar conta, cadastro, registro, signup]
 3. Preencha: email, senha e nome.
 4. Confirme seu email através do link que chega na sua caixa de entrada.
 
-> 📸 *Screenshot pendente: tela de cadastro com campos de email/senha.*
+![Landing page do Marketfacil com headline "A ferramenta completa para otimizar anúncios" e botão Assinar Agora](../assets/screenshots/landing-page-v1.png)
 
 ## Pronto
 

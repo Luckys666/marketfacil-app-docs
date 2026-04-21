@@ -2,59 +2,95 @@
 title: Glossário
 description: Termos técnicos do Mercado Livre e do Marketfacil explicados para vendedores.
 audience: vendedores
-keywords: [glossário, mlb, mlbu, catálogo, tacos, acos, bpp, inpi]
+keywords: [glossário, mlb, mlbu, catálogo, tacos, acos, bpp, inpi, ean, tags]
 ---
 
 # Glossário
 
-Termos que você vai encontrar no app e no Mercado Livre.
+Termos que você encontra no Marketfacil e no Mercado Livre.
 
 ## Identificadores de anúncio
 
-**MLB** — Prefixo de um anúncio comum no Mercado Livre Brasil. Exemplo: `MLB4466906893`. É o ID que aparece no link do anúncio.
+**MLB** — Prefixo de um anúncio no Mercado Livre Brasil. Exemplo: `MLB4138204735`. ID que aparece no link.
 
-**MLBU** — Prefixo de um "produto de usuário", que é um agrupador que você cria para organizar seus anúncios. Um MLBU pode ter vários MLBs vinculados.
+**MLBU** — Prefixo de um "produto de usuário" — agrupador que você cria para organizar vários MLBs do mesmo produto (ex: o mesmo item em cores diferentes).
 
-**Catálogo** — Página única criada pelo Mercado Livre que agrupa vários vendedores disputando o mesmo produto. O link tem `/p/MLBxxx`. Quem ganha a "Buy Box" fica em destaque.
+**Catálogo** — Página única criada pelo Mercado Livre que agrupa vendedores disputando o mesmo produto. Link tem `/p/MLBxxx`. Quem ganha o destaque fica no topo.
 
-## Métricas de anúncio
+## Métricas e indicadores de anúncio
 
-**Score** — Nota de 0 a 100 que o Marketfacil dá ao seu anúncio com base em título, descrição, imagens, atributos e tags. Quanto maior, melhor otimizado.
+**Score** — Nota de 0 a 100 que o Marketfacil dá ao seu anúncio. Quanto maior, melhor otimizado.
 
-**Tags negativas** — Marcações do Mercado Livre que penalizam seu anúncio (ex: baixa qualidade de imagem, título mal formado).
+**Classe** — Rótulo qualitativo do score: A (quase perfeito) a F (crítico).
 
-**Experiência de Compra** — Indicador do Mercado Livre sobre a reputação do anúncio com base em devoluções, reclamações e problemas pós-venda.
+**Nível ML** — Porcentagem oficial do Mercado Livre sobre a qualidade da conta (ex: 76% Profissional).
 
-## Product Ads (anúncios patrocinados)
+**Tags** — Marcações automáticas do Mercado Livre nos seus anúncios. Algumas positivas, outras negativas.
 
-**ACOS** — *Advertising Cost of Sales*. Quanto você gastou em anúncios dividido pela receita gerada **pelos anúncios**. Quanto menor, mais eficiente a campanha.
+**Tags negativas** — Marcações que penalizam o anúncio (foto ruim, perdendo exposição, etc.).
 
-**TACOS** — *Total ACOS*. Gasto com anúncios dividido pela receita **total** (orgânica + paga). É a métrica mais importante: mostra o impacto real do investimento.
+**Experiência de Compra** — Indicador oficial do ML sobre a reputação do anúncio (devoluções, reclamações, problemas pós-venda).
 
-**ROAS** — *Return on Ad Spend*. Receita dos anúncios dividida pelo gasto. É o inverso do ACOS.
+## Product Ads e Mercado Ads
+
+**Product Ads / Mercado Ads** — Sistema de anúncios patrocinados do Mercado Livre.
+
+**ACOS** — *Advertising Cost of Sales*. Gasto em ads ÷ Receita dos ads.
+
+**TACOS** — *Total ACOS*. Gasto em ads ÷ Receita total (orgânica + paga). **Métrica mais importante**.
+
+**ROAS** — *Return on Ad Spend*. Receita dos ads ÷ Gasto em ads (inverso do ACOS).
 
 **CPC** — Custo por clique.
 
-**CTR** — *Click-Through Rate*. Porcentagem de pessoas que viram o anúncio e clicaram.
+**CTR** — *Click-Through Rate*. % de pessoas que viram o anúncio e clicaram.
 
-**CVR** — *Conversion Rate*. Porcentagem de cliques que viraram venda.
+**CVR** — *Conversion Rate*. % de cliques que viraram venda.
 
-**SOV** — *Share of Voice*. Sua participação nas impressões de uma categoria ou palavra-chave.
+**SOV** — *Share of Voice*. Sua participação nas impressões da categoria/palavra-chave.
 
 ## INPI e marcas
 
 **INPI** — Instituto Nacional da Propriedade Industrial. Registra marcas no Brasil.
 
-**BPP** — *Brand Protection Program*. Programa do Mercado Livre que permite ao dono de uma marca registrada pedir a retirada de anúncios de terceiros.
+**BPP** — *Brand Protection Program*. Programa do Mercado Livre que permite ao dono de uma marca pedir a retirada de anúncios de terceiros.
 
-**Classes 1–34** — Classes de **produtos** no INPI. Marca registrada nestas classes pode ser usada para derrubar anúncios via BPP. **Alto risco** para o vendedor.
+**Classes 1–34** — Classes de **produtos** no INPI. Marca nestas classes pode derrubar anúncios via BPP. **Alto risco**.
 
-**Classes 35–45** — Classes de **serviços**. Não permitem retirada de anúncios de produtos via BPP. **Baixo risco**.
+**Classes 35–45** — Classes de **serviços**. Não permitem retirada de anúncios de produtos. **Baixo risco**.
+
+## Catálogos e EANs
+
+**EAN** — Código de barras internacional. No Mercado Livre, necessário para criar catálogo. Pode ser gerado no [Gerador de EAN](gerador-ean/README.md) (não homologado GS1) ou oficial (GS1 Brasil).
+
+**GS1** — Organização que homologa EANs oficiais no Brasil.
+
+**GTIN** — Sinônimo de EAN em algumas contextos.
+
+**Buy Box** — Anúncio em destaque no catálogo — quem tem melhor combinação de preço, frete e reputação.
+
+**Líder** — Vendedor com mais visitas no catálogo nos últimos 90 dias.
+
+## Logística (Mercado Envios)
+
+**Full** — Mercado Envios Full. Produto armazenado nos galpões do ML, entrega mais rápida.
+
+**Flex** — Entrega no mesmo dia em regiões selecionadas.
+
+**ME1 / ME2** — Modalidades do Mercado Envios (tipos de logística).
+
+**Coleta** — ML retira no seu endereço.
+
+**Places** — Produto retirado em ponto físico do ML.
 
 ## Termos do app
 
-**Palavras-chave faltantes** — Palavras que outros anúncios usam e o seu não usa. O Agente de Palavras-Chave te mostra quais adicionar ao título.
+**Agente de Palavras-Chave** — Ferramenta de IA que sugere palavras-chave faltantes e gera títulos otimizados.
 
-**Concorrência de Catálogo** — Lista dos vendedores que disputam o mesmo catálogo que você, com preço, frete e visitas.
+**Concorrência de Catálogo** — Lista dos vendedores que disputam o mesmo catálogo, com preço, frete, visitas.
 
-**Buscador de Catálogos** — Ferramenta para achar catálogos com pouca concorrência e boa oportunidade de venda.
+**Busca de Catálogos** — Ferramenta para achar catálogos com filtros (logística, frete, concorrência).
+
+**Auditoria de Tags** — Escaneia toda sua conta em busca de tags nos anúncios.
+
+**Análise de Marca** — Consulta oficial ao INPI pelo Marketfacil.

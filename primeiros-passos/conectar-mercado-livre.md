@@ -18,7 +18,7 @@ Para o Marketfacil analisar seus anúncios, você precisa autorizar o acesso aos
 4. Revise as permissões solicitadas e clique em **Autorizar**.
 5. Você volta automaticamente para o Marketfacil, já conectado.
 
-> 📸 *Screenshot pendente: tela de autorização do Mercado Livre.*
+![Tela de Login do Marketfacil com campos Email, Senha e botão Entrar](../assets/screenshots/login-v1.png)
 
 ## O que o Marketfacil acessa
 
