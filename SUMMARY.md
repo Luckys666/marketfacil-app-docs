@@ -9,6 +9,7 @@
 * [Criar conta](primeiros-passos/criar-conta.md)
 * [Conectar Mercado Livre](primeiros-passos/conectar-mercado-livre.md)
 * [Tour da plataforma](primeiros-passos/tour-da-plataforma.md)
+* [Planos e pagamento](primeiros-passos/planos-e-pagamento.md)
 
 ## Playbooks
 

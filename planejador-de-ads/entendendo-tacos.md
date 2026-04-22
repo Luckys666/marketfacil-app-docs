@@ -34,6 +34,9 @@ Ou seja: 20% da receita do anúncio pago foi consumida pelo próprio custo do ad
 
 **Fórmula:** `Gasto com ads ÷ Receita TOTAL (orgânica + paga)`
 
+Do próprio Marketfacil:
+> "Custo de publicidade sobre faturamento TOTAL (ads + orgânico). TACOS = Gasto ÷ Faturamento Total. É o que consome sua margem."
+
 Por que é a mais importante? Porque mede o impacto do investimento em ads **na sua receita total**, não só na receita do anúncio pago.
 
 Exemplo:

@@ -11,6 +11,17 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-22
 
+### Enriquecimento com dados factuais do app
+
+Segunda rodada de observação do app via Playwright para adicionar informação factual:
+
+- **Nova página: Planos e pagamento** (`primeiros-passos/planos-e-pagamento.md`) com preços reais observados em `/pagamento`: Mensal R$ 39,90, Anual R$ 33,90 (cobrança única R$ 406,80/ano), Semestral R$ 37,90. Todos dão acesso completo.
+- **Planejador de Ads — Saúde dos Ads**: adicionada seção com as **7 verificações** reais do app, pontuação e alvos: ROAS positivo (+20), Meta de TACOS definida (+10), Dependência de ads saudável (+15), Orçamento não limitando entrega (+15), Sem alertas críticos (+10), Sem anúncios queimando dinheiro (+10), Campanhas batendo meta de ROAS (+10).
+- **Planejador de Ads — Onboarding**: documentado o fluxo de 3 perguntas ao abrir pela primeira vez (margem média, meta de TACOS, foco da estratégia: Rentabilidade vs Visibilidade).
+- **Entendendo TACOS**: adicionado texto oficial do app sobre o que é TACOS.
+- **FAQ atualizado**: preços dos planos, política de reembolso (7 dias), inexistência de limites de uso, email de suporte (contatomarketfacil@gmail.com).
+- SUMMARY.md inclui Planos e pagamento na seção Primeiros passos.
+
 ### Correção crítica — removidos números e regras inventados dos playbooks
 
 Identificado e removido conjunto amplo de thresholds, prazos e benchmarks que haviam sido inseridos nos playbooks e checklists como "rules of thumb" mas não vieram do app nem foram validados. Exemplos do que foi removido: "TACOS 5-15% saudável" (já corrigido antes), "30 dias sem vendas" como gatilho de reescrita de título, "14 dias de espera pós-mudança", "3-6 horas para re-indexar", "5 fotos mínimas", "descrição 300 caracteres", "CTR ≥ 1%", "CVR < 0.5%", "ROAS > 5x", "orçamento R$ 10-30/dia", "dia 3 / dia 5 / dia 7", "margem ≥ 20%", tempos estimados por passo ("5 min", "20 min"), entre outros. Substituídos por framing qualitativo ("depende do seu negócio", "sem vendas recentes", "dê tempo para o ML re-indexar"). Nova seção 9 adicionada ao DOCS-RULES: "Honestidade — nunca inventar números ou regras". Princípio: documentação é contrato de confiança.

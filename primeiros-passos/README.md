@@ -12,6 +12,7 @@ Se você está chegando agora no Marketfacil, esta é a sequência recomendada:
 1. [Criar sua conta](criar-conta.md)
 2. [Conectar seu Mercado Livre](conectar-mercado-livre.md)
 3. [Tour da plataforma](tour-da-plataforma.md)
+4. [Planos e pagamento](planos-e-pagamento.md)
 
 Depois disso, escolha por onde começar:
 

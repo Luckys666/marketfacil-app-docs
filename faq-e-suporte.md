@@ -26,6 +26,9 @@ R: Sim. Seu login funciona em qualquer navegador.
 **P: Uso celular. Dá pra usar o Marketfacil?**
 R: Sim, o app é responsivo. Telas com muitos gráficos (Concorrência, Planejador de Ads) ficam melhores no desktop.
 
+**P: Tem limite de uso por conta?**
+R: Atualmente não há limites — use as ferramentas à vontade dentro do seu plano.
+
 ## Conexão com Mercado Livre
 
 **P: O Marketfacil acessa minha senha do Mercado Livre?**
@@ -96,22 +99,30 @@ R: Você perde acesso às features pagas, mas sua conta e dados ficam preservado
 
 ## Pagamento e planos
 
-**P: Como cancelo meu plano pago?**
+**P: Quais são os planos?**
+R: Mensal (R$ 39,90/mês), Anual (R$ 33,90/mês, cobrança única R$ 406,80/ano) e Semestral (R$ 37,90/mês). Todos dão acesso completo a todas as ferramentas. Detalhes em [Planos e pagamento](primeiros-passos/planos-e-pagamento.md).
+
+**P: Tem limite de uso?**
+R: **Não.** Atualmente não há limite de análises, buscas ou qualquer outra ferramenta.
+
+**P: Posso pedir reembolso?**
+R: Sim, dentro de **7 dias** após a contratação (política padrão). Fale com o suporte nesse prazo.
+
+**P: Como cancelo meu plano?**
 R: Entre em contato pelo [suporte](#suporte). Cancelamentos são processados pelo time.
 
 **P: Posso mudar de plano?**
 R: Sim — upgrade e downgrade são permitidos. Fale com o suporte.
 
 **P: Por que algumas features dizem "Disponível somente para assinantes"?**
-R: Features avançadas (Busca de Catálogos, Concorrência, Agente de Palavras-Chave, Redimensionar, Gerador de EAN) são exclusivas de planos pagos.
+R: Features avançadas são exclusivas de planos pagos.
 
 ## Suporte
 
 Para dúvidas, bugs ou sugestões:
 
-- **WhatsApp** — disponível dentro do app pelo botão **Suporte** no menu lateral
-- **Email** — *(preencher)*
-- **Comunidade** — *(preencher)*
+- **WhatsApp** — botão **Suporte** no menu lateral do app (abre conversa direta)
+- **Email** — [contatomarketfacil@gmail.com](mailto:contatomarketfacil@gmail.com)
 
 Quando reportar um problema, envie:
 
