@@ -63,7 +63,7 @@ Para cada catálogo-candidato:
 1. Cole o link do seu anúncio recém-criado → Analisar.
 2. Veja a classe e a lista "O que melhorar".
 3. Corrija os pontos apontados (atributos, descrição, garantia, imagens).
-4. Reanalise depois que o ML re-indexar.
+4. Reanalise depois de cerca de 1 hora (tempo que o ML leva para incluir as mudanças nas buscas).
 
 **✅ Pronto quando:** os principais pontos técnicos estão endereçados antes de o anúncio começar a receber tráfego.
 

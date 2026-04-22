@@ -242,7 +242,7 @@ Toda mudança relevante entra em [`CHANGELOG.md`](CHANGELOG.md) com data ISO (`Y
 ### Framing correto quando não há base factual
 - "Depende do seu negócio"
 - "Use seu julgamento"
-- "Dê tempo para o ML re-indexar"
+- "O ML leva cerca de 1 hora para incluir palavras novas nas buscas" (confirmado pelo user)
 - "Sem vendas recentes" (sem especificar quantos dias)
 
 **Princípio:** documentação é contrato de confiança. Número inventado que não funcionar na prática destrói a credibilidade.
@@ -594,7 +594,7 @@ Use antes de publicar um anúncio pela primeira vez:
 
 ## ✅ Anúncio JÁ VENDENDO — o que você pode ajustar
 
-Anúncio com vendas pede cuidado. **Mexa apenas no que não reseta a indexação:**
+Anúncio com vendas pede cuidado. O ML recompensa volume de vendas atuais — mexa apenas no que **não derruba a exposição**:
 
 - [ ] Atributos faltantes
 - [ ] Descrição (pode reescrever sem risco de perder ranking)
@@ -703,10 +703,10 @@ Se algo não está funcionando como esperado, procure a situação abaixo antes 
 
 **Causas possíveis:**
 1. Mudou de categoria e os atributos da nova são diferentes
-2. ML leva algum tempo pra propagar mudanças de atributos
+2. ML ainda não propagou as mudanças (leva cerca de 1 hora)
 3. Atributos foram preenchidos com valores inválidos
 
-**Solução:** dê tempo para o ML re-indexar e analise de novo. Se persistir, confira os atributos no editor do ML.
+**Solução:** espere pelo menos 1 hora e analise de novo. Se persistir, confira os atributos no editor do ML.
 
 ## Busca de Catálogos / Concorrência
 
@@ -1013,10 +1013,10 @@ E ainda:
 3. Melhore as fotos (padrão 1200x1540, veja [Redimensionar Imagens](../redimensionar-imagens/README.md)).
 4. Se tiver tags negativas, entenda a causa e corrija.
 5. **Se o anúncio ainda não vende**, considere otimizar o título com o [Agente de Palavras-Chave](../palavras-chave/README.md).
-6. Reanalise depois — o Mercado Livre precisa de algum tempo para re-indexar mudanças.
+6. Reanalise depois — o Mercado Livre leva cerca de 1 hora para incluir palavras novas nas buscas após mudanças no anúncio.
 
 {% hint style="warning" %}
-⚠️ **Anúncio que vende = título fechado.** Se seu anúncio tem vendas recentes mas o score está em B/C, **não mexa no título**. Mudar título de anúncio com histórico derruba a exposição. Foque nos outros pontos (fotos, atributos, descrição) que melhoram o score sem resetar indexação.
+⚠️ **Anúncio que vende = título fechado.** Se seu anúncio tem vendas recentes mas o score está em B/C, **não mexa no título**. O Mercado Livre recompensa volume de vendas atuais — trocar o título corta a exposição, corta as visitas, corta as vendas. Foque em fotos, atributos, descrição e garantia — esses melhoram o score sem afetar a exposição.
 {% endhint %}
 
 ## Perguntas frequentes
@@ -1028,7 +1028,7 @@ R: Acima de 80, os ganhos marginais são pequenos em qualidade técnica. Foque e
 R: **Cuidado.** Se o anúncio tem vendas, o histórico no ML vale mais que o score técnico. Corrija apenas os pontos que **não mexem no título** (atributos, descrição, fotos, garantia). Jamais troque o título de anúncio com histórico de vendas — derruba a exposição.
 
 **P: Corrigi um problema mas o score não mudou. Por quê?**
-R: O Mercado Livre precisa de algum tempo para re-indexar mudanças no anúncio. Analise de novo mais tarde.
+R: O Mercado Livre leva cerca de 1 hora para incluir palavras novas nas buscas após mudanças no anúncio. Analise de novo depois desse tempo.
 
 **P: O score considera o preço?**
 R: Não. Preço é estratégia comercial — você decide. O score mede a qualidade técnica e a reputação do anúncio.
@@ -1552,10 +1552,10 @@ R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
 R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
 
 **P: Meu anúncio vende bem mas tem score em C. Devo otimizar?**
-R: **Cuidado.** Vendas valem mais que score técnico. Se mexer no **título**, reseta a indexação do ML e a exposição cai. Melhore só o que não exige mudar título (fotos, atributos, descrição, garantia). Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
+R: **Cuidado.** Vendas valem mais que score técnico — visitas importam, mas vendas importam mais. Se mexer no **título**, a exposição cai (o ML deixa de recompensar o volume atual). Melhore só o que não exige mudar título: fotos, atributos, descrição, garantia. Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
 
 **P: Corrigi um problema e o score não mudou. Por quê?**
-R: O ML precisa de algum tempo para re-indexar mudanças. Analise de novo mais tarde.
+R: O ML leva cerca de 1 hora para incluir palavras novas nas buscas após mudanças no anúncio. Analise de novo depois desse tempo.
 
 ## Dados e segurança
 
@@ -1874,7 +1874,7 @@ Sugestões editáveis com contagem de caracteres, respeitando o limite (60 em an
 {% hint style="danger" %}
 🚫 **Não mude o título de anúncios que já têm vendas recentes.**
 
-Alterar o título de um anúncio com histórico de vendas **reseta a indexação** e **derruba a exposição** no Mercado Livre. O algoritmo do ML recompensa histórico, e esse histórico está vinculado ao título atual.
+O Mercado Livre recompensa **volume de vendas atuais** — se o anúncio vende, fica em cima; se parar de vender, cai. Mexer no título derruba a exposição, corta as visitas, corta as vendas e o ML deixa de recompensar. É um ciclo negativo que começa com essa única mudança.
 
 Use o Agente principalmente para:
 - Criar título de anúncio **novo**
@@ -1902,7 +1902,7 @@ R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode de
 R: Pode. Mas edite antes pra garantir que reflete seu produto e soa natural.
 
 **P: Meu anúncio vende há meses, mas o score está em C. Devo mexer no título?**
-R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Se vende, o título funciona para o algoritmo do ML. Trabalhe fotos, descrição e atributos.
+R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Visitas importam, mas **vendas importam mais** — é o volume de vendas que o ML recompensa. Se o anúncio vende, o título está funcionando. Trabalhe fotos, descrição e atributos.
 
 ## Veja também
 
@@ -2307,7 +2307,7 @@ Para cada catálogo-candidato:
 1. Cole o link do seu anúncio recém-criado → Analisar.
 2. Veja a classe e a lista "O que melhorar".
 3. Corrija os pontos apontados (atributos, descrição, garantia, imagens).
-4. Reanalise depois que o ML re-indexar.
+4. Reanalise depois de cerca de 1 hora (tempo que o ML leva para incluir as mudanças nas buscas).
 
 **✅ Pronto quando:** os principais pontos técnicos estão endereçados antes de o anúncio começar a receber tráfego.
 
@@ -2339,7 +2339,7 @@ O título é um dos fatores mais importantes para que seu anúncio seja encontra
 {% hint style="danger" %}
 🚫 **Não modifique o título de anúncios que já têm vendas recentes.**
 
-Qualquer mudança no título **reseta a indexação** do Mercado Livre e **derruba a exposição** — mesmo que o novo título seja tecnicamente melhor. O algoritmo do ML recompensa histórico, e histórico é vinculado ao título atual.
+O Mercado Livre recompensa **volume de vendas atuais** — anúncio que vende se mantém no topo; anúncio que para de vender cai. Trocar o título derruba a exposição, o que corta as visitas, o que corta as vendas — e o ML deixa de recompensar o anúncio. É o oposto do que você quer.
 
 Trabalhe outros pontos nesses casos: fotos, descrição, atributos, preço, frete.
 {% endhint %}
@@ -2417,7 +2417,7 @@ Regras:
 - **Não use ALL CAPS.** ML penaliza.
 - **Não repita palavras** mesmo mudando ordem.
 - **Não copie título de concorrente idêntico.** Diferencie com atributo único.
-- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição enquanto o ML re-indexa.
+- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição — o ML demora cerca de 1 hora pra incluir palavras novas nas buscas, e você perde o efeito do volume de vendas atual.
 
 ## Perguntas frequentes
 
@@ -2544,7 +2544,7 @@ Anúncio que vendia bem agora está com poucas visitas ou vendas. Este playbook 
 {% hint style="danger" %}
 🚫 **Anúncio com vendas + mudança de título = piora ainda maior da exposição.**
 
-Se o anúncio já tem histórico de vendas, **não mexa no título** nem como tentativa de recuperação. Trocar o título reseta a indexação do Mercado Livre e derruba a exposição — e em um anúncio que já está com queda, isso só acelera a descida. Ataque as outras causas primeiro.
+O Mercado Livre recompensa **volume de vendas atuais**. Se o anúncio ainda tem alguma venda, mexer no título derruba a exposição, o que corta as visitas, o que corta as vendas — e o ML deixa de recompensar. Em um anúncio que já está em queda, isso acelera a descida. Ataque as outras causas primeiro.
 {% endhint %}
 
 ## Passo 1 — Análise inicial
@@ -2595,7 +2595,7 @@ Se o anúncio está em um catálogo:
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
 
 {% hint style="danger" %}
-🚫 **Só mexa no título se o anúncio está sem vendas recentes** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título reseta a indexação — vale o risco apenas quando o anúncio já não tem histórico a preservar.
+🚫 **Só mexa no título se o anúncio está sem vendas recentes** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título derruba a exposição — vale o risco apenas quando o anúncio já não tem vendas que o algoritmo do ML esteja recompensando.
 {% endhint %}
 
 1. Rode o Agente e veja palavras faltantes novas.
@@ -2611,10 +2611,10 @@ Baseado no diagnóstico, decida:
 |---------------------|------------------|
 | Experiência de Compra crítica | Resolver reclamações + considerar pausar/recriar |
 | Tags negativas de foto | Redimensionar imagens + aplicar no ML |
-| Título defasado **e sem vendas recentes** | Reescrever com palavras em tendência (aceitar reset de indexação) |
+| Título defasado **e sem vendas recentes** | Reescrever com palavras em tendência (aceitar queda inicial de exposição enquanto o ML reindexa) |
 | Título defasado **mas ainda com algumas vendas** | **Não reescrever** — trabalhe fotos, descrição, preço, frete |
 | Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
-| Nada óbvio | Pequenas melhorias em atributos e descrição; dar tempo para o ML re-indexar |
+| Nada óbvio | Pequenas melhorias em atributos e descrição; esperar cerca de 1 hora para o ML incluir nas buscas |
 
 {% hint style="success" %}
 ✅ **O segredo é fazer tudo bem feito.** Resolva cada causa identificada (reclamações, tags, imagens, preço, frete) com atenção ao detalhe. Não se trata de mudar "aos poucos" — se trata de mudar **corretamente**.

@@ -52,7 +52,7 @@ Sugestões editáveis com contagem de caracteres, respeitando o limite (60 em an
 {% hint style="danger" %}
 🚫 **Não mude o título de anúncios que já têm vendas recentes.**
 
-Alterar o título de um anúncio com histórico de vendas **reseta a indexação** e **derruba a exposição** no Mercado Livre. O algoritmo do ML recompensa histórico, e esse histórico está vinculado ao título atual.
+O Mercado Livre recompensa **volume de vendas atuais** — se o anúncio vende, fica em cima; se parar de vender, cai. Mexer no título derruba a exposição, corta as visitas, corta as vendas e o ML deixa de recompensar. É um ciclo negativo que começa com essa única mudança.
 
 Use o Agente principalmente para:
 - Criar título de anúncio **novo**
@@ -80,7 +80,7 @@ R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode de
 R: Pode. Mas edite antes pra garantir que reflete seu produto e soa natural.
 
 **P: Meu anúncio vende há meses, mas o score está em C. Devo mexer no título?**
-R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Se vende, o título funciona para o algoritmo do ML. Trabalhe fotos, descrição e atributos.
+R: **Não.** Score técnico é sobre otimização — vendas são sobre conversão. Visitas importam, mas **vendas importam mais** — é o volume de vendas que o ML recompensa. Se o anúncio vende, o título está funcionando. Trabalhe fotos, descrição e atributos.
 
 ## Veja também
 

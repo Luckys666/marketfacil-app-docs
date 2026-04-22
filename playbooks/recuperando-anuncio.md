@@ -13,7 +13,7 @@ Anúncio que vendia bem agora está com poucas visitas ou vendas. Este playbook 
 {% hint style="danger" %}
 🚫 **Anúncio com vendas + mudança de título = piora ainda maior da exposição.**
 
-Se o anúncio já tem histórico de vendas, **não mexa no título** nem como tentativa de recuperação. Trocar o título reseta a indexação do Mercado Livre e derruba a exposição — e em um anúncio que já está com queda, isso só acelera a descida. Ataque as outras causas primeiro.
+O Mercado Livre recompensa **volume de vendas atuais**. Se o anúncio ainda tem alguma venda, mexer no título derruba a exposição, o que corta as visitas, o que corta as vendas — e o ML deixa de recompensar. Em um anúncio que já está em queda, isso acelera a descida. Ataque as outras causas primeiro.
 {% endhint %}
 
 ## Passo 1 — Análise inicial
@@ -64,7 +64,7 @@ Se o anúncio está em um catálogo:
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
 
 {% hint style="danger" %}
-🚫 **Só mexa no título se o anúncio está sem vendas recentes** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título reseta a indexação — vale o risco apenas quando o anúncio já não tem histórico a preservar.
+🚫 **Só mexa no título se o anúncio está sem vendas recentes** e você já descartou todas as causas anteriores (Experiência de Compra, tags, concorrência). Alterar título derruba a exposição — vale o risco apenas quando o anúncio já não tem vendas que o algoritmo do ML esteja recompensando.
 {% endhint %}
 
 1. Rode o Agente e veja palavras faltantes novas.
@@ -80,10 +80,10 @@ Baseado no diagnóstico, decida:
 |---------------------|------------------|
 | Experiência de Compra crítica | Resolver reclamações + considerar pausar/recriar |
 | Tags negativas de foto | Redimensionar imagens + aplicar no ML |
-| Título defasado **e sem vendas recentes** | Reescrever com palavras em tendência (aceitar reset de indexação) |
+| Título defasado **e sem vendas recentes** | Reescrever com palavras em tendência (aceitar queda inicial de exposição enquanto o ML reindexa) |
 | Título defasado **mas ainda com algumas vendas** | **Não reescrever** — trabalhe fotos, descrição, preço, frete |
 | Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
-| Nada óbvio | Pequenas melhorias em atributos e descrição; dar tempo para o ML re-indexar |
+| Nada óbvio | Pequenas melhorias em atributos e descrição; esperar cerca de 1 hora para o ML incluir nas buscas |
 
 {% hint style="success" %}
 ✅ **O segredo é fazer tudo bem feito.** Resolva cada causa identificada (reclamações, tags, imagens, preço, frete) com atenção ao detalhe. Não se trata de mudar "aos poucos" — se trata de mudar **corretamente**.

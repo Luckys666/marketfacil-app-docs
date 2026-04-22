@@ -78,10 +78,10 @@ R: **Classe A ou B** é considerado bem otimizado. Abaixo de C merece atenção.
 R: O score mede **qualidade técnica**, não conversão. Vendas dependem de preço, frete, reputação, sazonalidade. Use os [playbooks](playbooks/README.md) pra diagnosticar.
 
 **P: Meu anúncio vende bem mas tem score em C. Devo otimizar?**
-R: **Cuidado.** Vendas valem mais que score técnico. Se mexer no **título**, reseta a indexação do ML e a exposição cai. Melhore só o que não exige mudar título (fotos, atributos, descrição, garantia). Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
+R: **Cuidado.** Vendas valem mais que score técnico — visitas importam, mas vendas importam mais. Se mexer no **título**, a exposição cai (o ML deixa de recompensar o volume atual). Melhore só o que não exige mudar título: fotos, atributos, descrição, garantia. Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
 
 **P: Corrigi um problema e o score não mudou. Por quê?**
-R: O ML precisa de algum tempo para re-indexar mudanças. Analise de novo mais tarde.
+R: O ML leva cerca de 1 hora para incluir palavras novas nas buscas após mudanças no anúncio. Analise de novo depois desse tempo.
 
 ## Dados e segurança
 

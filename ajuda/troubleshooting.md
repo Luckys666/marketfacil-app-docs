@@ -33,10 +33,10 @@ Se algo não está funcionando como esperado, procure a situação abaixo antes 
 
 **Causas possíveis:**
 1. Mudou de categoria e os atributos da nova são diferentes
-2. ML leva algum tempo pra propagar mudanças de atributos
+2. ML ainda não propagou as mudanças (leva cerca de 1 hora)
 3. Atributos foram preenchidos com valores inválidos
 
-**Solução:** dê tempo para o ML re-indexar e analise de novo. Se persistir, confira os atributos no editor do ML.
+**Solução:** espere pelo menos 1 hora e analise de novo. Se persistir, confira os atributos no editor do ML.
 
 ## Busca de Catálogos / Concorrência
 

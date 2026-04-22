@@ -27,7 +27,7 @@ Use antes de publicar um anúncio pela primeira vez:
 
 ## ✅ Anúncio JÁ VENDENDO — o que você pode ajustar
 
-Anúncio com vendas pede cuidado. **Mexa apenas no que não reseta a indexação:**
+Anúncio com vendas pede cuidado. O ML recompensa volume de vendas atuais — mexa apenas no que **não derruba a exposição**:
 
 - [ ] Atributos faltantes
 - [ ] Descrição (pode reescrever sem risco de perder ranking)

@@ -127,7 +127,7 @@ Toda mudança relevante entra em [`CHANGELOG.md`](CHANGELOG.md) com data ISO (`Y
 ### Framing correto quando não há base factual
 - "Depende do seu negócio"
 - "Use seu julgamento"
-- "Dê tempo para o ML re-indexar"
+- "O ML leva cerca de 1 hora para incluir palavras novas nas buscas" (confirmado pelo user)
 - "Sem vendas recentes" (sem especificar quantos dias)
 
 **Princípio:** documentação é contrato de confiança. Número inventado que não funcionar na prática destrói a credibilidade.

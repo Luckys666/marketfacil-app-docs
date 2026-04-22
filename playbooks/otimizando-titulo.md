@@ -13,7 +13,7 @@ O título é um dos fatores mais importantes para que seu anúncio seja encontra
 {% hint style="danger" %}
 🚫 **Não modifique o título de anúncios que já têm vendas recentes.**
 
-Qualquer mudança no título **reseta a indexação** do Mercado Livre e **derruba a exposição** — mesmo que o novo título seja tecnicamente melhor. O algoritmo do ML recompensa histórico, e histórico é vinculado ao título atual.
+O Mercado Livre recompensa **volume de vendas atuais** — anúncio que vende se mantém no topo; anúncio que para de vender cai. Trocar o título derruba a exposição, o que corta as visitas, o que corta as vendas — e o ML deixa de recompensar o anúncio. É o oposto do que você quer.
 
 Trabalhe outros pontos nesses casos: fotos, descrição, atributos, preço, frete.
 {% endhint %}
@@ -91,7 +91,7 @@ Regras:
 - **Não use ALL CAPS.** ML penaliza.
 - **Não repita palavras** mesmo mudando ordem.
 - **Não copie título de concorrente idêntico.** Diferencie com atributo único.
-- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição enquanto o ML re-indexa.
+- **Se precisar mudar** (ex: correção de erro grave), prepare-se para perder exposição — o ML demora cerca de 1 hora pra incluir palavras novas nas buscas, e você perde o efeito do volume de vendas atual.
 
 ## Perguntas frequentes
 
