@@ -108,7 +108,7 @@ Se algo não está funcionando como esperado, procure a situação abaixo antes 
 
 ### Mostra "Em análise" — posso usar?
 
-**Risco baixo agora**, alto depois. Se a marca for concedida, o titular pode pedir retirada retroativa dos seus anúncios. Evite se puder.
+**Evite.** Enquanto o pedido está em análise, o titular ainda não tem o registro concedido para acionar BPP — mas, se for concedida, ele pode pedir retirada **retroativa** dos seus anúncios. Além disso, o pedido de marca em si já indica intenção de proteger aquele nome, então o risco legal existe. Considere apenas marcas **sem qualquer registro** no INPI.
 
 ## Planejador de Ads
 
