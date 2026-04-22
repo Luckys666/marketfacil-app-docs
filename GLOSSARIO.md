@@ -73,15 +73,31 @@ Termos que você encontra no Marketfacil e no Mercado Livre.
 
 ## Logística (Mercado Envios)
 
+Categorias vindas direto da API do Mercado Livre. Termos oficiais do ML — aparecem nos filtros da [Busca de Catálogos](busca-de-catalogos/README.md) e no painel da [Concorrência de Catálogo](concorrencia-catalogo/README.md).
+
 **Full** — Mercado Envios Full. Produto armazenado nos galpões do ML, entrega mais rápida.
 
 **Flex** — Entrega no mesmo dia em regiões selecionadas.
 
-**ME1 / ME2** — Modalidades do Mercado Envios (tipos de logística).
+**ME1 / ME2** — Modalidades do Mercado Envios.
 
-**Coleta** — ML retira no seu endereço.
+**Coleta** — ML retira no seu endereço do vendedor.
 
-**Places** — Produto retirado em ponto físico do ML.
+**Places** — Produto retirado em ponto físico.
+
+**Custom** — Logística personalizada.
+
+**Correios** — Envio via Correios.
+
+**N/E** — Não especificado.
+
+**Sem Log.** — Sem modalidade de logística definida.
+
+## Medalhas do vendedor
+
+Vêm direto da API do Mercado Livre. Aparecem na coluna **MED** da Concorrência de Catálogo.
+
+**Gold / Silver / Bronze** — Classificação oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade).
 
 ## Termos do app
 

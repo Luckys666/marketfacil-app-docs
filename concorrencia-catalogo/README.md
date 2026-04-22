@@ -59,7 +59,7 @@ Colunas principais:
 | **POS** | Posição no catálogo (líder = #1) |
 | **Vendedor** | Nome e link do perfil |
 | **REP** | Reputação (semáforo do ML) |
-| **MED** | Medalha ML (Gold, Silver, Bronze) |
+| **MED** | Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML. |
 | **LOJA** | Se é loja oficial |
 | **PÁG** | Se tem página própria |
 | **UF** | Estado do vendedor |

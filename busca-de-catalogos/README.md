@@ -24,6 +24,10 @@ A **Busca de Catálogos** ajuda você a encontrar produtos novos para vender na 
 ### Logística
 - **Todos**, **Coleta**, **Places**, **Correios**, **Full**, **ME1**, **ME2**, **Custom**, **N/E**, **Sem Log.**
 
+{% hint style="info" %}
+💡 As categorias de logística (Full, Flex, ME1, ME2, Places, Coleta, Custom, etc.) são **termos oficiais do Mercado Envios** — vêm direto da API do Mercado Livre. Se você vende no ML, provavelmente já conhece. Em caso de dúvida, consulte a documentação do próprio Mercado Envios para saber o que cada modalidade implica em prazo e custo.
+{% endhint %}
+
 ### Frete Grátis
 - **Todos**, **Sim**, **Não**
 

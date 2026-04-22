@@ -51,20 +51,31 @@ O score de saúde é a soma de pontos das 7 verificações. Clique em **Ver deta
 
 As 7 verificações observadas no app:
 
-| Verificação | Pontos | Alvo |
-|-------------|--------|------|
-| **ROAS positivo** | +20 | ROAS ≥ 1x |
-| **Meta de TACOS definida** | +10 | Meta preenchida |
-| **Dependência de ads saudável** | +15 | ≤ 60% das vendas via ads |
-| **Orçamento não limitando entrega** | +15 | 0 campanhas com orçamento limitado |
-| **Sem alertas críticos** | +10 | 0 alertas críticos abertos |
-| **Sem anúncios queimando dinheiro** | +10 | 0 anúncios com ROAS muito baixo |
-| **Campanhas batendo meta de ROAS** | +10 | 100% das campanhas dentro da meta |
+| Verificação | Alvo |
+|-------------|------|
+| **ROAS positivo** | ROAS ≥ 1x |
+| **Meta de TACOS definida** | Meta preenchida |
+| **Dependência de ads saudável** | ≤ 60% das vendas via ads |
+| **Orçamento não limitando entrega** | 0 campanhas com orçamento limitado |
+| **Sem alertas críticos** | 0 alertas críticos abertos |
+| **Sem anúncios queimando dinheiro** | 0 anúncios com gasto sem retorno |
+| **Campanhas batendo meta de ROAS** | 100% das campanhas dentro da meta |
 
 Cada verificação no app mostra:
-- Seu valor atual (ex: "0,00x das vendas via ads")
+- Seu valor atual (ex: "0% das vendas via ads")
 - O alvo a bater (ex: "alvo: ≥ 1x")
 - Uma **ação recomendada** quando a verificação falha (ex: "Pause os anúncios com pior ROAS e realoque o orçamento")
+
+### O que conta como "alerta crítico"
+
+A verificação "Sem alertas críticos" falha quando existe algum alerta da categoria crítica aberto. Os principais tipos que o app mostra:
+
+- **ROAS geral < 1** — você está gastando em ads mais do que recebe de volta
+- **Dependência de ads muito alta** — ads estão carregando demais da sua receita total (perigoso se pausar a campanha)
+
+### O que conta como "anúncio queimando dinheiro"
+
+Anúncio com **gasto acumulado sem venda** — o próprio app mostra esse critério ao abrir o filtro "Ver anúncios queimando dinheiro". Pausar ou revisar esses anúncios é o caminho direto pra melhorar a saúde do conjunto.
 
 ## Seções do painel
 
@@ -94,7 +105,7 @@ Lista de ações priorizadas pelo sistema baseadas no estado atual das suas camp
 ## Perguntas frequentes
 
 **P: Como o score de saúde é calculado?**
-R: É a soma de pontos das 7 verificações listadas acima. Cada verificação tem um peso fixo. Para ver quais estão ok e quais falharam, clique em **Ver detalhes**.
+R: O score combina o resultado das 7 verificações listadas acima — quanto mais verificações passam, maior o score. Clique em **Ver detalhes** para ver quais estão ok e quais falharam.
 
 **P: Ganho algo ao subir de nível?**
 R: É gamificação pra criar hábito — não é recompensa financeira. Mas vendedores que sobem de nível geralmente têm campanhas mais saudáveis.

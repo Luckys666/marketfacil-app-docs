@@ -19,6 +19,14 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-22
 
+### Refinamento — Saúde dos Ads, logística ML e medalhas
+
+- **Planejador de Ads**: adicionada explicação do que conta como "alerta crítico" (ROAS geral < 1, dependência de ads muito alta) e "anúncio queimando dinheiro" (gasto acumulado sem venda) — textos que o próprio app já mostra nos filtros.
+- **Removidos os pesos numéricos** (+20, +15, +10) da tabela das 7 verificações — mantida só a lista das verificações e alvos. O cálculo exato do score é interno.
+- **Busca de Catálogos**: callout explicando que filtros de logística (Full, Flex, ME1, ME2, Places, Coleta, Custom, N/E, Sem Log.) são termos oficiais do Mercado Envios vindos da API do ML.
+- **Concorrência de Catálogo**: coluna MED agora explicitamente documentada como "Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML".
+- **Glossário** expandido com seções dedicadas a Logística (Custom, Correios, N/E, Sem Log.) e Medalhas do Vendedor — todos marcados como conceitos oficiais do ML.
+
 ### Enriquecimento com dados factuais do app
 
 Segunda rodada de observação do app via Playwright para adicionar informação factual:
@@ -345,15 +353,31 @@ Termos que você encontra no Marketfacil e no Mercado Livre.
 
 ## Logística (Mercado Envios)
 
+Categorias vindas direto da API do Mercado Livre. Termos oficiais do ML — aparecem nos filtros da [Busca de Catálogos](busca-de-catalogos/README.md) e no painel da [Concorrência de Catálogo](concorrencia-catalogo/README.md).
+
 **Full** — Mercado Envios Full. Produto armazenado nos galpões do ML, entrega mais rápida.
 
 **Flex** — Entrega no mesmo dia em regiões selecionadas.
 
-**ME1 / ME2** — Modalidades do Mercado Envios (tipos de logística).
+**ME1 / ME2** — Modalidades do Mercado Envios.
 
-**Coleta** — ML retira no seu endereço.
+**Coleta** — ML retira no seu endereço do vendedor.
 
-**Places** — Produto retirado em ponto físico do ML.
+**Places** — Produto retirado em ponto físico.
+
+**Custom** — Logística personalizada.
+
+**Correios** — Envio via Correios.
+
+**N/E** — Não especificado.
+
+**Sem Log.** — Sem modalidade de logística definida.
+
+## Medalhas do vendedor
+
+Vêm direto da API do Mercado Livre. Aparecem na coluna **MED** da Concorrência de Catálogo.
+
+**Gold / Silver / Bronze** — Classificação oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade).
 
 ## Termos do app
 
@@ -1276,6 +1300,10 @@ A **Busca de Catálogos** ajuda você a encontrar produtos novos para vender na 
 ### Logística
 - **Todos**, **Coleta**, **Places**, **Correios**, **Full**, **ME1**, **ME2**, **Custom**, **N/E**, **Sem Log.**
 
+{% hint style="info" %}
+💡 As categorias de logística (Full, Flex, ME1, ME2, Places, Coleta, Custom, etc.) são **termos oficiais do Mercado Envios** — vêm direto da API do Mercado Livre. Se você vende no ML, provavelmente já conhece. Em caso de dúvida, consulte a documentação do próprio Mercado Envios para saber o que cada modalidade implica em prazo e custo.
+{% endhint %}
+
 ### Frete Grátis
 - **Todos**, **Sim**, **Não**
 
@@ -1396,7 +1424,7 @@ Colunas principais:
 | **POS** | Posição no catálogo (líder = #1) |
 | **Vendedor** | Nome e link do perfil |
 | **REP** | Reputação (semáforo do ML) |
-| **MED** | Medalha ML (Gold, Silver, Bronze) |
+| **MED** | Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML. |
 | **LOJA** | Se é loja oficial |
 | **PÁG** | Se tem página própria |
 | **UF** | Estado do vendedor |
@@ -1939,20 +1967,31 @@ O score de saúde é a soma de pontos das 7 verificações. Clique em **Ver deta
 
 As 7 verificações observadas no app:
 
-| Verificação | Pontos | Alvo |
-|-------------|--------|------|
-| **ROAS positivo** | +20 | ROAS ≥ 1x |
-| **Meta de TACOS definida** | +10 | Meta preenchida |
-| **Dependência de ads saudável** | +15 | ≤ 60% das vendas via ads |
-| **Orçamento não limitando entrega** | +15 | 0 campanhas com orçamento limitado |
-| **Sem alertas críticos** | +10 | 0 alertas críticos abertos |
-| **Sem anúncios queimando dinheiro** | +10 | 0 anúncios com ROAS muito baixo |
-| **Campanhas batendo meta de ROAS** | +10 | 100% das campanhas dentro da meta |
+| Verificação | Alvo |
+|-------------|------|
+| **ROAS positivo** | ROAS ≥ 1x |
+| **Meta de TACOS definida** | Meta preenchida |
+| **Dependência de ads saudável** | ≤ 60% das vendas via ads |
+| **Orçamento não limitando entrega** | 0 campanhas com orçamento limitado |
+| **Sem alertas críticos** | 0 alertas críticos abertos |
+| **Sem anúncios queimando dinheiro** | 0 anúncios com gasto sem retorno |
+| **Campanhas batendo meta de ROAS** | 100% das campanhas dentro da meta |
 
 Cada verificação no app mostra:
-- Seu valor atual (ex: "0,00x das vendas via ads")
+- Seu valor atual (ex: "0% das vendas via ads")
 - O alvo a bater (ex: "alvo: ≥ 1x")
 - Uma **ação recomendada** quando a verificação falha (ex: "Pause os anúncios com pior ROAS e realoque o orçamento")
+
+### O que conta como "alerta crítico"
+
+A verificação "Sem alertas críticos" falha quando existe algum alerta da categoria crítica aberto. Os principais tipos que o app mostra:
+
+- **ROAS geral < 1** — você está gastando em ads mais do que recebe de volta
+- **Dependência de ads muito alta** — ads estão carregando demais da sua receita total (perigoso se pausar a campanha)
+
+### O que conta como "anúncio queimando dinheiro"
+
+Anúncio com **gasto acumulado sem venda** — o próprio app mostra esse critério ao abrir o filtro "Ver anúncios queimando dinheiro". Pausar ou revisar esses anúncios é o caminho direto pra melhorar a saúde do conjunto.
 
 ## Seções do painel
 
@@ -1982,7 +2021,7 @@ Lista de ações priorizadas pelo sistema baseadas no estado atual das suas camp
 ## Perguntas frequentes
 
 **P: Como o score de saúde é calculado?**
-R: É a soma de pontos das 7 verificações listadas acima. Cada verificação tem um peso fixo. Para ver quais estão ok e quais falharam, clique em **Ver detalhes**.
+R: O score combina o resultado das 7 verificações listadas acima — quanto mais verificações passam, maior o score. Clique em **Ver detalhes** para ver quais estão ok e quais falharam.
 
 **P: Ganho algo ao subir de nível?**
 R: É gamificação pra criar hábito — não é recompensa financeira. Mas vendedores que sobem de nível geralmente têm campanhas mais saudáveis.

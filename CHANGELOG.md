@@ -11,6 +11,14 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-22
 
+### Refinamento — Saúde dos Ads, logística ML e medalhas
+
+- **Planejador de Ads**: adicionada explicação do que conta como "alerta crítico" (ROAS geral < 1, dependência de ads muito alta) e "anúncio queimando dinheiro" (gasto acumulado sem venda) — textos que o próprio app já mostra nos filtros.
+- **Removidos os pesos numéricos** (+20, +15, +10) da tabela das 7 verificações — mantida só a lista das verificações e alvos. O cálculo exato do score é interno.
+- **Busca de Catálogos**: callout explicando que filtros de logística (Full, Flex, ME1, ME2, Places, Coleta, Custom, N/E, Sem Log.) são termos oficiais do Mercado Envios vindos da API do ML.
+- **Concorrência de Catálogo**: coluna MED agora explicitamente documentada como "Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML".
+- **Glossário** expandido com seções dedicadas a Logística (Custom, Correios, N/E, Sem Log.) e Medalhas do Vendedor — todos marcados como conceitos oficiais do ML.
+
 ### Enriquecimento com dados factuais do app
 
 Segunda rodada de observação do app via Playwright para adicionar informação factual:
