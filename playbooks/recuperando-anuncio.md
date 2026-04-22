@@ -10,6 +10,12 @@ keywords: [recuperação, diagnóstico, anúncio parado, sem visitas, tags negat
 
 Anúncio que vendia bem agora está com poucas visitas ou vendas. Este playbook te dá um **roteiro de diagnóstico** pra encontrar a causa e o plano de ação.
 
+{% hint style="danger" %}
+🚫 **Anúncio com vendas + mudança de título = piora ainda maior da exposição.**
+
+Se o anúncio já tem histórico de vendas, **não mexa no título** nem como tentativa de recuperação. Trocar o título reseta a indexação do Mercado Livre e derruba a exposição — e em um anúncio que já está com queda, isso só acelera a descida. Ataque as outras causas primeiro.
+{% endhint %}
+
 ## Passo 1 — Análise inicial
 
 **Feature:** [Análise de Anúncios](../analise-de-anuncios/README.md)
@@ -42,7 +48,18 @@ Se o indicador estiver em atenção ou crítico:
    - Foto em baixa qualidade → use [Redimensionar Imagens](../redimensionar-imagens/README.md) + padrão 1200x1540.
    - Perdendo exposição → resolução + talvez Melhorar Resolução do próprio ML.
 
-## Passo 4 — (Último recurso) Revisar o título
+## Passo 4 — Verificar concorrência
+
+**Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md) (se for catálogo)
+
+Se o anúncio está em um catálogo:
+
+1. Analise a concorrência.
+2. Seu **preço final** ainda é competitivo?
+3. Apareceu um novo líder agressivo?
+4. Novos vendedores com Full/Frete Grátis?
+
+## Passo 5 — (Último recurso) Revisar o título
 
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md)
 
@@ -54,17 +71,6 @@ Se o indicador estiver em atenção ou crítico:
 2. Rode Palavras-Chave da Categoria — veja o que está em **tendência agora**.
 3. Se aparecerem termos novos relevantes, reescreva o título incorporando-os.
 4. Depois de reescrever, **não mexa mais** até ter dados suficientes para avaliar o impacto.
-
-## Passo 5 — Verificar concorrência
-
-**Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md) (se for catálogo)
-
-Se o anúncio está em um catálogo:
-
-1. Analise a concorrência.
-2. Seu **preço final** ainda é competitivo?
-3. Apareceu um novo líder agressivo?
-4. Novos vendedores com Full/Frete Grátis?
 
 ## Passo 6 — Plano de ação
 
@@ -79,6 +85,6 @@ Baseado no diagnóstico, decida:
 | Concorrente mais agressivo | Rever preço ou melhorar frete (Full/Flex) |
 | Nada óbvio | Pequenas melhorias em atributos e descrição; dar tempo para o ML re-indexar |
 
-{% hint style="warning" %}
-⚠️ Evite mudar tudo de uma vez. Ajuste um ou dois fatores e dê tempo para ver o efeito antes de mexer mais. Mudanças em cascata confundem o algoritmo do ML.
+{% hint style="success" %}
+✅ **O segredo é fazer tudo bem feito.** Resolva cada causa identificada (reclamações, tags, imagens, preço, frete) com atenção ao detalhe. Não se trata de mudar "aos poucos" — se trata de mudar **corretamente**.
 {% endhint %}
