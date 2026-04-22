@@ -55,7 +55,7 @@ Se a conversão orgânica está baixa, o problema **não é falta de tráfego** 
 **Feature:** [Planejador de Ads](../planejador-de-ads/README.md) + [Entendendo TACOS](../planejador-de-ads/entendendo-tacos.md)
 
 - [ ] Você sabe qual **TACOS máximo** seu negócio suporta?
-- [ ] Regra prática: 5–15% é saudável. Mais que isso compromete margem.
+- [ ] A meta precisa fazer sentido para a **sua margem** e estratégia — não há número universal.
 
 ## Lançando a campanha
 

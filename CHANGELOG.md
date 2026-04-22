@@ -11,6 +11,10 @@ Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológic
 
 ## 2026-04-21
 
+### Ajuste — não prescrever faixa "saudável" de TACOS
+
+Removidas todas as menções a faixas numéricas fixas de TACOS como "saudável" ou "compromete margem" (ex: "5–15% é saudável", "acima de 20% compromete margem", "meta padrão de 15%"). Cada vendedor tem uma margem, nicho e estratégia diferente — não existe número universal. A documentação agora orienta o vendedor a definir a própria meta e comparar com a própria margem. Arquivos: `planejador-de-ads/entendendo-tacos.md`, `planejador-de-ads/README.md`, `playbooks/preparando-campanha-ads.md`.
+
 ### Correção crítica — nunca modificar título de anúncio que já vende
 
 Adicionada em todos os arquivos a regra de ouro: **alterar título de anúncio com vendas derruba a exposição do Mercado Livre** (reseta indexação). A otimização de título serve apenas para anúncios novos ou sem vendas há 30+ dias. Para anúncios vendendo com score técnico baixo, o vendedor deve trabalhar outros pontos (fotos, atributos, descrição, preço, frete) — nunca o título. Arquivos atualizados: `playbooks/otimizando-titulo.md`, `palavras-chave/README.md`, `playbooks/recuperando-anuncio.md`, `analise-de-anuncios/entendendo-o-score.md`, `ajuda/checklists.md`, `faq-e-suporte.md`.

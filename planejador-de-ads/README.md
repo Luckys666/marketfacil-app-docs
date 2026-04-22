@@ -1,6 +1,6 @@
 ---
 title: Planejador de Ads
-description: Painel de saúde das suas campanhas de Mercado Ads com score, gamificação e tarefas diárias para manter o TACOS saudável.
+description: Painel de saúde das suas campanhas de Mercado Ads com score, gamificação e tarefas diárias.
 audience: vendedores
 feature: planejador-ads
 keywords: [planejador de ads, mercado ads, tacos, saúde, gamificação, beta]
@@ -41,7 +41,7 @@ Score de 0 a 100 com label qualitativo (Bom, Ótimo, Precisa Ajuste, etc). Mostr
 - **Histórico de Saúde** — score médio dos últimos dias
 
 ### Meta de TACOS
-Você define uma meta (padrão 15%) e o app compara com seu TACOS atual. Se bater a meta, aparece ✅ Meta atingida.
+Você define uma meta de TACOS personalizada e o app compara com seu TACOS atual. Se bater a meta, aparece ✅ Meta atingida. A meta ideal varia por negócio — ajuste conforme sua margem e estratégia.
 
 ### Tarefas de Hoje
 Lista de ações concretas pra fazer hoje (ex: "Conferir 1 anúncio em observação"). Ao completar, o progresso conta pra sua sequência.
@@ -59,7 +59,7 @@ Lista de ações concretas pra fazer hoje (ex: "Conferir 1 anúncio em observaç
 
 - **Mantenha a sequência** — cuidar dos ads todos os dias tem retorno maior do que mexer de vez em quando.
 - **Foque nas tarefas do dia** — elas são priorizadas pelo próprio sistema com base no estado das suas campanhas.
-- **Ajuste a meta de TACOS** ao seu negócio — 15% é um bom ponto de partida, mas nichos diferentes têm realidades diferentes (ver [Entendendo TACOS, ACOS e ROAS](entendendo-tacos.md)).
+- **Ajuste a meta de TACOS** ao seu negócio — não existe número universal. Cada nicho, margem e estratégia pede um TACOS diferente (ver [Entendendo TACOS, ACOS e ROAS](entendendo-tacos.md)).
 
 ## Perguntas frequentes
 

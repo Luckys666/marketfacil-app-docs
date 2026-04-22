@@ -44,10 +44,10 @@ Exemplo:
 - Receita total: R$ 2000.
 - **TACOS = 100/2000 = 5%**.
 
-Você está investindo 5% da sua receita total em ads para gerar esse volume. Isso é saudável.
+Você está investindo 5% da sua receita total em ads para gerar esse volume.
 
-{% hint style="success" %}
-✅ **Regra prática:** TACOS entre 5% e 15% é saudável para a maioria dos nichos. Acima de 20%, os ads estão consumindo demais da margem.
+{% hint style="info" %}
+💡 **Qual TACOS é bom pra você?** Depende do seu negócio — margem do produto, ticket médio, sazonalidade e estratégia (escalar volume × proteger margem). Não existe número único que sirva para todo mundo. Acompanhe seu TACOS ao longo do tempo e compare com sua própria margem: se o TACOS está comendo mais do que sua margem suporta, é hora de ajustar.
 {% endhint %}
 
 ## Comparando as três

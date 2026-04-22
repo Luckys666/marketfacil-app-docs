@@ -1,6 +1,6 @@
 # Marketfacil — Manual do vendedor (conteúdo completo)
 
-> Arquivo concatenado para consumo por LLMs. Gerado em 2026-04-21.
+> Arquivo concatenado para consumo por LLMs. Gerado em 2026-04-22.
 
 ---
 
@@ -18,6 +18,10 @@ keywords: [changelog, histórico, versões]
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
 
 ## 2026-04-21
+
+### Ajuste — não prescrever faixa "saudável" de TACOS
+
+Removidas todas as menções a faixas numéricas fixas de TACOS como "saudável" ou "compromete margem" (ex: "5–15% é saudável", "acima de 20% compromete margem", "meta padrão de 15%"). Cada vendedor tem uma margem, nicho e estratégia diferente — não existe número universal. A documentação agora orienta o vendedor a definir a própria meta e comparar com a própria margem. Arquivos: `planejador-de-ads/entendendo-tacos.md`, `planejador-de-ads/README.md`, `playbooks/preparando-campanha-ads.md`.
 
 ### Correção crítica — nunca modificar título de anúncio que já vende
 
@@ -1827,7 +1831,7 @@ R: **Não.** Score técnico é sobre otimização — vendas são sobre convers�
 
 ---
 title: Planejador de Ads
-description: Painel de saúde das suas campanhas de Mercado Ads com score, gamificação e tarefas diárias para manter o TACOS saudável.
+description: Painel de saúde das suas campanhas de Mercado Ads com score, gamificação e tarefas diárias.
 audience: vendedores
 feature: planejador-ads
 keywords: [planejador de ads, mercado ads, tacos, saúde, gamificação, beta]
@@ -1868,7 +1872,7 @@ Score de 0 a 100 com label qualitativo (Bom, Ótimo, Precisa Ajuste, etc). Mostr
 - **Histórico de Saúde** — score médio dos últimos dias
 
 ### Meta de TACOS
-Você define uma meta (padrão 15%) e o app compara com seu TACOS atual. Se bater a meta, aparece ✅ Meta atingida.
+Você define uma meta de TACOS personalizada e o app compara com seu TACOS atual. Se bater a meta, aparece ✅ Meta atingida. A meta ideal varia por negócio — ajuste conforme sua margem e estratégia.
 
 ### Tarefas de Hoje
 Lista de ações concretas pra fazer hoje (ex: "Conferir 1 anúncio em observação"). Ao completar, o progresso conta pra sua sequência.
@@ -1886,7 +1890,7 @@ Lista de ações concretas pra fazer hoje (ex: "Conferir 1 anúncio em observaç
 
 - **Mantenha a sequência** — cuidar dos ads todos os dias tem retorno maior do que mexer de vez em quando.
 - **Foque nas tarefas do dia** — elas são priorizadas pelo próprio sistema com base no estado das suas campanhas.
-- **Ajuste a meta de TACOS** ao seu negócio — 15% é um bom ponto de partida, mas nichos diferentes têm realidades diferentes (ver [Entendendo TACOS, ACOS e ROAS](entendendo-tacos.md)).
+- **Ajuste a meta de TACOS** ao seu negócio — não existe número universal. Cada nicho, margem e estratégia pede um TACOS diferente (ver [Entendendo TACOS, ACOS e ROAS](entendendo-tacos.md)).
 
 ## Perguntas frequentes
 
@@ -1954,10 +1958,10 @@ Exemplo:
 - Receita total: R$ 2000.
 - **TACOS = 100/2000 = 5%**.
 
-Você está investindo 5% da sua receita total em ads para gerar esse volume. Isso é saudável.
+Você está investindo 5% da sua receita total em ads para gerar esse volume.
 
-{% hint style="success" %}
-✅ **Regra prática:** TACOS entre 5% e 15% é saudável para a maioria dos nichos. Acima de 20%, os ads estão consumindo demais da margem.
+{% hint style="info" %}
+💡 **Qual TACOS é bom pra você?** Depende do seu negócio — margem do produto, ticket médio, sazonalidade e estratégia (escalar volume × proteger margem). Não existe número único que sirva para todo mundo. Acompanhe seu TACOS ao longo do tempo e compare com sua própria margem: se o TACOS está comendo mais do que sua margem suporta, é hora de ajustar.
 {% endhint %}
 
 ## Comparando as três
@@ -2353,7 +2357,7 @@ Se a conversão orgânica está baixa, o problema **não é falta de tráfego** 
 **Feature:** [Planejador de Ads](../planejador-de-ads/README.md) + [Entendendo TACOS](../planejador-de-ads/entendendo-tacos.md)
 
 - [ ] Você sabe qual **TACOS máximo** seu negócio suporta?
-- [ ] Regra prática: 5–15% é saudável. Mais que isso compromete margem.
+- [ ] A meta precisa fazer sentido para a **sua margem** e estratégia — não há número universal.
 
 ## Lançando a campanha
 
