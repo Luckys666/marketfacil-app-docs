@@ -39,10 +39,10 @@ Para cada catálogo-candidato:
 **Feature:** [Análise de Marca](../analise-de-marca/README.md)
 
 1. Digite a marca do produto (se houver) → Analisar.
-2. Se a marca tiver **qualquer registro** no INPI (classes 1–34 ou 35–45), **não use o nome da marca** no seu anúncio — mesmo classes de serviço dão ao titular direitos legais para te notificar ou processar.
-3. Entre apenas em catálogos/anúncios cuja marca **não tem registro**, ou onde você é revendedor oficial com autorização por escrito.
+2. Se aparecer **qualquer registro** no INPI — não importa a classe — **não use o nome da marca** no seu anúncio. Classe de serviço (35–45) apenas impede o BPP do ML; o titular continua podendo te notificar, processar e pedir indenização por outras vias.
+3. Entre apenas em catálogos/anúncios cuja marca **não tem registro algum**, ou onde você é revendedor oficial com autorização por escrito.
 
-**✅ Pronto quando:** você confirma que o nome está livre no INPI, ou optou por um produto/catálogo sem marca registrada.
+**✅ Pronto quando:** você confirma que o nome está livre no INPI ou optou por um produto/catálogo sem marca registrada.
 
 ## Passo 4 — Crie o anúncio com título otimizado
 
