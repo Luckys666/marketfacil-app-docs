@@ -78,7 +78,7 @@ R: O score mede **qualidade técnica**, não conversão. Vendas dependem de pre�
 R: **Cuidado.** Vendas valem mais que score técnico. Se mexer no **título**, reseta a indexação do ML e a exposição cai. Melhore só o que não exige mudar título (fotos, atributos, descrição, garantia). Veja o [checklist "Anúncio já vendendo"](ajuda/checklists.md).
 
 **P: Corrigi um problema e o score não mudou. Por quê?**
-R: O ML leva de 3 a 6 horas pra re-indexar mudanças. Analise de novo mais tarde.
+R: O ML precisa de algum tempo para re-indexar mudanças. Analise de novo mais tarde.
 
 ## Dados e segurança
 

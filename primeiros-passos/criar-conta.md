@@ -1,6 +1,6 @@
 ---
 title: Criar conta
-description: Como abrir sua conta no Marketfacil em menos de 1 minuto.
+description: Como abrir sua conta no Marketfacil.
 audience: vendedores
 feature: onboarding
 keywords: [criar conta, cadastro, registro, signup]

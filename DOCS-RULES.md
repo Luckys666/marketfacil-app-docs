@@ -103,7 +103,36 @@ Toda mudança relevante entra em [`CHANGELOG.md`](CHANGELOG.md) com data ISO (`Y
 - Prints **não podem** mostrar: emails de outros usuários, tokens, sessões, dados de pagamento. Borre antes de subir.
 - Em dúvida: **não publique**. Pergunte antes.
 
-## 9. Sem "ouro" — esconder diferenciais competitivos
+## 9. Honestidade — nunca inventar números ou regras
+
+**Regra absoluta:** toda afirmação na doc pública precisa ser **factualmente verificável**. Nunca invente thresholds, prazos, quantidades, benchmarks ou regras que "parecem razoáveis".
+
+### ✅ Pode escrever
+- Textos literais do app observados em produção
+- Comportamentos observados (fluxos, botões, campos)
+- Limites públicos oficiais do Mercado Livre (título 60/200 caracteres, etc.)
+- Termos oficiais do ML
+- Classificações do próprio app (Classe A-F, níveis)
+- Exemplos numéricos para explicar fórmulas
+- Tempos medidos em uso real
+
+### ❌ Nunca escrever
+- Thresholds de "saudável" sem base (ex: "TACOS 5-15% saudável")
+- Prazos específicos não observados (ex: "espere 6 horas", "30 dias sem vendas")
+- Quantidades mínimas não oficiais (ex: "5 fotos", "descrição 300 caracteres")
+- Schedule de acompanhamento ("dia 3 checar X")
+- Tempo estimado por passo ("5 min", "20 min")
+- Benchmarks de e-commerce genéricos apresentados como regra do ML
+
+### Framing correto quando não há base factual
+- "Depende do seu negócio"
+- "Use seu julgamento"
+- "Dê tempo para o ML re-indexar"
+- "Sem vendas recentes" (sem especificar quantos dias)
+
+**Princípio:** documentação é contrato de confiança. Número inventado que não funcionar na prática destrói a credibilidade.
+
+## 10. Sem "ouro" — esconder diferenciais competitivos
 
 Esta é uma **doc pública**, acessível também pelos concorrentes. Explique **o que a feature faz e como usar**, sem expor os internals que dão vantagem competitiva ao Marketfacil.
 

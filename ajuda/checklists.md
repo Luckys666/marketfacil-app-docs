@@ -1,39 +1,36 @@
 ---
 title: Checklists reutilizáveis
-description: Checklists prontos para usar no dia a dia — anúncio otimizado, pré-campanha, lançamento de produto e revisão mensal.
+description: Sequências de verificação usando features do Marketfacil para cenários comuns do vendedor.
 audience: vendedores
-keywords: [checklist, check list, lista, revisão, otimização]
+keywords: [checklist, check list, lista, revisão, sequência]
 ---
 
 # Checklists reutilizáveis
 
-Imprima ou salve. Use quando precisar.
+Estes checklists são **sequências de verificação** que combinam features do Marketfacil para cenários comuns. Não são receitas fechadas — use seu julgamento sobre o que faz sentido para o seu negócio.
 
-## ✅ Anúncio NOVO otimizado (antes de publicar)
+## ✅ Anúncio NOVO antes de publicar
 
-Antes de publicar um anúncio pela primeira vez:
+Use antes de publicar um anúncio pela primeira vez:
 
-- [ ] Título usa **50+ caracteres** (meta: 60 em anúncio comum, 200 em catálogo)
-- [ ] Título contém **3 a 5 palavras-chave relevantes** ([Agente de Palavras-Chave](../palavras-chave/README.md))
-- [ ] Título **não tem palavras repetidas**
-- [ ] **Pelo menos 5 fotos** em ângulos diferentes
-- [ ] Fotos no padrão **1200x1540** ([Redimensionar Imagens](../redimensionar-imagens/README.md))
-- [ ] **Todos os atributos obrigatórios** da categoria preenchidos
-- [ ] **Descrição** com ≥ 300 caracteres e sem copiar fornecedor
-- [ ] **Garantia** cadastrada (mesmo que "7 dias pela lei")
-- [ ] **Marca** não registrada no INPI ([Análise de Marca](../analise-de-marca/README.md))
-- [ ] Score ≥ **Classe B** ([Análise de Anúncios](../analise-de-anuncios/README.md))
+- [ ] Título redigido com apoio do [Agente de Palavras-Chave](../palavras-chave/README.md) + [Autocompletar](../palavras-chave-autocompletar/README.md) + [Categoria](../palavras-chave-categoria/README.md)
+- [ ] Fotos no padrão 1200x1540 ([Redimensionar Imagens](../redimensionar-imagens/README.md))
+- [ ] Atributos da categoria preenchidos
+- [ ] Descrição escrita (não copiar fornecedor)
+- [ ] Garantia cadastrada
+- [ ] Marca **sem registro** no INPI ([Análise de Marca](../analise-de-marca/README.md))
+- [ ] [Análise de Anúncios](../analise-de-anuncios/README.md) rodada e pontos a melhorar endereçados
 
 {% hint style="danger" %}
-🚫 **Este checklist é para anúncios novos ou sem vendas.** Se o anúncio já tem vendas, **não mexa no título** — isso derruba a exposição. Trabalhe apenas fotos, atributos, descrição e garantia.
+🚫 **Este checklist é para anúncios novos.** Se o anúncio já tem vendas, **não mexa no título** — derruba a exposição. Trabalhe apenas fotos, atributos, descrição e garantia.
 {% endhint %}
 
-## ✅ Anúncio JÁ VENDENDO — o que você pode mexer
+## ✅ Anúncio JÁ VENDENDO — o que você pode ajustar
 
-Anúncio com vendas recentes precisa de cuidado. **Mexa apenas no que não reseta a indexação:**
+Anúncio com vendas pede cuidado. **Mexa apenas no que não reseta a indexação:**
 
 - [ ] Atributos faltantes
-- [ ] Descrição (pode reescrever sem risco)
+- [ ] Descrição (pode reescrever sem risco de perder ranking)
 - [ ] Garantia
 - [ ] Fotos (pode trocar, adicionar, redimensionar)
 - [ ] Preço
@@ -41,43 +38,43 @@ Anúncio com vendas recentes precisa de cuidado. **Mexa apenas no que não reset
 
 **Nunca mexer:** título, categoria principal.
 
-## ✅ Lançamento de produto novo (por produto)
+## ✅ Lançamento de produto novo
 
-Sequência completa:
+Sequência completa para entrar em um novo produto:
 
-- [ ] Demanda validada ([Busca de Catálogos](../busca-de-catalogos/README.md) — Concorrentes 1–5, ordenado por Mais Visitas)
-- [ ] Margem simulada positiva em 3 catálogos-candidatos ([Concorrência de Catálogo](../concorrencia-catalogo/README.md))
+- [ ] Demanda validada ([Busca de Catálogos](../busca-de-catalogos/README.md))
+- [ ] Concorrência analisada ([Concorrência de Catálogo](../concorrencia-catalogo/README.md)) e margem simulada no Simulador de Margem
 - [ ] Marca checada no INPI ([Análise de Marca](../analise-de-marca/README.md))
-- [ ] EAN criado (se precisar de catálogo novo) ([Gerador de EAN](../gerador-ean/README.md))
+- [ ] EAN criado se necessário ([Gerador de EAN](../gerador-ean/README.md))
 - [ ] Anúncio criado no Mercado Livre
-- [ ] Título otimizado (playbook [Otimizando um título](../playbooks/otimizando-titulo.md))
+- [ ] Título otimizado (veja playbook [Otimizando um título](../playbooks/otimizando-titulo.md))
 - [ ] Imagens redimensionadas 1200x1540
-- [ ] Análise final ≥ Classe B
+- [ ] [Análise de Anúncios](../analise-de-anuncios/README.md) rodada antes de publicar
 
-## ✅ Pré-campanha de Ads (por anúncio)
+## ✅ Pré-campanha de Ads
 
-Antes de investir 1 real em Mercado Ads:
+Antes de investir em Mercado Ads (veja também o playbook [Preparando uma campanha de Ads](../playbooks/preparando-campanha-ads.md)):
 
-- [ ] Anúncio em **Classe A ou B**
-- [ ] Imagens em **1200x1540**
-- [ ] **Experiência de Compra** verde
-- [ ] **Sem tags negativas** da [Auditoria de Tags](../auditoria-tags/README.md)
-- [ ] **Taxa de conversão orgânica ≥ 1%** nos últimos 7 dias
-- [ ] **TACOS máximo** definido (meta)
-- [ ] **Estoque** suficiente pra sustentar volume
+- [ ] Classe do anúncio aceitável na [Análise de Anúncios](../analise-de-anuncios/README.md)
+- [ ] Imagens no padrão 1200x1540
+- [ ] Experiência de Compra em verde
+- [ ] Sem tags negativas na [Auditoria de Tags](../auditoria-tags/README.md)
+- [ ] Anúncio já vende organicamente (ads amplifica — não cria conversão)
+- [ ] TACOS máximo que o negócio suporta definido
+- [ ] Estoque suficiente para sustentar possível aumento de volume
 - [ ] Plano de acompanhamento no [Planejador de Ads](../planejador-de-ads/README.md)
 
-## ✅ Revisão mensal da conta
+## ✅ Revisão periódica da conta
 
-Uma vez por mês, gaste 1 hora fazendo:
+Revise sua conta em intervalos regulares:
 
 - [ ] [Auditoria de Tags](../auditoria-tags/README.md) — escanear toda a conta
-- [ ] Exportar relatório e priorizar tag mais comum
-- [ ] Analisar **top 5 anúncios por visitas** — confirmar Classe A/B
-- [ ] Analisar **bottom 5 anúncios por vendas** — decidir: otimizar, pausar ou excluir
-- [ ] Revisar **Experiência de Compra** de todos os anúncios críticos
-- [ ] No [Planejador de Ads](../planejador-de-ads/README.md): revisar TACOS do mês e ajustar meta se necessário
-- [ ] Pesquisar 3 a 5 nichos novos no [Busca de Catálogos](../busca-de-catalogos/README.md)
+- [ ] Exportar relatório e priorizar a tag mais comum
+- [ ] Rever anúncios top por visitas — confirmar classificação técnica
+- [ ] Rever anúncios bottom por vendas — decidir: otimizar, pausar ou excluir
+- [ ] Revisar Experiência de Compra dos anúncios críticos
+- [ ] No [Planejador de Ads](../planejador-de-ads/README.md): revisar TACOS e ajustar meta se necessário
+- [ ] Explorar nichos novos no [Busca de Catálogos](../busca-de-catalogos/README.md)
 
 ## ✅ Quando anúncio parou de vender (SOS)
 
@@ -88,13 +85,13 @@ Diagnóstico rápido — siga em ordem:
 - [ ] Confira [Concorrência de Catálogo](../concorrencia-catalogo/README.md) — seu preço ainda é competitivo?
 - [ ] Confira [Palavras-Chave da Categoria](../palavras-chave-categoria/README.md) — termos em alta mudaram?
 - [ ] Tem avaliações novas ruins? Responda imediatamente.
-- [ ] Houve mudança recente (título, foto, preço) nos últimos 14 dias? Considere reverter.
+- [ ] Houve mudança recente (título, foto, preço) recente? Considere reverter.
 
-## ✅ Checklist de segurança da conta
+## ✅ Segurança da conta
 
 Uma vez por semestre:
 
-- [ ] Senha forte no Mercado Livre (≥ 12 caracteres, sem data de nascimento)
+- [ ] Senha forte no Mercado Livre
 - [ ] Autenticação de dois fatores ativa no ML
-- [ ] Aplicativos autorizados no ML revisados — manter só Marketfacil e outros que você usa de fato
+- [ ] Aplicativos autorizados no ML revisados — manter só os que você usa
 - [ ] Dados cadastrais do [Minha Conta](../minha-conta/README.md) atualizados

@@ -8,9 +8,9 @@ keywords: [lançamento, produto novo, novo anúncio, validação, playbook]
 
 # Playbook: Lançando um produto novo
 
-Você tem um produto em mente e quer lançar certo desde o início. Este playbook te guia pelos **5 passos** essenciais antes e depois de criar o anúncio.
+Você tem um produto em mente e quer usar as features do Marketfacil antes e depois de criar o anúncio. Esta é uma **sequência de verificações** — você decide em que profundidade aplicar cada passo no seu caso.
 
-## Passo 1 — Valide a oportunidade (15 min)
+## Passo 1 — Valide a oportunidade
 
 **Feature:** [Busca de Catálogos](../busca-de-catalogos/README.md)
 
@@ -21,7 +21,7 @@ Você tem um produto em mente e quer lançar certo desde o início. Este playboo
 
 **✅ Pronto quando:** você identifica 2 a 3 catálogos-candidatos com volume razoável e concorrência baixa.
 
-## Passo 2 — Analise a concorrência (10 min por catálogo)
+## Passo 2 — Analise a concorrência
 
 **Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md)
 
@@ -34,7 +34,7 @@ Para cada catálogo-candidato:
 
 **✅ Pronto quando:** você escolhe **1 catálogo** com margem saudável e líder vencível.
 
-## Passo 3 — Verifique a marca (5 min)
+## Passo 3 — Verifique a marca
 
 **Feature:** [Análise de Marca](../analise-de-marca/README.md)
 
@@ -44,7 +44,7 @@ Para cada catálogo-candidato:
 
 **✅ Pronto quando:** você confirma que o nome está livre no INPI, ou optou por um produto/catálogo sem marca registrada.
 
-## Passo 4 — Crie o anúncio com título otimizado (20 min)
+## Passo 4 — Crie o anúncio com título otimizado
 
 **Feature:** [Agente de Palavras-Chave](../palavras-chave/README.md) + [Palavras-Chave do Autocompletar](../palavras-chave-autocompletar/README.md)
 
@@ -52,25 +52,25 @@ Para cada catálogo-candidato:
 2. Analise no **Agente de Palavras-Chave** → copie as palavras faltantes.
 3. Complemente com o **Autocompletar** — descubra variações que compradores digitam.
 4. Use o **Gerador de Títulos IA** do Agente como base.
-5. Edite o título final até ficar natural e usar ~60 caracteres.
+5. Edite o título final até ficar natural — use o máximo de caracteres que o ML permite (60 em anúncio comum, 200 em catálogo).
 
 **✅ Pronto quando:** seu anúncio tem título no limite de caracteres e palavras-chave relevantes.
 
-## Passo 5 — Analise e ajuste (10 min)
+## Passo 5 — Analise e ajuste
 
 **Feature:** [Análise de Anúncios](../analise-de-anuncios/README.md)
 
 1. Cole o link do seu anúncio recém-criado → Analisar.
-2. Veja a classe (A a F). Se menor que B, leia "O que melhorar" e corrija.
-3. Confira: imagens 1200x1540 ([Redimensionar Imagens](../redimensionar-imagens/README.md)), todos os atributos, descrição, garantia.
-4. Reanalise até atingir Classe A ou B.
+2. Veja a classe e a lista "O que melhorar".
+3. Corrija os pontos apontados (atributos, descrição, garantia, imagens).
+4. Reanalise depois que o ML re-indexar.
 
-**✅ Pronto quando:** seu anúncio está em **Classe A ou B** antes de começar a rodar.
+**✅ Pronto quando:** os principais pontos técnicos estão endereçados antes de o anúncio começar a receber tráfego.
 
 ## Próximos passos
 
 Depois de lançar:
 
-- Acompanhe visitas e vendas nos primeiros 7 dias
-- Se tudo estiver bem, considere [preparar uma campanha de Ads](preparando-campanha-ads.md)
+- Acompanhe visitas e vendas ao longo dos primeiros dias
+- Se o anúncio começar a vender, considere [preparar uma campanha de Ads](preparando-campanha-ads.md)
 - Se não vender, use o playbook [Recuperando um anúncio](recuperando-anuncio.md)

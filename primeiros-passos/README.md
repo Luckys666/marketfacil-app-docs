@@ -9,9 +9,9 @@ keywords: [primeiros passos, onboarding, criar conta, mercado livre, tour]
 
 Se você está chegando agora no Marketfacil, esta é a sequência recomendada:
 
-1. [Criar sua conta](criar-conta.md) — 1 minuto
-2. [Conectar seu Mercado Livre](conectar-mercado-livre.md) — 2 minutos
-3. [Tour da plataforma](tour-da-plataforma.md) — 5 minutos
+1. [Criar sua conta](criar-conta.md)
+2. [Conectar seu Mercado Livre](conectar-mercado-livre.md)
+3. [Tour da plataforma](tour-da-plataforma.md)
 
 Depois disso, escolha por onde começar:
 

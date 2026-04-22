@@ -56,7 +56,7 @@ Alterar o título de um anúncio com histórico de vendas **reseta a indexação
 
 Use o Agente principalmente para:
 - Criar título de anúncio **novo**
-- Reescrever anúncio **sem vendas** nos últimos 30 dias (após descartar outras causas)
+- Reescrever anúncio **sem vendas recentes** (após descartar outras causas)
 - Planejar títulos antes de publicar
 
 **Anúncio que vende = título fechado.** Trabalhe fotos, descrição e atributos.
@@ -66,7 +66,7 @@ Use o Agente principalmente para:
 
 - Priorize as palavras com **maior score** — são as que mais aparecem em sugestões.
 - Os títulos da IA são uma base — **edite** pra soar natural e refletir o que o produto é de verdade.
-- Depois de publicar um novo título, **não mexa** por pelo menos 14 dias — deixe o ML indexar.
+- Depois de publicar um novo título, **não mexa mais** — deixe o ML indexar e dê tempo para o histórico se formar.
 
 ## Perguntas frequentes
 

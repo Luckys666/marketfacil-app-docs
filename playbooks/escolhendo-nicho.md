@@ -1,6 +1,6 @@
 ---
 title: Escolhendo um novo nicho
-description: Validação em 5 passos antes de investir em um novo nicho — demanda, concorrência, margem e barreiras.
+description: Sequência de verificações usando features do Marketfacil antes de investir em um novo nicho.
 audience: vendedores
 feature: playbook
 keywords: [nicho, validação, novo produto, pesquisa, oportunidade]
@@ -8,33 +8,38 @@ keywords: [nicho, validação, novo produto, pesquisa, oportunidade]
 
 # Playbook: Escolhendo um novo nicho
 
-Antes de comprar estoque ou assinar contrato com fornecedor, valide o nicho em 30 minutos.
+Antes de comprar estoque ou assinar contrato com fornecedor, use as features do Marketfacil para entender o cenário.
+
+Esta é uma **sequência de verificações** — os critérios de "bom" ou "ruim" dependem do seu negócio e estratégia.
 
 ## Passo 1 — Explorar a base de catálogos
 
 **Feature:** [Busca de Catálogos](../busca-de-catalogos/README.md)
 
-1. Pense em 3 a 5 palavras-chave genéricas do nicho (ex: "suporte notebook", "porta copos carro").
+1. Pense em palavras-chave genéricas do nicho (ex: "suporte notebook").
 2. Para cada palavra, rode a busca.
-3. Aplique filtros:
-   - **Concorrentes: 1–5** — nichos com espaço
-   - **Ordenar: Mais Visitas** — com demanda
-4. Anote 10 a 15 catálogos candidatos com: ID, faixa de preço, nº de concorrentes, visitas.
+3. Experimente os filtros disponíveis:
+   - **Concorrentes** (1–5, 6–20, 21+) para ver o nível de disputa
+   - **Ordenar por Mais Visitas** para priorizar volume de demanda
+   - **Ordenar por Menos Concorrentes** para enxergar nichos
+4. Anote catálogos candidatos (ID, faixa de preço, concorrentes, visitas).
 
 ## Passo 2 — Analisar concorrência em profundidade
 
 **Feature:** [Concorrência de Catálogo](../concorrencia-catalogo/README.md)
 
-Escolha 3 catálogos mais atraentes e para cada um:
+Para cada catálogo-candidato:
 
 1. Rode a análise completa.
-2. Simule sua margem (custo estimado + frete + imposto).
-3. Olhe a tabela de competidores: tem **loja oficial**? Vendedor com **1000+ vendas**? Isso vira barreira.
+2. Use o **Simulador de Margem** com seu **custo + frete + imposto** para ver sua margem em cada faixa de preço.
+3. Analise a tabela de competidores — loja oficial, reputação, volume de vendas.
 
-**🚩 Red flags**:
+**Sinais a observar**:
 - Loja oficial dominante
-- Top 3 vendedores com **reputação verde escuro** e milhares de vendas
+- Vendedores bem estabelecidos (reputação verde escuro, volume alto de vendas)
 - Spread de preço muito apertado (margem de todos achatada)
+
+Como interpretar esses sinais depende da sua estratégia — ser mais barato? Oferecer frete melhor? Ter estoque próximo ao comprador?
 
 ## Passo 3 — Verificar marca registrada
 
@@ -56,24 +61,22 @@ Se o nicho envolve uma marca específica:
 
 ## Passo 5 — Decisão final
 
-Passou em **todos os 4 passos**? O nicho é promissor. Se falhou em algum:
+Faça a leitura dos passos anteriores e decida. Se em algum passo os sinais forem ruins para sua estratégia:
 
-| Falhou em | Significado |
-|-----------|-------------|
-| Passo 1 (sem visitas) | Nicho com pouca demanda |
-| Passo 2 (concorrência forte) | Barreira alta, difícil entrar |
-| Passo 2 (margem apertada) | Entra em guerra de preço |
-| Passo 3 (marca registrada em qualquer classe) | Risco legal ou precisa de autorização por escrito |
-| Passo 4 (dominado por marca) | Não compete com marca sem ser autorizado |
+| Problema | Significado |
+|----------|-------------|
+| Passo 1 — sem demanda | Nicho com pouco volume |
+| Passo 2 — concorrência forte | Barreira alta, difícil entrar |
+| Passo 2 — margem apertada | Risco de guerra de preço |
+| Passo 3 — marca registrada em qualquer classe | Risco legal ou precisa de autorização por escrito |
+| Passo 4 — dominado por marca | Não compete com marca sem ser autorizado |
 
 ## Checklist de decisão
 
-Marque os itens antes de investir:
+Itens para conferir antes de investir:
 
-- [ ] Encontrei ao menos 3 catálogos com Concorrentes 1–5 e Mais Visitas > 50/90d
-- [ ] Minha margem simulada é ≥ 20% no menor preço do catálogo
-- [ ] Não há marca registrada em **nenhuma classe** do INPI bloqueando o nicho (1–45)
+- [ ] Encontrei catálogos com nível de concorrência aceitável para minha estratégia
+- [ ] Minha margem simulada faz sentido no cenário de preço do catálogo
+- [ ] Não há marca registrada em **nenhuma classe** do INPI bloqueando o nicho
 - [ ] Os compradores usam linguagem genérica (não só marca)
 - [ ] Tenho fornecedor confiável com preço que cabe no simulador
-
-5/5 → vai em frente. Menos → replaneje.

@@ -9,6 +9,14 @@ keywords: [changelog, histórico, versões]
 
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
 
+## 2026-04-22
+
+### Correção crítica — removidos números e regras inventados dos playbooks
+
+Identificado e removido conjunto amplo de thresholds, prazos e benchmarks que haviam sido inseridos nos playbooks e checklists como "rules of thumb" mas não vieram do app nem foram validados. Exemplos do que foi removido: "TACOS 5-15% saudável" (já corrigido antes), "30 dias sem vendas" como gatilho de reescrita de título, "14 dias de espera pós-mudança", "3-6 horas para re-indexar", "5 fotos mínimas", "descrição 300 caracteres", "CTR ≥ 1%", "CVR < 0.5%", "ROAS > 5x", "orçamento R$ 10-30/dia", "dia 3 / dia 5 / dia 7", "margem ≥ 20%", tempos estimados por passo ("5 min", "20 min"), entre outros. Substituídos por framing qualitativo ("depende do seu negócio", "sem vendas recentes", "dê tempo para o ML re-indexar"). Nova seção 9 adicionada ao DOCS-RULES: "Honestidade — nunca inventar números ou regras". Princípio: documentação é contrato de confiança.
+
+Arquivos ajustados: `playbooks/preparando-campanha-ads.md` (reescrito), `playbooks/otimizando-titulo.md`, `playbooks/recuperando-anuncio.md`, `playbooks/escolhendo-nicho.md` (reescrito), `playbooks/lancando-produto-novo.md`, `playbooks/README.md` (disclaimer honesto), `ajuda/checklists.md` (reescrito), `analise-de-anuncios/entendendo-o-score.md`, `analise-de-anuncios/como-analisar.md`, `ajuda/troubleshooting.md`, `faq-e-suporte.md`, `primeiros-passos/README.md`, `primeiros-passos/criar-conta.md`, `palavras-chave/README.md`, `DOCS-RULES.md`.
+
 ## 2026-04-21
 
 ### Ajuste — não prescrever faixa "saudável" de TACOS

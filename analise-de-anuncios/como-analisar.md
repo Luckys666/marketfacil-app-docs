@@ -68,4 +68,4 @@ R: A Análise de Anúncios funciona com anúncios, produtos e catálogos **vincu
 R: Os dados do Mercado Livre mudam em tempo real — novas avaliações, mudanças de título, tags. O score reflete o estado atual do seu anúncio.
 
 **P: Quais classes existem?**
-R: De A (excelente) a F (crítico). A classificação é qualitativa — quanto mais próximo de A, melhor otimizado está seu anúncio.
+R: De A (bem otimizado) a F (com muitos pontos a melhorar). A classificação é qualitativa — quanto mais próximo de A, melhor otimizado tecnicamente está seu anúncio.
