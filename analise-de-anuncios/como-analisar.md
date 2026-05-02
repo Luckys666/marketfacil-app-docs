@@ -11,7 +11,10 @@ keywords: [como analisar, passo a passo, mlb, mlbu, catálogo]
 ## Passo a passo
 
 1. No menu lateral, clique em **Análise de Anúncios**.
-2. Cole o link do anúncio no campo de texto.
+2. Cole no campo de texto **uma destas opções**:
+   - O **ID do anúncio** (ex.: `MLB5365306260` ou `MLBU1164018775`).
+   - O **link da tela de edição** do painel do Mercado Livre (`mercadolivre.com.br/anuncios/{ID}/modificar/...`).
+   - O **link público** do anúncio ou do produto MLBU.
 3. Clique em **Analisar**.
 4. Aguarde alguns segundos.
 5. Role a página para ver o resultado completo.
