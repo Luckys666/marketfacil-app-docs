@@ -9,6 +9,14 @@ keywords: [changelog, histórico, versões]
 
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
 
+## 2026-05-02
+
+### Concorrência de Catálogo — atualização pós-deploy
+
+- **Barra de busca embutida**: o input de URL e o botão "Analisar Catálogo" agora vivem dentro do bloco da feature, ocupando a largura completa da página. Screenshot de tela inicial recapturada (`concorrencia-input-v2.png`).
+- **Simulador de Margem**: adicionada nota explicando que a margem é calculada sobre o **preço com desconto** (mesma base das comissões do ML), não sobre o preço cheio.
+- **Coluna MED**: corrigida a descrição. ML usa **Platinum**, **Gold** e **Líder** — não Silver/Bronze, que não existem na taxonomia oficial.
+
 ## 2026-04-22
 
 ### Refinamento — Saúde dos Ads, logística ML e medalhas

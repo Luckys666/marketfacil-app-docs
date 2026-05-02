@@ -97,7 +97,7 @@ Categorias vindas direto da API do Mercado Livre. Termos oficiais do ML — apar
 
 Vêm direto da API do Mercado Livre. Aparecem na coluna **MED** da Concorrência de Catálogo.
 
-**Gold / Silver / Bronze** — Classificação oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade).
+**Platinum / Gold / Líder** — Classificação MercadoLíder oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade). Vendedores sem medalha aparecem como `-`.
 
 ## Termos do app
 

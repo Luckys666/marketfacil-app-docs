@@ -1,6 +1,6 @@
 # Marketfacil — Manual do vendedor (conteúdo completo)
 
-> Arquivo concatenado para consumo por LLMs. Gerado em 2026-04-22.
+> Arquivo concatenado para consumo por LLMs. Gerado em 2026-05-02.
 
 ---
 
@@ -16,6 +16,14 @@ keywords: [changelog, histórico, versões]
 # Changelog
 
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
+
+## 2026-05-02
+
+### Concorrência de Catálogo — atualização pós-deploy
+
+- **Barra de busca embutida**: o input de URL e o botão "Analisar Catálogo" agora vivem dentro do bloco da feature, ocupando a largura completa da página. Screenshot de tela inicial recapturada (`concorrencia-input-v2.png`).
+- **Simulador de Margem**: adicionada nota explicando que a margem é calculada sobre o **preço com desconto** (mesma base das comissões do ML), não sobre o preço cheio.
+- **Coluna MED**: corrigida a descrição. ML usa **Platinum**, **Gold** e **Líder** — não Silver/Bronze, que não existem na taxonomia oficial.
 
 ## 2026-04-22
 
@@ -377,7 +385,7 @@ Categorias vindas direto da API do Mercado Livre. Termos oficiais do ML — apar
 
 Vêm direto da API do Mercado Livre. Aparecem na coluna **MED** da Concorrência de Catálogo.
 
-**Gold / Silver / Bronze** — Classificação oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade).
+**Platinum / Gold / Líder** — Classificação MercadoLíder oficial do ML baseada em performance do vendedor (vendas, reputação, pontualidade). Vendedores sem medalha aparecem como `-`.
 
 ## Termos do app
 
@@ -891,7 +899,10 @@ keywords: [como analisar, passo a passo, mlb, mlbu, catálogo]
 ## Passo a passo
 
 1. No menu lateral, clique em **Análise de Anúncios**.
-2. Cole o link do anúncio no campo de texto.
+2. Cole no campo de texto **uma destas opções**:
+   - O **ID do anúncio** (ex.: `MLB5365306260` ou `MLBU1164018775`).
+   - O **link da tela de edição** do painel do Mercado Livre (`mercadolivre.com.br/anuncios/{ID}/modificar/...`).
+   - O **link público** do anúncio ou do produto MLBU.
 3. Clique em **Analisar**.
 4. Aguarde alguns segundos.
 5. Role a página para ver o resultado completo.
@@ -1382,11 +1393,11 @@ Cole o link de qualquer catálogo do Mercado Livre (mesmo que não seja seu) e v
 ## Como usar
 
 1. No menu lateral, clique em **Concorrência de Catálogo**.
-2. Cole o link do catálogo (formato `.../p/MLBxxx`).
-3. Clique em **Analisar catálogo**.
+2. Cole o link do catálogo (formato `.../p/MLBxxx`) ou só o ID na barra de busca.
+3. Clique em **Analisar Catálogo**.
 4. Aguarde o carregamento — o app busca dados de **cada competidor** em paralelo (pode levar de 1 a 3 minutos).
 
-![Tela inicial da Concorrência de Catálogo com campo para colar link e botão Analisar catálogo](../assets/screenshots/concorrencia-input-v1.png)
+![Tela inicial da Concorrência de Catálogo com barra de busca para colar link e botão Analisar Catálogo](../assets/screenshots/concorrencia-input-v2.png)
 
 ## Resultado — visão geral
 
@@ -1399,6 +1410,8 @@ Cole o link de qualquer catálogo do Mercado Livre (mesmo que não seja seu) e v
 
 ### Simulador de Margem
 Entre com **Custo**, **Frete** e **Imposto (%)** → clique em **Calcular** pra ver sua margem em cada faixa de preço do catálogo. Decisão de entrada em catálogo ficou muito mais fácil.
+
+A margem é calculada sobre o **preço com desconto** que o comprador efetivamente paga — a mesma base que o Mercado Livre usa pra cobrar comissão. Assim o número que você vê reflete o lucro real, não uma simulação otimista usando o preço cheio.
 
 ### Barra de métricas (navy)
 - **Vendedores** (35)
@@ -1424,7 +1437,7 @@ Colunas principais:
 | **POS** | Posição no catálogo (líder = #1) |
 | **Vendedor** | Nome e link do perfil |
 | **REP** | Reputação (semáforo do ML) |
-| **MED** | Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML. |
+| **MED** | Medalha MercadoLíder (Platinum, Gold ou Líder). Vendedores sem medalha aparecem como `-`. |
 | **LOJA** | Se é loja oficial |
 | **PÁG** | Se tem página própria |
 | **UF** | Estado do vendedor |

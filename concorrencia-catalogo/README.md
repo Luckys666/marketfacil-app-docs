@@ -17,11 +17,11 @@ Cole o link de qualquer catálogo do Mercado Livre (mesmo que não seja seu) e v
 ## Como usar
 
 1. No menu lateral, clique em **Concorrência de Catálogo**.
-2. Cole o link do catálogo (formato `.../p/MLBxxx`).
-3. Clique em **Analisar catálogo**.
+2. Cole o link do catálogo (formato `.../p/MLBxxx`) ou só o ID na barra de busca.
+3. Clique em **Analisar Catálogo**.
 4. Aguarde o carregamento — o app busca dados de **cada competidor** em paralelo (pode levar de 1 a 3 minutos).
 
-![Tela inicial da Concorrência de Catálogo com campo para colar link e botão Analisar catálogo](../assets/screenshots/concorrencia-input-v1.png)
+![Tela inicial da Concorrência de Catálogo com barra de busca para colar link e botão Analisar Catálogo](../assets/screenshots/concorrencia-input-v2.png)
 
 ## Resultado — visão geral
 
@@ -34,6 +34,8 @@ Cole o link de qualquer catálogo do Mercado Livre (mesmo que não seja seu) e v
 
 ### Simulador de Margem
 Entre com **Custo**, **Frete** e **Imposto (%)** → clique em **Calcular** pra ver sua margem em cada faixa de preço do catálogo. Decisão de entrada em catálogo ficou muito mais fácil.
+
+A margem é calculada sobre o **preço com desconto** que o comprador efetivamente paga — a mesma base que o Mercado Livre usa pra cobrar comissão. Assim o número que você vê reflete o lucro real, não uma simulação otimista usando o preço cheio.
 
 ### Barra de métricas (navy)
 - **Vendedores** (35)
@@ -59,7 +61,7 @@ Colunas principais:
 | **POS** | Posição no catálogo (líder = #1) |
 | **Vendedor** | Nome e link do perfil |
 | **REP** | Reputação (semáforo do ML) |
-| **MED** | Medalha do Mercado Livre (Gold, Silver, Bronze). Vem direto da API do ML. |
+| **MED** | Medalha MercadoLíder (Platinum, Gold ou Líder). Vendedores sem medalha aparecem como `-`. |
 | **LOJA** | Se é loja oficial |
 | **PÁG** | Se tem página própria |
 | **UF** | Estado do vendedor |
