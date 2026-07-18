@@ -20,7 +20,7 @@ O **Agente de Palavras-Chave** é o especialista em otimização de título do M
 1. No menu lateral, clique em **Agente de Palavras-Chave**.
 2. Cole o link ou ID do anúncio (aceita MLB, MLBU ou link de catálogo).
 3. Clique em **Analisar**.
-4. Aguarde — o agente faz scraping, processa com IA e gera o resultado.
+4. Aguarde — o agente coleta os dados do anúncio, processa com IA e gera o resultado.
 
 ![Tela do Agente de Palavras-Chave com campo de URL e botão Analisar](../assets/screenshots/palavras-chave-input-v1.png)
 
@@ -74,7 +74,7 @@ Use o Agente principalmente para:
 R: Não. As sugestões são baseadas em **palavras reais** do ecossistema do Mercado Livre (anúncios concorrentes, atributos da categoria, buscas dos compradores).
 
 **P: Por que algumas análises demoram mais?**
-R: O scraping depende do servidor do Mercado Livre. Em horário de pico, pode demorar até 30 segundos.
+R: A coleta de dados depende do servidor do Mercado Livre. Em horário de pico, pode demorar até 30 segundos.
 
 **P: Posso usar o título sugerido direto?**
 R: Pode. Mas edite antes pra garantir que reflete seu produto e soa natural.

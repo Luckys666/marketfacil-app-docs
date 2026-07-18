@@ -70,7 +70,7 @@ Se algo não está funcionando como esperado, procure a situação abaixo antes 
 **Causas possíveis:**
 1. Anúncio com título muito longo e preenchido — já está bem otimizado
 2. Categoria com pouca variedade lexical (ex: produtos muito específicos)
-3. Scraping do ML falhou
+3. A consulta ao Mercado Livre falhou momentaneamente
 
 **Solução:** se persistir, tente de novo em alguns minutos. Se o anúncio realmente está ótimo, significa que você não tem muito o que melhorar no título.
 

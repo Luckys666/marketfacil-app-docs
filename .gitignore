@@ -12,3 +12,5 @@ ruvector.db
 .claude-flow/
 .claude/
 .codebase-memory/
+AGENT-MANUAL*.md
+*-SPEC.md

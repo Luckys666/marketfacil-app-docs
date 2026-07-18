@@ -5,7 +5,11 @@ import { join, relative } from 'node:path';
 const ROOT = decodeURIComponent(new URL('..', import.meta.url).pathname).replace(/^\/([A-Z]:)/, '$1');
 const OUT = join(ROOT, 'llms-full.txt');
 
-const SKIP = new Set(['node_modules', '.git', 'assets', 'scripts', '.gitbook']);
+const SKIP = new Set(['node_modules', '.git', 'assets', 'scripts', '.gitbook',
+  // material interno — existe no disco mas é gitignored; NUNCA pode entrar no llms-full.txt público
+  'catalog-audit', '.claude', '.claude-flow', '.codebase-memory']);
+// arquivos internos por nome (manuais de agente, specs técnicos)
+const SKIP_FILES = [/^AGENT-MANUAL.*\.md$/i, /-SPEC\.md$/i];
 
 async function walk(dir, acc = []) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -14,7 +18,7 @@ async function walk(dir, acc = []) {
     const full = join(dir, e.name);
     if (e.isDirectory()) {
       await walk(full, acc);
-    } else if (e.name.endsWith('.md')) {
+    } else if (e.name.endsWith('.md') && !SKIP_FILES.some((rx) => rx.test(e.name))) {
       acc.push(full);
     }
   }
