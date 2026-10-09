@@ -100,7 +100,7 @@ R: Você perde acesso às features pagas, mas sua conta e dados ficam preservado
 ## Pagamento e planos
 
 **P: Quais são os planos?**
-R: Mensal (R$ 39,90/mês), Anual (R$ 33,90/mês, cobrança única R$ 406,80/ano) e Semestral (R$ 37,90/mês). Todos dão acesso completo a todas as ferramentas. Detalhes em [Planos e pagamento](primeiros-passos/planos-e-pagamento.md).
+R: Mensal (R$ 49,90/mês), Anual (R$ 42,40/mês, cobrança única R$ 508,80/ano) e Semestral (R$ 47,40/mês). Todos dão acesso completo a todas as ferramentas. Detalhes em [Planos e pagamento](primeiros-passos/planos-e-pagamento.md).
 
 **P: Tem limite de uso?**
 R: **Não.** Atualmente não há limite de análises, buscas ou qualquer outra ferramenta.

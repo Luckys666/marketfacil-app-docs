@@ -1,6 +1,6 @@
 # Marketfacil — Manual do vendedor (conteúdo completo)
 
-> Arquivo concatenado para consumo por LLMs. Gerado em 2026-07-18.
+> Arquivo concatenado para consumo por LLMs. Gerado em 2026-10-09.
 
 ---
 
@@ -16,6 +16,10 @@ keywords: [changelog, histórico, versões]
 # Changelog
 
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
+
+## 2026-10-09
+
+- Preços atualizados: Mensal R$ 49,90, Semestral R$ 47,40/mês (R$ 284,40), Anual R$ 42,40/mês (R$ 508,80/ano). Quem já assinava mantém o preço.
 
 ## 2026-05-02
 
@@ -1587,7 +1591,7 @@ R: Você perde acesso às features pagas, mas sua conta e dados ficam preservado
 ## Pagamento e planos
 
 **P: Quais são os planos?**
-R: Mensal (R$ 39,90/mês), Anual (R$ 33,90/mês, cobrança única R$ 406,80/ano) e Semestral (R$ 37,90/mês). Todos dão acesso completo a todas as ferramentas. Detalhes em [Planos e pagamento](primeiros-passos/planos-e-pagamento.md).
+R: Mensal (R$ 49,90/mês), Anual (R$ 42,40/mês, cobrança única R$ 508,80/ano) e Semestral (R$ 47,40/mês). Todos dão acesso completo a todas as ferramentas. Detalhes em [Planos e pagamento](primeiros-passos/planos-e-pagamento.md).
 
 **P: Tem limite de uso?**
 R: **Não.** Atualmente não há limite de análises, buscas ou qualquer outra ferramenta.
@@ -2768,15 +2772,13 @@ O Marketfacil tem três planos — todos dão **acesso completo a todas as ferra
 
 Acesse em [app.marketfacil.com.br/pagamento](https://app.marketfacil.com.br/pagamento).
 
-![Página de planos do Marketfacil mostrando três opções: Mensal R$39,90, Anual R$33,90 (Mais Popular, economize 15%) e Semestral R$37,90 (economize ~5%)](../assets/screenshots/pagamento-v1.png)
-
 ## Planos disponíveis
 
 | Plano | Preço por mês | Observações |
 |-------|--------------|-------------|
-| **Mensal** | R$ 39,90 | Assinatura recorrente |
-| **Anual** ⭐ | R$ 33,90 | Cobrança única de R$ 406,80/ano · Economize 15% · **Mais popular** |
-| **Semestral** | R$ 37,90 | Economize ~5% |
+| **Mensal** | R$ 49,90 | Assinatura recorrente |
+| **Anual** ⭐ | R$ 42,40 | Cobrança única de R$ 508,80/ano · Economize 15% · **Mais popular** |
+| **Semestral** | R$ 47,40 | Economize ~5% |
 
 ### O que vem em todos os planos
 

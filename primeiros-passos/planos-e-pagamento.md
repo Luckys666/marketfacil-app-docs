@@ -12,15 +12,13 @@ O Marketfacil tem três planos — todos dão **acesso completo a todas as ferra
 
 Acesse em [app.marketfacil.com.br/pagamento](https://app.marketfacil.com.br/pagamento).
 
-![Página de planos do Marketfacil mostrando três opções: Mensal R$39,90, Anual R$33,90 (Mais Popular, economize 15%) e Semestral R$37,90 (economize ~5%)](../assets/screenshots/pagamento-v1.png)
-
 ## Planos disponíveis
 
 | Plano | Preço por mês | Observações |
 |-------|--------------|-------------|
-| **Mensal** | R$ 39,90 | Assinatura recorrente |
-| **Anual** ⭐ | R$ 33,90 | Cobrança única de R$ 406,80/ano · Economize 15% · **Mais popular** |
-| **Semestral** | R$ 37,90 | Economize ~5% |
+| **Mensal** | R$ 49,90 | Assinatura recorrente |
+| **Anual** ⭐ | R$ 42,40 | Cobrança única de R$ 508,80/ano · Economize 15% · **Mais popular** |
+| **Semestral** | R$ 47,40 | Economize ~5% |
 
 ### O que vem em todos os planos
 

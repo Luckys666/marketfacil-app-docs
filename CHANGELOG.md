@@ -9,6 +9,10 @@ keywords: [changelog, histórico, versões]
 
 Todas as mudanças relevantes na documentação ficam aqui, em ordem cronológica inversa. Formato: `YYYY-MM-DD — descrição`.
 
+## 2026-10-09
+
+- Preços atualizados: Mensal R$ 49,90, Semestral R$ 47,40/mês (R$ 284,40), Anual R$ 42,40/mês (R$ 508,80/ano). Quem já assinava mantém o preço.
+
 ## 2026-05-02
 
 ### Concorrência de Catálogo — atualização pós-deploy
