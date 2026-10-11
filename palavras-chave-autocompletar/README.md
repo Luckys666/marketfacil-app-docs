@@ -1,6 +1,6 @@
 ---
 title: Palavras-Chave do Autocompletar
-description: Descubra o que os compradores estão digitando no Mercado Livre e em outros buscadores — use nos seus títulos.
+description: Descubra o que os compradores estão digitando no Google, no YouTube e no Bing — use nos seus títulos.
 audience: vendedores
 feature: palavras-autocompletar
 keywords: [autocompletar, busca, sugestões, termos de busca, palavras-chave]
@@ -8,7 +8,7 @@ keywords: [autocompletar, busca, sugestões, termos de busca, palavras-chave]
 
 # Palavras-Chave do Autocompletar
 
-Essa feature mostra o que os compradores estão **efetivamente digitando** nos mecanismos de busca (Mercado Livre e outros) quando começam a escrever o termo do seu produto. Serve pra descobrir termos de alta intenção de compra.
+Essa feature mostra o que os compradores estão **efetivamente digitando** nos buscadores Google, YouTube e Bing quando começam a escrever o termo do seu produto. Serve pra descobrir termos de alta intenção de compra.
 
 ## Como usar
 
@@ -38,4 +38,4 @@ Essa feature mostra o que os compradores estão **efetivamente digitando** nos m
 R: Dos próprios buscadores. São as sugestões que aparecem no autocompletar quando o usuário começa a digitar.
 
 **P: Serve só pro Mercado Livre?**
-R: Também. A função agrega sugestões de diversos mecanismos de busca em uma só lista.
+R: Não. As sugestões não vêm do Mercado Livre: vêm do Google, do YouTube e do Bing.
