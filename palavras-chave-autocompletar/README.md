@@ -8,7 +8,7 @@ keywords: [autocompletar, busca, sugestões, termos de busca, palavras-chave]
 
 # Palavras-Chave do Autocompletar
 
-Essa feature mostra o que os compradores estão **efetivamente digitando** nos buscadores Google, YouTube e Bing quando começam a escrever o termo do seu produto. Serve pra descobrir termos de alta intenção de compra.
+Essa feature mostra o que as pessoas estão **efetivamente digitando** nos buscadores Google, YouTube e Bing quando começam a escrever o termo do seu produto. Serve pra descobrir termos de alta intenção de compra.
 
 ## Como usar
 
@@ -35,7 +35,7 @@ Essa feature mostra o que os compradores estão **efetivamente digitando** nos b
 ## Perguntas frequentes
 
 **P: De onde vêm as sugestões?**
-R: Dos próprios buscadores. São as sugestões que aparecem no autocompletar quando o usuário começa a digitar.
+R: Do Google, do YouTube e do Bing. São as sugestões que aparecem no autocompletar desses buscadores quando alguém começa a digitar.
 
-**P: Serve só pro Mercado Livre?**
-R: Não. As sugestões não vêm do Mercado Livre: vêm do Google, do YouTube e do Bing.
+**P: As sugestões vêm da busca do Mercado Livre?**
+R: Não. Elas mostram como as pessoas procuram o produto no Google, no YouTube e no Bing, não dentro do Mercado Livre.
